@@ -9,8 +9,8 @@ export default function AkumaNoMi({ fruta }) {
             style={{ "--color": '#976f47', "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
             className='w-full max-w-96 border border-[#976f4755] hover:bg-white backdrop-blur-sm duration-300 p-5 grow rounded-xl relative transition-colors min-h-50 [&:popover-open]:flex flex-col gap-4 items-center'>
 
-            <div className='w-1/3 h-24 shrink-0' style={{ anchorName: `--svg-${fruta.id}`, "--size": `--svg-${fruta.id}`, "--mask": `url(/src/assets/images/fruits/${fruta.localImg})` }}>
-                <img src={`/src/assets/images/fruits/${fruta.localImg}`}
+            <div className='w-1/3 h-24 shrink-0' style={{ anchorName: `--svg-${fruta.id}`, "--size": `--svg-${fruta.id}`, "--mask": `url(/images/fruits/${fruta.localImg})` }}>
+                <img src={`/images/fruits/${fruta.localImg}`}
                     draggable='false' alt={fruta.name} className='w-full h-full object-contain select-none filter-[drop-shadow(0_0_40px_var(--mix))]'
                 />
             </div>

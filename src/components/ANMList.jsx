@@ -104,7 +104,7 @@ export default function ANMList() {
                         {searchResult.map(fruit => (
                             <Link key={fruit.id} to={`/fruta/${fruit.id}`}
                                 className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex gap-3 items-center'>
-                                <img src={`/src/assets/images/fruits/${fruit.localImg}`} className='w-6' /> {fruit.name} • {fruit.jpName}
+                                <img src={`/images/fruits/${fruit.localImg}`} className='w-6' /> {fruit.name} • {fruit.jpName}
                             </Link>
                         ))}
                     </div>
@@ -121,8 +121,8 @@ export default function ANMList() {
                         style={{ "--color": fruit.localImg.includes('svg') ? '#976f47' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
                         className='xl:w-[31%] md:w-[47%] w-full border border-[#976f4755] hover:bg-white backdrop-blur-sm duration-300 p-5 grow rounded-xl relative transition-colors min-h-50 flex gap-4 items-center no-underline text-inherit group'>
 
-                        <div className='w-1/3 h-24 shrink-0' style={{ anchorName: `--svg-${i}`, "--size": `--svg-${i}`, "--mask": `url(/src/assets/images/fruits/${fruit.localImg})` }}>
-                            <img src={`/src/assets/images/fruits/${fruit.localImg}`}
+                        <div className='w-1/3 h-24 shrink-0' style={{ anchorName: `--svg-${i}`, "--size": `--svg-${i}`, "--mask": `url(/images/fruits/${fruit.localImg})` }}>
+                            <img src={`/images/fruits/${fruit.localImg}`}
                                 draggable='false' alt={fruit.name} className='w-full h-full object-contain select-none filter-[drop-shadow(0_0_40px_var(--mix))]'
                             />
                         </div>

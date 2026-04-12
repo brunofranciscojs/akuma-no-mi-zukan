@@ -39,7 +39,7 @@ export default function FruitPage() {
                             <div className='absolute inset-0 rounded-full blur-3xl opacity-30 saturate-200'
                                 style={{ backgroundColor: fruta.color + 'aa' || '#976f47' }} />
                             <img
-                                src={`/src/assets/images/fruits/${fruta.localImg}`}
+                                src={`/images/fruits/${fruta.localImg}`}
                                 alt={fruta.name}
                                 draggable='false'
                                 className='relative w-full scale-100 lg:scale-150 h-full object-contain select-none drop-shadow-2xl animate-[fruitFloat_5s_ease-in-out_infinite]'
