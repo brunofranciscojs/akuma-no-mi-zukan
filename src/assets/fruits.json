@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "ANM0",
+    "name": "Ame Ame no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/ame_ame_no_mi.png",
+    "exerpt": "Can create, control, and transform into candy syrup at will",
+    "desc": "Allows the user to create, control, and transform into candy syrup at will. This candy can be made to be syrup-like and sticky to trap opponents or intensely solid. This devil fruit is weak to flour, which will nullify the intagibility of the user",
+    "engName": "Candy-Candy Fruit"
+  },
+  {
+    "id": "ANM1",
+    "name": "Ami Ami no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into and produce nets from their body",
+    "desc": "Allows the user to produce nets from their body and even turn into a net allowing attacks to bounce right off of the user. These nets take on the properties of materials that the user ingests, such as boiling hot water, iron, or even fire",
+    "engName": "Net-Net Fruit"
+  },
+  {
+    "id": "ANM2",
+    "name": "Aro Aro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can produce and control vectorial arrows that can affect the motion of objects",
+    "desc": "Allows the user to generate and control arrow-like strips from their body, which behave like floating bandages that can be directed telekinetically. These arrows serve a variety of purposes, including binding and crushing enemies, forming piercing stakes, or enhancing physical strikes with large, armor-like constructs. Additionally, the user can manipulate movement through these arrows—accelerating attacks, creating aerial paths, and boosting impact force. However, this power comes with the drawback of visually telegraphing their attack trajectories",
+    "engName": "Arrow-Arrow Fruit"
+  },
+  {
+    "id": "ANM3",
+    "name": "Ato Ato no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/ato_ato_no_mi.png",
+    "exerpt": "Can turn targets into abstract art",
+    "desc": "Allows the user to turn targets into abstract art. This is done by the user creating a thought cloud, which can be tossed at a target, and if it makes contact it turns them into abstract art. Any object or vehicle affected by this power loses all functionality",
+    "engName": "Art-Art Fruit"
+  },
+  {
+    "id": "ANM4",
+    "name": "Atsu Atsu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can produce and control vast amounts of body heat",
+    "desc": "Allows the user to produce and control vast amounts of body heat. Their body heat can reach such high temperatures as to melt anything they touch. The amount of body heat produced is also affected by the user's mood, surging to high levels when angry",
+    "engName": "Hot-Hot Fruit"
+  },
+  {
+    "id": "ANM5",
+    "name": "Awa Awa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/awa_awa_no_mi.png",
+    "exerpt": "Can create strength nullifying soap and bubbles",
+    "desc": "Allows the user to emit and control soap and bubbles that can not only clean off dirt but can also \"clean off\" power. Creatures cleaned by this power turn shiny and smooth and are drained of their energy. This effect can be washed away by water",
+    "engName": "Bubble-Bubble Fruit"
+  },
+  {
+    "id": "ANM6",
+    "name": "Baku Baku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/baku_baku_no_mi.png",
+    "exerpt": "Can eat anything and incorporate it into their body",
+    "desc": "Allows the user to each otherwise inedible object, then later manifesting them from their body. The user can transform parts of their body into anything they have eat or can fuse objects or creatures together to create new things. This can also be used to create Wapometal, a special type of shape-memory alloy",
+    "engName": "Munch-Munch Fruit"
+  },
+  {
+    "id": "ANM7",
+    "name": "Bana Bana no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can use their jealousy to set themselves ablaze",
+    "desc": "Allows the user to to set themselves ablaze, with the heat's intensity rising in accordance with their jealousy. The user can also transmit this heat into weapons or people they make contact with",
+    "engName": "Burner-Burner Fruit"
+  },
+  {
+    "id": "ANM8",
+    "name": "Bane Bane no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/bane_bane_no_mi.png",
+    "exerpt": "Can turn their body parts into springs",
+    "desc": "Allows the user to transform parts of their body into springs, primarily using their legs to propel themselves at high speedss",
+    "engName": "Spring-Spring Fruit"
+  },
+  {
+    "id": "ANM9",
+    "name": "Bara Bara no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/bara_bara_no_mi.png",
+    "exerpt": "Can split their body into pieces",
+    "desc": "Allows the user to split their own body into pieces and control said pieces however they want, as well as making the user immune to slashing attacks. Chopped body parts can levitate through the air and lift objects regardless of their weight",
+    "engName": "Chop-Chop Fruit"
+  },
+  {
+    "id": "ANM10",
+    "name": "Bari Bari no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/bari_bari_no_mi.png",
+    "exerpt": "Can create an indestructible barrier",
+    "desc": "Allows the user to generate an indestructible barrier by crossing their fingers. This barrier can be shaped and controlled by the user",
+    "engName": "Barrier-Barrier Fruit"
+  },
+  {
+    "id": "ANM11",
+    "name": "Basu Basu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can explode anything they touch",
+    "desc": "Allows the user to turn anything they touch into a bomb",
+    "engName": "Explode-Explode Fruit"
+  },
+  {
+    "id": "ANM12",
+    "name": "Bata Bata no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can control butter",
+    "desc": "Allows the user to create and control butter. This butter is sticky and adhesive when in semi-liquid form, capable of immobilizing an opponent by wrapping it around their hands or bodies",
+    "engName": "Butter-Butter Fruit"
+  },
+  {
+    "id": "ANM13",
+    "name": "Batto Batto no Mi, Model: Vampire",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/batto_batto_no_mi_model_vampire.png",
+    "exerpt": "Can transform into a vampire",
+    "desc": "Allows the user to turn into a vampire. In their hybrid form, the user can fly, create a shroud to cloak themselves, and teleport. The user can also suck out a creature's life-force by biting the victim's neck or digging their nails into the victim's skin. By sucking out the user's life-force, the user can regain their own youth",
+    "engName": "Bat-Bat Fruit, Model: Vampire"
+  },
+  {
+    "id": "ANM14",
+    "name": "Beri Beri no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/beri_beri_no_mi.png",
+    "exerpt": "Can transform their body into large bouncy balls",
+    "desc": "Allows the user to transform their body parts into a multitude of bouncy berry-like balls, making them immune to blunt force attacks",
+    "engName": "Berry-Berry Fruit"
+  },
+  {
+    "id": "ANM15",
+    "name": "Beta Beta no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/beta_beta_no_mi.png",
+    "exerpt": "Can create and control mucus",
+    "desc": "Allows the user to create and control mucus. The mucus created is sticky and can restrain the movement of creatures and objects caught in it. Additionally, it is flammable and will cause it to explode violently upon contact with a spark",
+    "engName": "Stick-Stick Fruit"
+  },
+  {
+    "id": "ANM16",
+    "name": "Bijo Bijo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/bijo_bijo_no_mi.png",
+    "exerpt": "Can create illusions of anything they touch",
+    "desc": "Allows the user to \"phantomize,\" or create illusory images, of any picture the user touches. These phantoms can interact with their environment like the pictures they are imitating",
+    "engName": "Vision-Vision Fruit"
+  },
+  {
+    "id": "ANM17",
+    "name": "Bisu Bisu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/bisu_bisu_no_mi.png",
+    "exerpt": "Can create and control biscuits",
+    "desc": "Allows the user to generate and manipulate biscuits at will. These crackers can be produced in near-limitless amounts by the user clapping their hands, and can be shaped to whatever form the user desires",
+    "engName": "Bis-Bis Fruit"
+  },
+  {
+    "id": "ANM18",
+    "name": "Bomu Bomu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/bomu_bomu_no_mi.png",
+    "exerpt": "Can explode parts of their body",
+    "desc": "Allows the user to make any part of their body explode, whether it be their limbs, hair, mucus, even breath or cough. The user also becomes immune to explosions",
+    "engName": "Bomb-Bomb Fruit"
+  },
+  {
+    "id": "ANM19",
+    "name": "Buki Buki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn their body parts into weapons",
+    "desc": "Allows the user to change their body parts into weapons. Transforming into self-detonating weapons, such as missiles and bombs, does not harm the user",
+    "engName": "Arms-Arms Fruit"
+  },
+  {
+    "id": "ANM20",
+    "name": "Buku Buku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can manipulate books and trap things in them",
+    "desc": "Allows the user to manipulate books. The user can telekinetically control nearby books, and even trap living things inside a book's setting either physically or in a visual illusion inside the victim's mind",
+    "engName": "Book-Book Fruit"
+  },
+  {
+    "id": "ANM21",
+    "name": "Chiyu Chiyu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can heal at the expense of their own lifespan",
+    "desc": "Allows the user to heal any wound or injury through the use of liquid that comes from the user's body like tears. The user also has the ability to restore damaged inanimate objects to their original form, though their lifespan will be shortened in the process",
+    "engName": "Heal-Heal Fruit"
+  },
+  {
+    "id": "ANM22",
+    "name": "Choki Choki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/choki_choki_no_mi.png",
+    "exerpt": "Can turn their body into scissors that can cut anything",
+    "desc": "Allows the user to transform parts of their body into scissors and cut solid objects as if they were paper",
+    "engName": "Snip-Snip Fruit"
+  },
+  {
+    "id": "ANM23",
+    "name": "Chuni Chuni no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can increase or decrease the strength of other's abilities",
+    "desc": "Allows the user to tune abilities and powers, increasing or decreasing the abilities and powers of people by firing beams known as Age Age Beams or Sage Sage Beams",
+    "engName": "Tuning-Tuning Fruit"
+  },
+  {
+    "id": "ANM24",
+    "name": "Deka Deka no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can become 10x their normal size",
+    "desc": "Allows the user to drastically enlarge their body to 10x their normal size",
+    "engName": "Huge-Huge Fruit"
+  },
+  {
+    "id": "ANM25",
+    "name": "Deri Deri no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can deliver object to any target in view",
+    "desc": "Allows the user to deliver an object to any target within view. This can be used to deliver objects invisible to the naked eye, like viruses, and can even be used to deliver others' hearts to themselves",
+    "engName": "Delivery-Delivery Fruit"
+  },
+  {
+    "id": "ANM26",
+    "name": "Dero Dero no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can dissolve anything they touch",
+    "desc": "Allows the user to dissolve anything they touch into a liquid. The user can dissolve themselves into a liquid, making them effectively immune to physical attacks. When dissolving, the user can control the acidity of their body, allowing them to gradually melt things that touch them. The fruit can also be used to dissolve the hearts of others—metaphorically and literally—placing them under the control of the fruit's user. If the ability is not cancelled within 24 hours of being triggered, then the affected person will die",
+    "engName": "Dissolve-Dissolve Fruit"
+  },
+  {
+    "id": "ANM27",
+    "name": "Doa Doa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create a door on anything they touch",
+    "desc": "Allows the user to create doors through anything they touch. The doors they create can be created from any part of their body, from the palm of their hands to their whole body itself, and usually take the shape and form of the body part creating it. The doors remain as passageways anyone can pass through until closed completely. The user can also create doors in the very atmosphere itself which lead to a pocket dimension that can be used to travel across vast distances. While inside this pocket dimension the user can not interact with the real world",
+    "engName": "Door-Door Fruit"
+  },
+  {
+    "id": "ANM28",
+    "name": "Doku Doku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/doku_doku_no_mi.png",
+    "exerpt": "Can create and control different types of poison",
+    "desc": "Allows the user to produce and control different types of poison, as well as grants immunity to all forms of poison. The user can create and control a wide range of poisons that can vary in strength and form, ranging from a mild irritant to a strong paralyzing agent, to a deadly and highly-corrosive toxin. The user can produce these poisons in both liquid and gaseous states. The poison they create can be shaped into gigantic, monstrous entities, such as a hydra or a demon",
+    "engName": "Venom-Venom Fruit"
+  },
+  {
+    "id": "ANM29",
+    "name": "Doru Doru no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/doru_doru_no_mi.png",
+    "exerpt": "Can create and control large amounts of wax",
+    "desc": "Allows the user to create and control large quantities of candle wax from their body. When the wax hardens, it becomes as strong as steel",
+    "engName": "Wax-Wax Fruit"
+  },
+  {
+    "id": "ANM30",
+    "name": "Fude Fude no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/fude_fude_no_mi.png",
+    "exerpt": "Can produce ink which can be painted into an animated lifelike objecs",
+    "desc": "Allows the user to generate ink from their body and use a painting brush to turn images created with that ink into three-dimensional, lifelike objects. The objects they create possesses the same properties as the real-life subject it is based on, or a different property if the user so wishes, such as drawings of humans and animals gaining a consciousness, drawings of weapons having the same effect as their real-life counterparts, and drawings of food being edible and sustaining. The strength and abilities of the users' drawings heavily depend on the artistic skill of the user",
+    "engName": "Brush-Brush Fruit"
+  },
+  {
+    "id": "ANM31",
+    "name": "Fuku Fuku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create temporary clothing and disguises",
+    "desc": "Allows the user to create clothing and other apparel out of leaves or stones by visualizing them. The clothes are also not permanent and revert back to its original objects as soon as they are removed",
+    "engName": "Garb-Garb Fruit"
+  },
+  {
+    "id": "ANM32",
+    "name": "Fuwa Fuwa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/fuwa_fuwa_no_mi.png",
+    "exerpt": "Can levitiate themselves and any object they touch",
+    "desc": "Allows the user to levitate themselves and non-living things into the air after touching them once. Affected objects do not have to be in close proximity with the user in order to maintain the effect",
+    "engName": "Float-Float Fruit"
+  },
+  {
+    "id": "ANM33",
+    "name": "Gabu Gabu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can gulp alcohol and spit it out while igniting it",
+    "desc": "Allows the user to to gulp down alcohol and then spit it out while igniting it",
+    "engName": "Glug-Glug Fruit"
+  },
+  {
+    "id": "ANM34",
+    "name": "Gasha Gasha no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/gasha_gasha_no_mi.png",
+    "exerpt": "Can telekinetically disassemble and then reassamble objects into a different form",
+    "desc": "Allows the user to telekinetically disassemble objects and reassemble them into whatever they please. The user must also know what they are making, meaning one needs a large amount mechanical knowledge",
+    "engName": "Clank-Clank Fruit"
+  },
+  {
+    "id": "ANM35",
+    "name": "Gasu Gasu no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/gasu_gasu_no_mi.png",
+    "exerpt": "Can create, control, and transform into gas at will",
+    "desc": "Allows the user to create, control, and transform into gas at will. The fruit grants the user the ability to fly, and manipulate gases present in the near vicinity, such as removing the oxygen in the area to suffocate enemies. The gas produced can be of any type the user wishes. In its base form it is very poisonous and explodes when set alight. As pure gas, the user is intangible, with normal attacks passing straight through them harmlessly",
+    "engName": "Gas-Gas Fruit"
+  },
+  {
+    "id": "ANM36",
+    "name": "Gemu Gemu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can transport other poeple into a game-like world",
+    "desc": "Allows the user to transport other people into a game-like world, being able to decide on the genre of game",
+    "engName": "Game-Game Fruit"
+  },
+  {
+    "id": "ANM37",
+    "name": "Giro Giro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/giro_giro_no_mi.png",
+    "exerpt": "Can see through everything and read the minds of others",
+    "desc": "Allows the user to see through everything and read the minds of others. By forming circles out of their index finger and thumb and putting their hands next to their eyes, like glasses, the user can see through a person's clothes and skin, much like X-ray specs, but also read their minds and memories, allowing them to see through any lies. It also allows the user to transfer their own memories to another person's mind, by letting another person look through the circled fingers",
+    "engName": "Glare-Glare Fruit"
+  },
+  {
+    "id": "ANM38",
+    "name": "Gocha Gocha no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can merge with other people to increase their size and strength",
+    "desc": "Allows the user to merge themselves with other people, massively increasing the user's size and strength",
+    "engName": "Pile-Pile Fruit"
+  },
+  {
+    "id": "ANM39",
+    "name": "Goe Goe no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create powerful beams of concentrate sound energy",
+    "desc": "Allows the user to create powerful beams of concentrated sound energy by shouting",
+    "engName": "Shout-Shout Fruit"
+  },
+  {
+    "id": "ANM40",
+    "name": "Gomu Gomu no Mi",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/gomu_gomu_no_mi.png",
+    "exerpt": "Grants the user's body the properties of rubber",
+    "desc": "This devil fruit grants the user's body the properties of rubber. Originally, the fruit was called Hito Hito no Mi, Model: Nika and classified as a Mythical Zoan-type fruit that allows one to transform into the legendary \"Sun God\" Nika (and gain his rubbery attributes), before being renamed and reclassified by the World Government to hide the truth. The user's body permanently adopts the properties of rubber: their body can stretch, bend, bounce, inflate, and twist. Additionally, they become almost completely immune to lightning and blunt damage, such as blunt weapons, cannonballs, and even bullets, all of which bounce straight off them",
+    "engName": "Gum-Gum Fruit"
+  },
+  {
+    "id": "ANM41",
+    "name": "Goro Goro no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/goro_goro_no_mi.png",
+    "exerpt": "Can create, control, and transform into lightning at will",
+    "desc": "Allows the user to create, control, and transform into lightning at will. The user can discharge up to 200 million volts of electricity from their body, shocking targets at close or long range. As pure electricity, the user is intangible, with normal attacks passing straight through them harmlessly. Attacks against the user with rubber can bypass their intangiblity, allowing them to be hurt",
+    "engName": "Rumble-Rumble Fruit"
+  },
+  {
+    "id": "ANM42",
+    "name": "Goru Goru no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/goru_goru_no_mi.png",
+    "exerpt": "Can telekinetically control gold they have touched",
+    "desc": "Allows the user to telekinetically manipulate gold they have touched. The user can quickly change the gold from solid to liquid and vice-versa, allowing them to shape it in any way they desire, even hardening it to be stronger than normal gold",
+    "engName": "Gol-Gol Fruit"
+  },
+  {
+    "id": "ANM43",
+    "name": "Gunyo Gunyo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create and control clay from their body",
+    "desc": "Allows the user to create and shape clay from their body, forming diverse structures such as animated golems that can engage in combat. The user can adjust the clay's hardness, creating anything from soft, pliable forms to rigid constructs like weapons",
+    "engName": "Glorp-Glorp Fruit"
+  },
+  {
+    "id": "ANM44",
+    "name": "Gura Gura no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/gura_gura_no_mi.png",
+    "exerpt": "Can create powerful earthquakes and vibrations",
+    "desc": "Allows the user to create vibrations, or \"quakes\". The fruit can be used to generate massive vibrations, or shockwaves, which can travel through virtually any medium, including the ground, the seafloor, and even the air. The quakes are strong enough to be able to devastate an entire island with ease. This fruit is fearsomely reputed to be able to destroy the world, and is considered to be the strongest Devil Fruit within the Paramecia class",
+    "engName": "Tremor-Tremor Fruit"
+  },
+  {
+    "id": "ANM45",
+    "name": "Guru Guru no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can transform body parts into high-speed propellers",
+    "desc": "Allows the user to create propellers around their body giving them the ability of flight",
+    "engName": "Spin-Spin Fruit"
+  },
+  {
+    "id": "ANM46",
+    "name": "Gutsu Gutsu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn their body into a blast furnace capable of smelting metal",
+    "desc": "Allows the user to turn their body into a blast furnace, melt metals inside it, and then solidify the molten ore in the user's body and shape it into anything the user desires",
+    "engName": "Smelt-Smelt Fruit"
+  },
+  {
+    "id": "ANM47",
+    "name": "Hana Hana no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/hana_hana_no_mi.png",
+    "exerpt": "Can sprout parts of their body on surfaces",
+    "desc": "Allows the user to replicate and sprout pieces of their body from the surface of any object or living thing that they can then manipulate at will. The user can sprout up to one thousand body parts at once, and can even meld them into gigantic limbs. Any damage to their sprouted body parts transferred to the user's real body",
+    "engName": "Flower-Flower Fruit"
+  },
+  {
+    "id": "ANM48",
+    "name": "Hebi Hebi no Mi, Model: Anaconda",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/hebi_hebi_no_mi_model_anaconda.png",
+    "exerpt": "Can turn into an anaconda or anaconda hybrid",
+    "desc": "Allows the user to transform into an anaconda hybrid and a full anaconda at will",
+    "engName": "Snake-Snake Fruit: Model Anaconda"
+  },
+  {
+    "id": "ANM49",
+    "name": "Hebi Hebi no Mi, Model: King Cobra",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/hebi_hebi_no_mi_model_king_cobra.png",
+    "exerpt": "Can turn into a king cobra or king cobra hybrid",
+    "desc": "Allows the user to transform into an king cobra hybrid and a full king cobra at will. The user can spit a corrosive liquid venom from their mouth. If the spit does not hit the target, it starts emitting poisonous smoke that can affect nearby opponents",
+    "engName": "Snake-Snake Fruit: Model King Cobra"
+  },
+  {
+    "id": "ANM50",
+    "name": "Hebi Hebi no Mi, Model: Yamata no Orochi",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/hebi_hebi_no_mi_model_yamata_no_orochi.png",
+    "exerpt": "Can turn into the Yamato no Orochi, or a Yamato no Orochi hybrid",
+    "desc": "Allows the user to transform into a hybrid and full version of the Yamata no Orochi, an eight-headed snake or dragon in Japanese mythology. This fruit grants the user eight separate heads, each one with an extremely long neck. The fruit's multiple heads also allow the user to survive decapitation, even in Human Form, resulting in the user being required to be beheaded eight times in order to die. The user can not regenerate any heads that they have lost",
+    "engName": "Snake-Snake Fruit, Model: Yamata-no-Orochi"
+  },
+  {
+    "id": "ANM51",
+    "name": "Hie Hie no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/hie_hie_no_mi.png",
+    "exerpt": "Can create, control, and transform into ice at will",
+    "desc": "Allows the user to create, control, and transform into ice at will. The user can create massive amounts of ice and freeze opponents upon physical contact. Enough ice can be produced to freeze a giant, a Sea Beast, and even convert a massive amount of seawater into a gigantic ice sheet within mere moments. As pure ice, the user is immune to damage, with their ice body being able to reform itself after being hit with a normal attack",
+    "engName": "Ice-Ice Fruit"
+  },
+  {
+    "id": "ANM52",
+    "name": "Hira Hira no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can make their body and objects flexibile and flutter like a flag",
+    "desc": "Allows the user to make their body and any object they touch become flat and flexible, letting solid objects ripple, billow, and flutter like a piece of cloth or a flag. At the same time, all other natural characteristics such as toughness, strength, or sharpness are retained by the material, so metal objects can still resist forceful impact from enemies and blades retain an edge",
+    "engName": "Ripple-Ripple Fruit"
+  },
+  {
+    "id": "ANM53",
+    "name": "Hiso Hiso no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can speak telepathically to animals",
+    "desc": "Allows the user to understand the heart of an animal; in other words, it allows them to \"speak\" telepathically to animals",
+    "engName": "Whisper-Whisper Fruit"
+  },
+  {
+    "id": "ANM54",
+    "name": "Hito Hito no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/hito_hito_no_mi.png",
+    "exerpt": "Can transform into a human",
+    "desc": "Allows the user to transform into a human hybrid or a human at will. If consumed by an animal or object, this fruit grants them the intelligence of a human as well as the ability to speak in human language; if the user is an animal, they retain the ability to communicate with other animals as well. Similarly, just like humans, animals will become able to assimilate knowledge and utilize tools, the latter thanks to their now bipedal biology. If consumed by a human, this fruit will have no effect on them other than taking away their ability to swim",
+    "engName": "Human-Human Fruit"
+  },
+  {
+    "id": "ANM55",
+    "name": "Hito Hito no Mi, Model: Daibutsu",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/hito_hito_no_mi_model_daibutsu.png",
+    "exerpt": "Can transform into a Daibutsu",
+    "desc": "Allows the user to transform into a Daibutsu (a giant gold Buddha) at will. Additionally, the user can use palm thrusts to launch powerful shock waves",
+    "engName": "Human-Human Fruit, Model: Buddha"
+  },
+  {
+    "id": "ANM56",
+    "name": "Hito Hito no Mi, Model: Onyudo",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_0.svg",
+    "exerpt": "Can transform into a large monk yonkai",
+    "desc": "Allows the user to transform into an onyudo, a large monk yokai, at will. If consumed by an animal or object, this fruit grants them the intelligence of a human as well as the ability to speak in human language; if the user is an animal, they retain the ability to communicate with other animals as well. Similarly, just like humans, animals will become able to assimilate knowledge and utilize tools, the latter thanks to their now bipedal biology",
+    "engName": "Human-Human Fruit Model Onyudo"
+  },
+  {
+    "id": "ANM57",
+    "name": "Hobi Hobi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/hobi_hobi_no_mi.png",
+    "exerpt": "Can turn living people into toys by touching them",
+    "desc": "Allows the user to transform living people into toys by touching them, and erase memories of their existence from others. Upon transforming a person into a toy, the user can create a contract with the victims, forcing them to follow every order given at that point, against their will. Victims appear to lose their physical strength in the process of becoming toys, being limited to the capacities of whatever body they now may have, and any weapons they may have on them also disappear. Once an individual becomes a toy, any and all memory of that person's existence will be erased. Toys are still able to remember their own identities, but they will not remember anyone else who has been turned into a toy as well. Another effect of this fruit is that it halts the user's aging process upon consumption, effectively granting eternal youth. This effect seemingly applies to those turned into toys as well as they do not seem to change physically beyond the point of transformation. Killing the user or knocking them unconscious, whether through pain or fear, will immediately cancel out all the transformation and memory modification effects",
+    "engName": "Hobby-Hobby Fruit"
+  },
+  {
+    "id": "ANM58",
+    "name": "Homi Homi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can make objects they hold land in a spot they have previously locked on to",
+    "desc": "Allows the user to make objects they hold land in a spot they have previously locked on to",
+    "engName": "Homing-Homing Fruit"
+  },
+  {
+    "id": "ANM59",
+    "name": "Hore Hore no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can force creatures to fall in love with them",
+    "desc": "Allows the user to force any living creature to fall in love and lust after them and anything else they chooss and follow any of their orders by spreading the wings of aa peacock-like outfit and pouring a ray of light onto them and singing \"Hore Hore Love Revolu~tion\". This power will have no effect on anyone who has already found what they love most",
+    "engName": "Enamour-Enamour Fruit"
+  },
+  {
+    "id": "ANM60",
+    "name": "Horo Horo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/horo_horo_no_mi.png",
+    "exerpt": "Can astral project and conjure ghosts that can enfeeble others upon touching them",
+    "desc": "Allows the user to conjure and control ghosts called \"Hollows\". The Hollows are able to fly and, being intangible, are immune to physical attacks. The most basic of these forms are the Negative Hollows; should a person have a Negative Hollow pass through them or vice versa, they will immediately fall on their knees and become very negative about themselves, sometimes to the point of wanting to commit suicide. The user can also produce small round ghosts called Mini Hollows or large round ghosts called Toku Hollows which are tangible, allowing them to latch onto their opponents and explode at will. The user can also link their consciousness to their hollows for reconnaissance. Additionally, the user can also use a form of astral projection, projects their own \"hollow\" or spirit which looks exactly like them, is impervious to physical attack, can summon ghosts, change size, fly, and is intangible",
+    "engName": "Hollow-Hollow Fruit"
+  },
+  {
+    "id": "ANM61",
+    "name": "Horu Horu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn their fingers into syringe-like needles to inject hormones",
+    "desc": "Allows the user to create a variety of special hormones that can alter the recipient's body in any way the user desires. These hormones allow the user to  \"remodel a human from the inside out\" on a genetic level when injected. The user can also turn their fingers into syringe-like needles, which they use to inject the hormones into a target's body, including their own body if they desire to do so. These hormones can be used to freely alter any of the target's physical aspects, such as gender, body temperature, skin pigmentation, growth, stamina, even their emotional state",
+    "engName": "Horm-Horm Fruit"
+  },
+  {
+    "id": "ANM62",
+    "name": "Hoya Hoya no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/hoya_hoya_no_mi.png",
+    "exerpt": "Can summon a powerful genie from their body",
+    "desc": "Allows the user to summon a powerful genie wielding a bisento from their body. The user needs to continually rub their body, as if rubbing a genie lamp, to maintain the genie's presence",
+    "engName": "Puff-Puff Fruit"
+  },
+  {
+    "id": "ANM63",
+    "name": "Iba Iba no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/iba_iba_no_mi.png",
+    "exerpt": "Can create invisble thorny vines that can wrap around themselves and other people",
+    "desc": "Allows the user to create invisible thorny vines that can wrap around targets, causing damage on contact",
+    "engName": "Thorn-Thorn Fruit"
+  },
+  {
+    "id": "ANM64",
+    "name": "Iku Iku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can increase the size of inanimate objects in their vicinity",
+    "desc": "Allows the user to grow inanimate objects to massive size through proximity to the user",
+    "engName": "Grow-Grow Fruit"
+  },
+  {
+    "id": "ANM65",
+    "name": "Inu Inu no Mi, Model: Bake-danuki",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_bake_danuki.png",
+    "exerpt": "Can turn into a bake-danuki or bake-danuki hybrid at will",
+    "desc": "Allows the user to transform into a bake-danuki, a type of tanuki monster. The user can transform ordinary leaves into anything else, from objects to other people and entire environments. The individuals the user creates have the same exact abilities as the originals and are utterly loyal to the user, but are not as powerful as their original counterpart. They can even create copies of themselves. If consumed by an animal or object, this fruit grants them sapient intelligence as well as the ability to speak in human language; if the user is an animal, they retain the ability to communicate with other animals as well",
+    "engName": "Dog-Dog Fruit, Model: Bake-danuki"
+  },
+  {
+    "id": "ANM66",
+    "name": "Inu Inu no Mi, Model: Chihuahua",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_2.svg",
+    "exerpt": "Can turn into a chihuahua or chihuahua hybrid at will",
+    "desc": "Allows the user to transform into a chihuahua hybrid and a full chihuahua at will",
+    "engName": "Dog-Dog Fruit, Model: Chihuahua"
+  },
+  {
+    "id": "ANM67",
+    "name": "Inu Inu no Mi, Model: Dachshund",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_dachshund.png",
+    "exerpt": "Can turn into a dachshund or dachshund hybrid at will",
+    "desc": "Allows the user to transform into a dachshund hybrid and a full dachshund at will",
+    "engName": "Dog-Dog Fruit, Model: Dachshund"
+  },
+  {
+    "id": "ANM68",
+    "name": "Inu Inu no Mi, Model: Dalmatian",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a dalmatian or dalmatian hybrid at will",
+    "desc": "Allows the user to transform into a dalmatian hybrid and a full dalmatian at will",
+    "engName": "Dog-Dog Fruit, Model: Dalmatian"
+  },
+  {
+    "id": "ANM69",
+    "name": "Inu Inu no Mi, Model: Hound",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_0.svg",
+    "exerpt": "Can turn into a hound or hound hybrid at will",
+    "desc": "Allows the user to transform into a hound hybrid and a full hound at will. Being a predatory canine, this fruit is better suited for physical combat than normal Zoans",
+    "engName": "Dog-Dog Fruit, Model: Hound"
+  },
+  {
+    "id": "ANM70",
+    "name": "Inu Inu no Mi, Model: Jackal",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_jackal.png",
+    "exerpt": "Can turn into a jackal or jackal hybrid at will",
+    "desc": "Allows the user to transform into a jackal hybrid and a full jackal at will. Being a predatory canine, this fruit is better suited for physical combat than normal Zoans",
+    "engName": "Dog-Dog Fruit, Model: Jackal"
+  },
+  {
+    "id": "ANM71",
+    "name": "Inu Inu no Mi, Model: Cerberus",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a three-headed cerberus or cerberus hybrid at will",
+    "desc": "Allows the user to transform into a three-headed cerberus hybrid and cerberus caterpillar at will. As a Mythical Zoan, it also bestows heightened predatory instincts, on top of equipping the user with three heads with powerful teeth well-suited for combat.",
+    "engName": "Dog-Dog Fruit, Model: Cerberus"
+  },
+  {
+    "id": "ANM72",
+    "name": "Inu Inu no Mi, Model: Kyubi no Kitsune",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_kyubi_no_kitsune.png",
+    "exerpt": "Can turn into a kitsune or kitsune hybrid at will",
+    "desc": "Allows the user to transform into a nine-tailed fox. The user gains the ability to disguise themselves as anyone they like, allowing them to impersonate them. The clothing of the target individual can also be imitated during the transformation",
+    "engName": "Dog-Dog Fruit, Model: Nine Tailed Fox"
+  },
+  {
+    "id": "ANM73",
+    "name": "Inu Inu no Mi, Model: Okuchi no Makami",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_okuchi_no_makami.png",
+    "exerpt": "Can turn into an ancient wolf deity or ancient wolf deity hybrid at will",
+    "desc": "Allows the user to transform into a hybrid and full version of an ancient wolf deity, the \"Guardian Deity of Wano\", at will. This transformation greatly bolsters the user's physical abilities and, as a carnivorous Zoan, presumably bestows heightened predatory instincts, on top of equipping the user with canine fangs and claws well-suited for combat. Additionally, the user is able to generate ice, which they can expel as blasts from their mouth or otherwise make appear from their body",
+    "engName": "Dog-Dog Fruit, Model: Okuchi-no-Makami"
+  },
+  {
+    "id": "ANM74",
+    "name": "Inu Inu no Mi, Model: Tanuki",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_tanuki.png",
+    "exerpt": "Can turn into a tanuki or tanuki hybrid at will",
+    "desc": "Allows the user to transform into a tanuki hybrid and a full tanuki at will",
+    "engName": "Dog-Dog Fruit, Model: Tanuki"
+  },
+  {
+    "id": "ANM75",
+    "name": "Inu Inu no Mi, Model: Wolf",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/inu_inu_no_mi_model_wolf.png",
+    "exerpt": "Can turn into a wolf or wolf hybrid at will",
+    "desc": "Allows the user to transform into a wolf hybrid (which almost resembles a werewolf) and a full wolf at will. This transformation greatly bolsters the user's physical abilities and, as a carnivorous Zoan, presumably bestows heightened predatory instincts, on top of equipping the user with canine fangs and claws well-suited for combat",
+    "engName": "Dog-Dog Fruit, Model: Wolf"
+  },
+  {
+    "id": "ANM76",
+    "name": "Iro Iro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/iro_iro_no_mi.png",
+    "exerpt": "Can paint objects to create camoflauge",
+    "desc": "Allows the user to create paint to camouflage or disguise people and objects, rendering it nearly invisible to the eye",
+    "engName": "Color-Color Fruit"
+  },
+  {
+    "id": "ANM77",
+    "name": "Ishi Ishi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/ishi_ishi_no_mi.png",
+    "exerpt": "Can merge with and manipulate stone",
+    "desc": "Allows the user to merge with and manipulate stone. The user can take control of anything made of stone that they come in contact with. While under the user's control, the stone gains a surprising level of flexibility and dexterity that it otherwise would not have, allowing it to stretch and shape. The user's physical body can travel anywhere inside of the stone, and any damage done to the stone the user controls is not inflicted upon the user themselves, so long as their true body is not harmed",
+    "engName": "Stone-Stone Fruit"
+  },
+  {
+    "id": "ANM78",
+    "name": "Ito Ito no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/ito_ito_no_mi.png",
+    "exerpt": "Can create powerful razor-sharp strings that they can manipulate",
+    "desc": "Allows the user to create and manipulate strings. The user is bestowed with the power to generate and control white, durable, wafer-thin, razor-sharp strings attachable to seemingly any surface (even non-solid targets such as clouds) from seemingly any part of the user's own body (even the innards), though mostly seen protruding from the palms and fingertips, for many diverse purposes, such as manipulating people's movements in a way reminiscent of how puppeteers control puppets by connecting the strings to their spines, swiping the strings to slice through things like body parts and weapons similar to piano wire or monomolecular wire, attaching them to clouds for aerial transportation, and creating masses of bundled-up, compressed strings for various constructs such as ropes usable as whips, bullets, clones, a humongous cage-like force field or a massive spider web defense",
+    "engName": "String-String Fruit"
+  },
+  {
+    "id": "ANM79",
+    "name": "Jake Jake no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can become a wearable jacket that can control anyone who wears them",
+    "desc": "Allows the user to become a jacket and be worn by others. When worn, the user can then control the wearer's body and gain their abilities, potentially increasing their strength. The user still maintains the ability to move and talk while turned into a jacket, but it is unknown if they can force anyone to wear the jacket against their will",
+    "engName": "Jacket-Jacket Fruit"
+  },
+  {
+    "id": "ANM80",
+    "name": "Jara Jara no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create adjustable chains from their body",
+    "desc": "Allows the user to grow chains from their body. These chains can have their ends be made sharp, tightened telekinetically, and can be increased in size",
+    "engName": "Chain-Chain Fruit"
+  },
+  {
+    "id": "ANM81",
+    "name": "Jiki Jiki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/jiki_jiki_no_mi.png",
+    "exerpt": "Can create magnetic forces to attract, repel, and manipulate metal",
+    "desc": "Allows the user to create magnetic forces and use them to control metal. The user can generate magnetic fields that either attract or repel metallic objects to and from their body as they please. In general, the creatable magnetic forces are extremely strong and very difficult, if not impossible, to resist. The fruit gives the user a sufficient degree of control over their magnetism to accumulate a large amount of metallic objects around their body and form them into specific shapes; the user can then move these masses around very fluidly, either by being directly connected to them or not. These objects can then be turned into functioning mechanical arms, gatling guns, railguns, and even exoskeletal fighting machines. As part of this devil fruit's awakening the user is capable of turning other objects, including living organisms, into magnets by assigning them with a specific polarity",
+    "engName": "Magnet-Magnet Fruit"
+  },
+  {
+    "id": "ANM82",
+    "name": "Juku Juku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can mature and decay anything they touch",
+    "desc": "Allows the user to mature and decay anything they touch. This power can be used to rapidly age and decay objects to the point of breaking, or even used on living beings to cause them to grow older in an instant",
+    "engName": "Ripe-Ripe Fruit"
+  },
+  {
+    "id": "ANM83",
+    "name": "Kachi Kachi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can harden and heat up their body",
+    "desc": "Allows the body of the user to harden and heat up their body at will, increasing their defensive capabilities and their temperature",
+    "engName": "Flint-Flint Fruit"
+  },
+  {
+    "id": "ANM84",
+    "name": "Kage Kage no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/kage_kage_no_mi.png",
+    "exerpt": "Can manifest and control shadows of living creatues and create zombies",
+    "desc": "Allows the user to manifest and control shadows of living creatures, including their own, as physical and tangible forms. The user can steal the shadows of other beings and insert them into different bodies, living or dead, which in the latter case enables the creation of zombies. The created zombies will adopt the shadow's personality quirks. The original owner of the shadow will be forced to remain in darkness, as they will vaporize if hit by sunlight without their shadow. The user is also able to manifest their own shadow as a semi-liquid physical form. They are then able to control their shadow and make it fight for them in their stead. Their shadow, as a physical manifestation, is a being of strength similar to that of a Logia Devil Fruit user as their shadow, in that state, is impervious to damage. It is also able to change shape and size depending on the user's wishes. Additionally,  the user can take the shadows they implanted into their zombie minions and place them into themselves for a power boost",
+    "engName": "Shadow-Shadow Fruit"
+  },
+  {
+    "id": "ANM85",
+    "name": "Kama Kama no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Grants the user razor-sharp nails",
+    "desc": "This devil fruit gives the user long, sharp nails that they can use to create slicing air blades",
+    "engName": "Sickle-Sickle Fruit"
+  },
+  {
+    "id": "ANM86",
+    "name": "Kame Kame no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a turtle or turtle hybrid at will",
+    "desc": "Allows the user to transform into a turtle hybrid and full turtle at will. This turtle has a nearly-impenetrable protective shell as hard as diamond. However, being a turtle, the user will become naturally slower",
+    "engName": "Turtle-Turtle Fruit"
+  },
+  {
+    "id": "ANM87",
+    "name": "Karuma Karuma no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/karuma_karuma_no_mi.png",
+    "exerpt": "Can turn damage they receive into physical strength",
+    "desc": "Allows the user to convert damage received into physical strength, causing their muscles to expand and their body size to increase",
+    "engName": "Karma-Karma Fruit"
+  },
+  {
+    "id": "ANM88",
+    "name": "Kemushi Kemushi no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a caterpillar or caterpillar hybrid at will",
+    "desc": "Allows the user to transform into a caterpillar hybrid and full caterpillar at will",
+    "engName": "Caterpillar-Caterpillar Fruit"
+  },
+  {
+    "id": "ANM89",
+    "name": "Kibi Kibi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/kibi_kibi_no_mi.png",
+    "exerpt": "Can create dango that allow them to tame animals",
+    "desc": "Allows the user to create \"dango\" from their cheeks that can tame animals and those of part-animal nature. By pinching their cheeks while making a circle using their index finger and thumb, the user can create small, round dango dumplings, that, when fed to any animal, will make them become utterly tame and subservient to the user, obeying all their orders and defending them from harm. This technique will not cause the user's cheek any harm,[2] and since only the user is capable of creating the dangos, they cannot be forcefully taken from their body against their will. The dango's effect is similar to brainwashing, and though the consumer seems to retain all their memories and personality, they also gain an undying loyalty to the producer. They place the user's wellbeing and orders above all else, even their own lives. While the dangos usually are not capable of taming humans, those who have eaten functional SMILE fruits are an exception, being susceptible to being tamed due to their part-animal nature. Once a period of one month passes, the effects of the fruit wear off, with the tamed animal then being able to decide whether to remain loyal to the user or leave their command",
+    "engName": "Millet-Millet Fruit"
+  },
+  {
+    "id": "ANM90",
+    "name": "Kira Kira no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/kira_kira_no_mi.png",
+    "exerpt": "Can transform their body into diamonds",
+    "desc": "Allows the user to transform their body into diamond. The user is unable to move parts of their body that have been transformed into diamond",
+    "engName": "Twinkle-Twinkle Fruit"
+  },
+  {
+    "id": "ANM91",
+    "name": "Kiro Kiro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/kiro_kiro_no_mi.png",
+    "exerpt": "Can change their weight from 1 to 10,000 kilograms",
+    "desc": "Allows the user to change their weight from 1 to 10,000 kilograms without, in any way, affecting the overall size of their body. Even with one's weight increased, the user of the fruit can move normally, their movement being unaffected by their weight",
+    "engName": "Kilo-Kilo Fruit"
+  },
+  {
+    "id": "ANM92",
+    "name": "Koara Koara no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a koala or koala hybrid at will",
+    "desc": "Allows the user to transform into a koala hybrid and full koala at will",
+    "engName": "Koala-Koala Fruit"
+  },
+  {
+    "id": "ANM93",
+    "name": "Kone Kone no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can transform individuals into different people",
+    "desc": "Allows the user to transform individuals into different people. The user can turn people into copies of others, giving them the appearance, abilities, and strength of those they are copying. The user cannot transform themselves, and those who are transformed return to their original state if they are incapacitated",
+    "engName": "Knead-Knead Fruit"
+  },
+  {
+    "id": "ANM94",
+    "name": "Kopi Kopi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can copy other people's abilities through touch",
+    "desc": "Allows the user to to copy other people's abilities through touch. The user needs great concentration when using this ability, with something as small as a sneeze being able to interrupt it",
+    "engName": "Dupe-Dupe Fruit"
+  },
+  {
+    "id": "ANM95",
+    "name": "Koro Koro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn their hands and feet into train wheels",
+    "desc": "Allows the user to turn their hands and feet into train wheels",
+    "engName": "Roll-Roll Fruit"
+  },
+  {
+    "id": "ANM96",
+    "name": "Kote Kote no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can summon large gauntlets with which they can grab and manipulate any non-living thing",
+    "desc": "Allows the user to summon large gauntlets with which they can grab and manipulate any non-living thing",
+    "engName": "Grab-Grab Fruit"
+  },
+  {
+    "id": "ANM97",
+    "name": "Kuku Kuku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn objects into bad-tasting food",
+    "desc": "Allows the user to turn objects into food. However, the food produced doesn't taste good in its original state",
+    "engName": "Cook-Cook Fruit"
+  },
+  {
+    "id": "ANM98",
+    "name": "Kumo Kumo no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a spider or spider hybrid at will",
+    "desc": "Allows the user to transform into a spider hybrid and full spider at will",
+    "engName": "Spider-Spider Fruit"
+  },
+  {
+    "id": "ANM99",
+    "name": "Kumo Kumo no Mi, Model: Rosamygale Grauvogeli",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/kumo_kumo_no_mi_model_rosamygale_grauvogeli.png",
+    "exerpt": "Can turn into a large ancient spider or spider hybrid at will",
+    "desc": "Allows the user to transform into a hybrid and full version of a Rosamygale grauvogeli, an ancient species of spider, proportional to the size of the user's body. The user can create sticky spider silk from their body, called \"Hard Gum\", which can be used to build webs and other structures meant for capturing and/or immobilizing targets, including sticky nets that can also be used as a shield. Much like a spider, the user is also able to walk on walls and upside-down across ceilings. Additionally, the ends of the user's spider legs are furthermore able to secrete poison, making them an effective weapon at close range. As a carnivorous Zoan, this transformation greatly bolsters the user's physical abilities",
+    "engName": "Spider-Spider Fruit, Model: Rosamygale Grauvogeli"
+  },
+  {
+    "id": "ANM100",
+    "name": "Kuri Kuri no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/kuri_kuri_no_mi.png",
+    "exerpt": "Can create and manipulating boiling hot cream",
+    "desc": "Allows the user to create and manipulate cream at will. The cream's sugar is capable of inflicting painful second or third degree burns to anyone it comes in contact with, allowing the user to physically harm their opponents while also making them hard to approach in battle due to the risk of coming in contact with the cream",
+    "engName": "Cream-Cream Fruit"
+  },
+  {
+    "id": "ANM101",
+    "name": "Kyameru Kyameru no Mi: Model Alpaca",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_0.svg",
+    "exerpt": "Can turn into an alpaca or alpaca hybrid at will",
+    "desc": "Allows the user to transform into a alpaca hybrid and a full alpaca at will",
+    "engName": "Camel-Camel Fruit: Model Alpaca"
+  },
+  {
+    "id": "ANM102",
+    "name": "Kyara Kyara no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/kyara_kyara_no_mi.png",
+    "exerpt": "Can provide consciousness to non-living souls, as well as allowing the soul to merge with others",
+    "desc": "Allows the user to provide consciousness to non-living souls, as well as allowing the soul to merge with others. The main strength of this Devil Fruit is the ability to merge with other people, providing massive increases in strength and speed",
+    "engName": "Character-Character Fruit"
+  },
+  {
+    "id": "ANM103",
+    "name": "Kyubu Kyubu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can cut anything they touch into cubes and control these structures",
+    "desc": "Allows the user to cut anything they touch into cubes and control these structures. The user can also compress the air around them or even living creatures—such as humans—around them into cubes. The victims of the fruit's powers are still able to move around on their own and can break free if they exert enough willpower",
+    "engName": "Cube-Cube Fruit"
+  },
+  {
+    "id": "ANM104",
+    "name": "Mabo Mabo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create illusions based on other's memories",
+    "desc": "Allows the user to probe the memories of people he touches, and create illusions and auditory hallucinations based on them",
+    "engName": "Phantom-Phantom Fruit"
+  },
+  {
+    "id": "ANM105",
+    "name": "Maji Maji no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can use magic techniques resembling the parlor tricks of stage magicians",
+    "desc": "Allows the user to use magic techniques resembling the parlor tricks of stage magicians. The user is able to disappear at will to easily escape from opponents. The user has the powers of magic, the kind used by party magicians, to create illusions and hypnotize others",
+    "engName": "Magic-Magic Fruit"
+  },
+  {
+    "id": "ANM106",
+    "name": "Magu Magu no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/magu_magu_no_mi.png",
+    "exerpt": "Can create, control, and transform into magma at will",
+    "desc": "Allows the user to create, control, and transform into magma at will. The user can create massive amounts of magma, propelling them across large distances at ease. The intense heat of the magma can vaporize an iceberg instantly and boil seawater that the magma happens to land in. Additionally, the heat from the magma melts away almost any flesh or metal it comes in contact with and is capable of burning away entire parts of a human body, leaving the victim in a scarred or disfigured shape. As pure magma, the user is intangible, with normal attacks passing straight through them, melting anything that comes into contact with the user. The Magu Magu no Mi has one of the highest offensive power among the Devil Fruits",
+    "engName": "Magma-Magma Fruit"
+  },
+  {
+    "id": "ANM107",
+    "name": "Maki Maki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/maki_maki_no_mi.png",
+    "exerpt": "Can create and control scrolls capable of storing objects",
+    "desc": "Allows the user to create and control scrolls at will, which have special properties including storing objects and generating drawings. With this power, the user can manifest and telekinetically control scrolls. These scrolls can change size as the user wills, being capable of growing big enough to dwarf people in size. Scrolls can be summoned and unrolled almost instantaneously",
+    "engName": "Scroll-Scroll Fruit"
+  },
+  {
+    "id": "ANM108",
+    "name": "Mane Mane no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/mane_mane_no_mi.png",
+    "exerpt": "Can transform themselves into a physical double of anyone they touch",
+    "desc": "Allows the user to turn themselves into a physical double of anyone they touch. The user gains perfect recollection of every person whose form they have ever copied, so they will not forget any person whom they imitates. The user can revert back to their own body by touching their face with their left hand. However, they cannot copy the target's clothes, mannerisms or weapons",
+    "engName": "Clone-Clone Fruit"
+  },
+  {
+    "id": "ANM109",
+    "name": "Mari Mari no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create copies of people and command them",
+    "desc": "Allows the user to create copies of people and command them. The user needs to know the person's name and see them directly in order to create a copy",
+    "engName": "Marionette-Marionette Fruit"
+  },
+  {
+    "id": "ANM110",
+    "name": "Mato Mato no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/mato_mato_no_mi.png",
+    "exerpt": "Can cause an object to move at great speeds towards a target they have touched",
+    "desc": "Allows the user to aim at whichever \"target\" he decides upon from any location and at any time with anything at ease. Upon touching a creature with their hands, the user is able to target them from any distance with an object. The longer the distance between the user and the user's target the greater the resulting momentum of the projectile thrown",
+    "engName": "Mark-Mark Fruit"
+  },
+  {
+    "id": "ANM111",
+    "name": "Memo Memo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn people's memories into strips of film and manipulate them",
+    "desc": "Allows the user to turn people's memories into strips of film and manipulate them. By reaching into their target's head, the user can extract their memories in the form of film strips, which they can then manipulate using scissors and paste. By cutting out frames, they can remove that part of the target's memory, and by pasting in other people's frames, they can add new memories to the target",
+    "engName": "Memo-Memo Fruit"
+  },
+  {
+    "id": "ANM112",
+    "name": "Mera Mera no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/mera_mera_no_mi.png",
+    "exerpt": "Can create, control, and transform into fire at will",
+    "desc": "Allows the user to create, control, and transform into fire at will. The user can create massive amounts of fire, propelling them across large distances at ease. As pure fire, the user is intangible, with normal attacks passing straight through them, burning anything that comes into contact with the user",
+    "engName": "Flame-Flame Fruit"
+  },
+  {
+    "id": "ANM113",
+    "name": "Mero Mero no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/mero_mero_no_mi.png",
+    "exerpt": "Can use love, lust, or adoration to transform opponents into stone",
+    "desc": "Allows the user to perform a range of attacks which use emotions of love, lust or adoration to transform opponents into stone. The standard attack involves emitting a beam that transforms users who lust or love after the user into stone. Petrification can also be achieved through physically striking an opponent, although the only area that is turned to stone is the contacted area, as opposed to the entire body. The power also extends to nonliving objects. Killing the user will not cause the petrification to end",
+    "engName": "Love-Love Fruit"
+  },
+  {
+    "id": "ANM114",
+    "name": "Meta Meta no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create and control liquid metal from their body",
+    "desc": "Allows the user to create and control liquid metal from their body. The user can use this liquid metal to make physical constructs or to create liquid metal soldiers that can take the form of himself and others",
+    "engName": "Metal-Metal Fruit"
+  },
+  {
+    "id": "ANM115",
+    "name": "Mini Mini no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can shrink their current size down to 5mm in height",
+    "desc": "Allows the user to become smaller than their actual size. The user can shrink from their current size to 5mm in height without reducing their strength. This also includes the user's weapons and personal items on them at the time",
+    "engName": "Mini-Mini Fruit"
+  },
+  {
+    "id": "ANM116",
+    "name": "Mira Mira no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/mira_mira_no_mi.png",
+    "exerpt": "Can create mirrors which can reflect attacks and access a personal pocket dimension",
+    "desc": "Allows the user to create mirrors which can reflect attacks or appearances. The user is able to create mirrors around them using their hands which can reflect an enemy's attack back at them. These mirrors can also be used as a portal to a pocket dimension called \"Mirro-World\". This pocket dimension is filled with portals to all nearby mirrors (in the range of an island). The user can also transform creatures into mirror images of certain individuals, but also imitate their actions completely",
+    "engName": "Mirror-Mirror Fruit"
+  },
+  {
+    "id": "ANM117",
+    "name": "Moa Moa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can amplify the size and speed of objects they touch by up to 100 times",
+    "desc": "Allows the user to amplify the size and speed of any object they touch up to 100 times the original. This can be used on bullets and cannonballs, as well as the user's own speed. The increased speed can bring forth powerful momentum to increase the power of the user's physical attacks, while the sudden increase in size can increase physical strength and destructive range of the weapon",
+    "engName": "More-More Fruit"
+  },
+  {
+    "id": "ANM118",
+    "name": "Mochi Mochi no Mi",
+    "type": "Special Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/mochi_mochi_no_mi.png",
+    "exerpt": "Can create, control, and transform into mochi at will",
+    "desc": "Allows the user to create, control, and transform into mochi at will. The user can create massive amounts of stretchy and sticky mochi, propelling them across large distances at ease. As pure mochi, the user is intangible, with normal attacks passing straight through them",
+    "engName": "Mochi-Mochi Fruit"
+  },
+  {
+    "id": "ANM119",
+    "name": "Modo Modo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can make anyone up to 12 years younger",
+    "desc": "Allows the user to generate pink energy which returns anyone and anything twelve years younger. If a target is reverted to before they were born, they become erased from existence. This effect is undone when the user loses consciousness",
+    "engName": "Return-Return Fruit"
+  },
+  {
+    "id": "ANM120",
+    "name": "Mogu Mogu no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a mole or mole hybrid at will",
+    "desc": "Allows the user to transform into a mole hybrid and a full mole at will. The user is able to move underground as if they were swimming in a pool by digging holes",
+    "engName": "Mole-Mole Fruit"
+  },
+  {
+    "id": "ANM121",
+    "name": "Moku Moku no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/moku_moku_no_mi.png",
+    "exerpt": "Can create, control, and transform into smoke at will",
+    "desc": "Allows the user to create, control, and transform into smoke at will. The user can create massive amounts of smoke, and is able to turn part of their body into smoke to fly. Additionally, density of the smoke can be altered to allow the user to surround his targets with their intangible smoke and then solidify it to grasp them, or to use it as a blunt weapon. As pure smoke, the user is intangible, with normal attacks passing straight through them",
+    "engName": "Plume-Plume Fruit"
+  },
+  {
+    "id": "ANM122",
+    "name": "Mono Mono no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create clones of peoples and things that they can command",
+    "desc": "Allows the user to create clones of people and things. The clones have the same abilities as their original counterparts, though their strength is not equal to the originals. The user also has command over the clones, even if the actions they are doing goes against their original personalities",
+    "engName": "Thing-Thing Fruit"
+  },
+  {
+    "id": "ANM123",
+    "name": "Mori Mori no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/mori_mori_no_mi.png",
+    "exerpt": "Can create, control, and transform into flora at will",
+    "desc": "Allows the user to create, control, and transform into flora at will. When active, the user's body parts can take the attributes of trees, flowers, vines, etc., making them akin to a living forest. The plants created by this power can grow rapidly and be made to move around freely, seemingly not being limited by the rigidity and stiffness that some plants, such as trees, normally possess. The user can generate large quantities of plants to unleash overwhelming large-scale attacks, like underground root tentacles that can ensnare multiple targets, or even enormous creatures such as dragons, at once. Additionally, those plants can rapidly absorb any liquid they touch, which includes dehydrating living creatures after impaling them, leaving them as shriveled husks. As a living forest, the user is immune to damage, with their forest body being able to reform itself after being hit with a normal attack",
+    "engName": "Woods-Woods Fruit"
+  },
+  {
+    "id": "ANM124",
+    "name": "Mosa Mosa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can accelerate the growth rate of plants and control them to their desire",
+    "desc": "Allows the user to accelerate the growth rate of plants and control them to their desire",
+    "engName": "Grow-Grow Fruit"
+  },
+  {
+    "id": "ANM125",
+    "name": "Muchi Muchi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can use whips to command anything they hit",
+    "desc": "Allows the user to use whips to command anything they hit. This fruit allows the user to transform objects into whips, giving them the property of implanting obedience into whatever the user lashes it onto. The effects of the whipping can affect even inanimate, immobile objects, such as buildings. If the user for example orders an object to move, it will do so regardless of whether it is physically possible or not",
+    "engName": "Whip-Whip Fruit"
+  },
+  {
+    "id": "ANM126",
+    "name": "Mushi Mushi no Mi, Model: Kabutomushi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_2.svg",
+    "exerpt": "Can turn into a rhinoceros beetle or rhinoceros beetle hybrid at will",
+    "desc": "Allows the user to transform into a rhinoceros beetle hybrid and full rhinoceros beetle at will. While transformed into a rhinoceros beetle the user is granted wings, a second pair of arms, and a horn",
+    "engName": "Bug-Bug Fruit, Model: Rhinoceros beetle"
+  },
+  {
+    "id": "ANM127",
+    "name": "Mushi Mushi no Mi, Model: Suzumebachi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_2.svg",
+    "exerpt": "Can turn into a hornet or hornet hybrid at will",
+    "desc": "Allows the user to transform into a hornet hybrid and full hornet at will. While transformed into a rhinoceros beetle the user is granted wings, a second pair of arms, and a stinger",
+    "engName": "Bug-Bug Fruit, Model: Hornet"
+  },
+  {
+    "id": "ANM128",
+    "name": "Nagi Nagi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/nagi_nagi_no_mi.png",
+    "exerpt": "Can create a soundproof field and to cancel all noises",
+    "desc": "Allows the user to create a soundproof field and to cancel all noises. The field makes it so that the sounds inside the field cannot be heard from the outside, and vice versa. The user can also use this fruit's ability to cancel all noises coming from the user or somebody else's actions",
+    "engName": "Calm-Calm Fruit"
+  },
+  {
+    "id": "ANM129",
+    "name": "Neko Neko no Mi, Model: Cheetah",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_2.svg",
+    "exerpt": "Can turn into a cheetah or cheetah hybrid at will",
+    "desc": "Allows the user to transform into a cheetah hybrid and a full cheetah at will. This transformation greatly bolsters the user's physical abilities and, as a carnivorous Zoan, bestows heightened predatory instincts, on top of equipping the user with powerful teeth and retractable claws well-suited for combat, as well as stealth, enhanced climbing, and jumping capabilities",
+    "engName": "Cat-Cat Fruit, Model: Cheetah"
+  },
+  {
+    "id": "ANM130",
+    "name": "Neko Neko no Mi, Model: Leopard",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/neko_neko_no_mi_model_leopard.png",
+    "exerpt": "Can turn into a leopard or leopard hybrid at will",
+    "desc": "Allows the user to transform into a leopard hybrid and a full leopard at will. This transformation greatly bolsters the user's physical abilities and, as a carnivorous Zoan, bestows heightened predatory instincts, on top of equipping the user with powerful teeth and retractable claws well-suited for combat, as well as stealth, enhanced climbing, and jumping capabilities",
+    "engName": "Cat-Cat Fruit, Model: Leopard"
+  },
+  {
+    "id": "ANM131",
+    "name": "Neko Neko no Mi, Model: Saber Tiger",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/neko_neko_no_mi_model_saber_tiger.png",
+    "exerpt": "Can turn into a saber-toothed tiger or saber-toothed tiger hybrid at will",
+    "desc": "Allows the user to transform into a hybrid and full version of a saber-toothed tiger at will. This transformation greatly bolsters the user's physical abilities and, as a carnivorous Zoan, bestows heightened predatory instincts, on top of equipping the user with a pair of long, sharp canine fangs usable for combat, as well as retractable claws on their hands and feet. As an Ancient Zoan, this fruit's transformation bestows even greater strength and durability than regular Zoans",
+    "engName": "Cat-Cat Fruit, Model: Saber-Toothed Tiger"
+  },
+  {
+    "id": "ANM132",
+    "name": "Nemu Nemu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can make anyone fall asleep",
+    "desc": "Allows the user to make anyone fall asleep. This fruit allows the user to trap people inside a dream world while they are asleep. Inside the dream world, the user can steal people's memories to power up. The user can also manipulate the dream world using the stolen memories, as well as take control of someone in the dream world",
+    "engName": "Sleep-Sleep Fruit"
+  },
+  {
+    "id": "ANM133",
+    "name": "Nepa Nepa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can generate powerful heat waves",
+    "desc": "Allows the user to generate heat waves to overwhelm their opponents. The heatwaves can be so powerful that they can cause entire islands to begin to collapse",
+    "engName": "Heatwave-Heatwave Fruit"
+  },
+  {
+    "id": "ANM134",
+    "name": "Netsu Netsu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can emanate vast amounts of heat from their body",
+    "desc": "Allows the user to emanate heat from their body. The user is capable of heating parts of their body to temperatures greater than most people can withstand, thus increasing their attack power. They can transfer the heat to other objects, such as their own weapons and even the sea itself. Transferring heat into the opponent's objects will make them too hot for them to wield. This transfer of heat can even happen without physical contact",
+    "engName": "Heat-Heat Fruit"
+  },
+  {
+    "id": "ANM135",
+    "name": "Nibi Nibi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can take the appearance of the diseased and control will-o'-the-wisps",
+    "desc": "Allows the user to take the appearance of the deceased. The user gains the power to control will-o'-the-wisps, flame-like spirits that, after touching a memento of a deceased person, can give the user their appearence and abilities. The will-o'-the-wisp can also be used for combat purposes",
+    "engName": "Wisp-Wisp Fruit"
+  },
+  {
+    "id": "ANM136",
+    "name": "Nikyu Nikyu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/nikyu_nikyu_no_mi.png",
+    "exerpt": "Can repel anything they touch with physical paws on the user's hand",
+    "desc": "Allows the user to repel everything they touch through physical paws on the user's hand. The user is able to push virtually anything they touch into paw-shaped bubbles and send it flying at an extremely high velocity. This includes both tangible materials like people, objects, and even gases such as air, as well as intangible things such as Hollows, pain, and memories",
+    "engName": "Paw-Paw Fruit"
+  },
+  {
+    "id": "ANM137",
+    "name": "Nito Nito no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can sweat a nitroglycerin-like compound, which detonates on impact",
+    "desc": "Allows the user to user to sweat a nitroglycerin-like compound, which detonates on impact. The user of this fruit can create explosions merely by clapping their hands",
+    "engName": "Nitro-Nitro Fruit"
+  },
+  {
+    "id": "ANM138",
+    "name": "Noko Noko no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create and control poisonous mushroom spores",
+    "desc": "Allows the user to create and control poisonous mushroom spores. The spores produced are lethal and can be deployed in any way that the user desires, from small bursts to large clouds. Either burning the spores themselves or setting the user himself on fire, can stop the spores before they can affect anyone",
+    "engName": "Shroom-Shroom Fruit"
+  },
+  {
+    "id": "ANM139",
+    "name": "Nomi Nomi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/nomi_nomi_no_mi.png",
+    "exerpt": "Can expand their brain indefinitely with new knowledge",
+    "desc": "Allows the user to expand their brain indefinitely with new knowledge. The more knowledge that the user accumulates, the larger their brain and head gets",
+    "engName": "Brain-Brain Fruit"
+  },
+  {
+    "id": "ANM140",
+    "name": "Nori Nori no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can control anything they ride",
+    "desc": "Allows the user to control anything they ride",
+    "engName": "Ride-Ride Fruit"
+  },
+  {
+    "id": "ANM141",
+    "name": "Nori Nori no Mi (Non-Canon)",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can force people to dance, even until they dance themselves to death",
+    "desc": "Allows the user to force people to dance, even until they dance themselves to death",
+    "engName": "Dance-Dance Fruit"
+  },
+  {
+    "id": "ANM142",
+    "name": "Noro Noro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/noro_noro_no_mi.png",
+    "exerpt": "Can emit beams that temporarily slow down their target",
+    "desc": "Allows the user to emit beams which temporarily slow down their target. The user can generate and emit Noroma Photons, purple beams of light, which slow down anything they hit for thirty seconds, be it people, objects or even the space itself. When a person is hit by these beams and receives any number of strikes while slowed, the kinetic force of said strikes is released all at once when they return to their normal speed, making the attacks more damaging",
+    "engName": "Slow-Slow Fruit"
+  },
+  {
+    "id": "ANM143",
+    "name": "Nui Nui no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/nui_nui_no_mi.png",
+    "exerpt": "Can stitch things together and un-stitch them like if nothing had happened",
+    "desc": "Allows the user to stitch things together and un-stitch them like if nothing had happened. This makes it useful for restraining people, pinning them to the ground, to a wall or even other nearby individuals. The user is also able to undo the stitches of the object with ease, freeing it from their power. The hardness of an object does not hinder the sewing process",
+    "engName": "Stitch-Stitch Fruit"
+  },
+  {
+    "id": "ANM144",
+    "name": "Nuke Nuke no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can phase through solid objects",
+    "desc": "Allows the user to phase through solid objects. The user can also share their intangibility with whatever they touch, allowing people or objects to phase through solid matter along with him, or making the ground intangible to make people fall through the floor. However, the user cannot phase through living tissue",
+    "engName": "Through-Through Fruit"
+  },
+  {
+    "id": "ANM145",
+    "name": "Numa Numa no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/numa_numa_no_mi.png",
+    "exerpt": "Can create, control, and transform into mud at will",
+    "desc": "Allows the user to create, control, and transform into mud at will. As pure mud, the user isintangible, with normal attacks capturing anything that comes into contact with the user. Additionally, the user can create bottomless swamps that are inescapable. The swamp also functions as an infinite storage space within the user's body, capable of holding an unlimited amount of captured items",
+    "engName": "Swamp-Swamp Fruit"
+  },
+  {
+    "id": "ANM146",
+    "name": "Ope Ope no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/ope_ope_no_mi.png",
+    "exerpt": "Can use surgery-related abilities in a spherical domain they emit",
+    "desc": "Allows the user to \"remodel\" the world within a transparent-blue spherical domain known as \"ROOM.\" Within this area, the user gains total control over all entities and objects, effectively acting as a \"surgeon\" in an \"operating room,\" with everything inside considered as \"patients\" on the operating table. Examples include, switching the positions of objects, telekinesis, slicing objects without injury, and various other surgery-related abilities",
+    "engName": "Op-Op Fruit"
+  },
+  {
+    "id": "ANM147",
+    "name": "Ori Ori no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create cages from their body that can bind their foe",
+    "desc": "Allows the user to create cages from their body that can bind their foes",
+    "engName": "Cage-Cage Fruit"
+  },
+  {
+    "id": "ANM148",
+    "name": "Oshi Oshi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can freely move and shape the ground around them",
+    "desc": "Allows the user to freely move and shape the ground around them",
+    "engName": "Push-Push Fruit"
+  },
+  {
+    "id": "ANM149",
+    "name": "Oto Oto no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can transform parts of their body into musical instruments that produces various destructive effects",
+    "desc": "Allows the user to transform parts of their body into musical instruments and play music that produces various destructive effects",
+    "engName": "Tone-Tone Fruit"
+  },
+  {
+    "id": "ANM150",
+    "name": "Pamu Pamu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can cause their body or any inorganic object they touch explode",
+    "desc": "Allows the user to cause their body or any inorganic object they touch to explode",
+    "engName": "Pop-Pop Fruit"
+  },
+  {
+    "id": "ANM151",
+    "name": "Pasa Pasa no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/pasa_pasa_no_mi.png",
+    "exerpt": "Can create, control, and transform into paper at will",
+    "desc": "Allows the user to create, control, and transform into paper at will. The user can create massive amounts of paper, propelling them across large distances at ease. As pure paper, the user is intangible, with normal attacks passing straight through them, cutting anything that comes into contact with the user. Additionally, certain pages can have special effects, such as explosions, electrocution, paralysis and healing",
+    "engName": "Paper-Paper Fruit"
+  },
+  {
+    "id": "ANM152",
+    "name": "Peke Peke no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/peke_peke_no_mi.png",
+    "exerpt": "Can transform others into allied clones of themselves",
+    "desc": "Allows the user to transform others into clones of themselves. These transformed individuals will align with the user, working against their former allies",
+    "engName": "Peketan-Peketan Fruit"
+  },
+  {
+    "id": "ANM153",
+    "name": "Pero Pero no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/pero_pero_no_mi.png",
+    "exerpt": "Can create and control large amounts of candy from their body",
+    "desc": "Allows the user to create and control large quantities of candy from their body. When the candy hardens, it becomes as strong as steel",
+    "engName": "Lick-Lick Fruit"
+  },
+  {
+    "id": "ANM154",
+    "name": "Peto Peto no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can control any living creature by giving them a collar",
+    "desc": "Allows the user to control any living creature by giving them a collar",
+    "engName": "Pet-Pet Fruit"
+  },
+  {
+    "id": "ANM155",
+    "name": "Pika Pika no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/pika_pika_no_mi.png",
+    "exerpt": "Can create, control, and transform into light at will",
+    "desc": "Allows the user to create, control, and transform into light at will. The user can create massive amounts of light, propelling them across large distances at light-speed, and use other light-based attacks. As pure light, the user is intangible, with normal attacks passing straight through them",
+    "engName": "Glint-Glint Fruit"
+  },
+  {
+    "id": "ANM156",
+    "name": "Pocha Pocha no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can control their own and other's body fat",
+    "desc": "Allows the user to control their own and other's body fat, enabling them to immobilize or slow down opponents, or to harden and fortify their own body fat for enhanced defense",
+    "engName": "Flab-Flab Fruit"
+  },
+  {
+    "id": "ANM157",
+    "name": "Poke Poke no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create pockets on their bodys to store large objects",
+    "desc": "Allows the user to create pockets on their body to store large objects. Objects stored inside can be much larger thatn the opening of the pocket as they will be shrunk down to fit",
+    "engName": "Pocket-Pocket Fruit"
+  },
+  {
+    "id": "ANM158",
+    "name": "Raki Raki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/raki_raki_no_mi.png",
+    "exerpt": "Can steal another's luck through touch",
+    "desc": "Allows the user to steal another person's luck through touch, making the user exceptionally lucky while rendering the victim extremely unlucky",
+    "engName": "Luck-Luck Fruit"
+  },
+  {
+    "id": "ANM159",
+    "name": "Rako Rako no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a sea otter or sea otter hybrid at will",
+    "desc": "Allows the user to transform into a sea otter hybrid and a full sea otter at will",
+    "engName": "Otter-Otter Fruit"
+  },
+  {
+    "id": "ANM160",
+    "name": "Riba Riba no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Allows the user to reverse time around them",
+    "desc": "Allows the user to reverse time around them but not themselves",
+    "engName": "Reverse-Reverse Fruit"
+  },
+  {
+    "id": "ANM161",
+    "name": "Riki Riki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/riki_riki_no_mi.png",
+    "exerpt": "Grants the user incredible strength",
+    "desc": "Grants the user incredible strength, being capable of ripping a mountain out of the ground and throwing it",
+    "engName": "Strong-Strong Fruit"
+  },
+  {
+    "id": "ANM162",
+    "name": "Ryu Ryu no Mi, Model: Allosaurus",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ryu_ryu_no_mi_model_allosaurus.png",
+    "exerpt": "Can turn into an allosaurus or allosaurus hybrid at will",
+    "desc": "Allows the user to transform into a allosaurus hybrid and a full allosaurus at will. As a carnivorous Ancient Zoan, it also bestows heightened predatory instincts, on top of equipping the user with powerful teeth and claws well-suited for combat",
+    "engName": "Dragon-Dragon Fruit: Model Allosaurus"
+  },
+  {
+    "id": "ANM163",
+    "name": "Ryu Ryu no Mi, Model: Brachiosaurus",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ryu_ryu_no_mi_model_brachiosaurus.png",
+    "exerpt": "Can turn into a brachiosaurus or brachiosaurus at will",
+    "desc": "Allows the user to transform into a brachiosaurus hybrid or a full brachiosaurus at will. This form grants the unusual ability to separate the head, elongated neck, and tail from the body, with the neck and tail acting independently to coil around and crush opponents with immense pressure. As an Ancient Zoan, it also provides enhanced strength and durability, greatly amplified by the brachiosaurus's massive size",
+    "engName": "Dragon-Dragon Fruit: Model Brachiosaurus"
+  },
+  {
+    "id": "ANM164",
+    "name": "Ryu Ryu no Mi, Model: Kirin",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into an qilin or qilin hybrid at will that can put others to sleep and materialize their...",
+    "desc": "Allows the user to transform into a qilin hybrid and a full qilin at will. As a Mythical Zoan, it also bestows heightened predatory instincts, on top of equipping the user with powerful teeth and claws well-suited for combat. This fruit also grants the user the ability to make others fall asleep through beams they emit and then manifest their dreams into reality. These manifested dreams have physical forms and can range from mundane objects to living beings, such as nightmarish monsters representing the sleeping target's biggest fears, and are shaped by the sleeper's imagination",
+    "engName": "Dragon-Dragon Fruit: Model Kirin"
+  },
+  {
+    "id": "ANM165",
+    "name": "Ryu Ryu no Mi, Model: Pachycephalosaurus",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ryu_ryu_no_mi_model_pachycephalosaurus.png",
+    "exerpt": "Can turn into a pachycephalosaurus or pachycephalosaurus at will",
+    "desc": "Allows the user to transform into a pachycephalosaurus hybrid or a full pachycephalosaurus at will. As an Ancient Zoan, it enhances strength and durability, featuring a super-thick, durable skull and claws optimized for combat",
+    "engName": "Dragon-Dragon Fruit: Model Pachycephalosaurus"
+  },
+  {
+    "id": "ANM166",
+    "name": "Ryu Ryu no Mi, Model: Pteranodon",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ryu_ryu_no_mi_model_pteranodon.png",
+    "exerpt": "Can turn into a pteranodon or pteranodon hybrid at will",
+    "desc": "Allows the user to transform into a pteranodon hybrid or a full pteranodon at will. As an Ancient Zoan, it enhances strength, durability, and flight capabilities, and equips the user with claws suited for combat. Additionally, the user can utilize their pteranodon head like a slingshot, pulling back their beak by the head crest and shooting it forward with great force. Their wings are also formidable weapons, capable of generating cutting winds or clashing with swords like blades",
+    "engName": "Dragon-Dragon Fruit: Model Pteranodon"
+  },
+  {
+    "id": "ANM167",
+    "name": "Ryu Ryu no Mi, Model: Spinosaurus",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ryu_ryu_no_mi_model_spinosaurus.png",
+    "exerpt": "Can turn into a spinosaurus or spinosaurus hybrid at will",
+    "desc": "Allows the user to transform into a spinosaurus hybrid or a full spinosaurus at will. As an Ancient Zoan, it enhances strength and durability, featuring jaws, tail, arms, and claws optimized for combat",
+    "engName": "Dragon-Dragon Fruit: Model Spinosaurus"
+  },
+  {
+    "id": "ANM168",
+    "name": "Ryu Ryu no Mi, Model: Triceratops",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ryu_ryu_no_mi_model_triceratops.png",
+    "exerpt": "Can turn into a triceratops or triceratops at will",
+    "desc": "Allows the user to transform into a triceratops hybrid or a full triceratops at will. As an Ancient Zoan, it enhances strength and durability, with the triceratops's thick skin providing added protection. In hybrid form, the user can achieve sustained flight by rapidly rotating the frills around their neck, simulating a helicopter's rotary wings to propel their large, heavy body through the air, which can also be used for devastating attacks",
+    "engName": "Dragon-Dragon Fruit: Model Triceratops"
+  },
+  {
+    "id": "ANM169",
+    "name": "Sabi Sabi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can cause metal object they touch to rust and break",
+    "desc": "Allows the user to cause metal objects they touch to rust and break",
+    "engName": "Rust-Rust Fruit"
+  },
+  {
+    "id": "ANM170",
+    "name": "Sai Sai no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a rhinoceros or rhinoceros hybrid at will",
+    "desc": "Allows the user to transform into a rhinoceros hybrid or a full rhinoceros at will",
+    "engName": "Rhino-Rhino Fruit"
+  },
+  {
+    "id": "ANM171",
+    "name": "Sara Sara no Mi, Model: Axolotl",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/sara_sara_no_mi_model_axolotl.png",
+    "exerpt": "Can turn into an axolotl or axolotl hybrid at will",
+    "desc": "Allows the user to transform into an axolotl hybrid or a full axolotl at will",
+    "engName": "Sala-Sala Fruit, Model: Axolotl"
+  },
+  {
+    "id": "ANM172",
+    "name": "Saru Saru no Mi, Model: Red Gorilla",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can transform their arm into monstrously large red gorilla arm",
+    "desc": "Allows the transform their left arm, which becomes monstrously large with red fur and claws upon consumption. The reason for this selective transformation, whether due to a lack of mastery or another factor, remains unclear. Despite this, the arm possesses immense strength, capable of delivering blows that create devastating, wide-reaching shockwaves on impact",
+    "engName": "Monkey-Monkey Fruit: Red Gorilla"
+  },
+  {
+    "id": "ANM173",
+    "name": "Shari Shari no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can transform their arms and feet into powerful high-speed wheels",
+    "desc": "Allows the user to transform their arms and feet into wheels, which can spin at high speeds to make powerful attacks",
+    "engName": "Wheel-Wheel Fruit"
+  },
+  {
+    "id": "ANM174",
+    "name": "Shibo Shibo no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/shibo_shibo_no_mi.png",
+    "exerpt": "Can wring from creatures objects causing extreme dehydration and leaving them as shriveled husks",
+    "desc": "Allows the user to drain liquid from both living and non-living things by wringing them, causing severe dehydration in living beings and leaving them as shriveled husks. The extracted liquids can be converted into flavorful juices and provide excellent poison defense by allowing the user to easily expel toxins. The user can also imbue their weapons with this ability, causing dehydration on contact, absorb liquid to increase the size and weight of objects, and release stored liquid as powerful, super-pressurized blasts",
+    "engName": "Wring-Wring Fruit"
+  },
+  {
+    "id": "ANM175",
+    "name": "Shiku Shiku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create diseases with various effects",
+    "desc": "Allows the user to create diseases with various effects and spread them among enemies. The power has a wide range, affecting targets even underwater, and the user can detect when their abilities are countered. One such example, is turning males into females",
+    "engName": "Sick-Sick Fruit"
+  },
+  {
+    "id": "ANM176",
+    "name": "Shima Shima no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can assimilate with any island and manipulate it freely",
+    "desc": "Allows the user to assimilate with any island environment, natural or artificial, and manipulate it freely. This power grants formidable strength and protection by merging with large landmasses, making them nearly impervious to attacks and capable of controlling the environment, including distant objects and conducting surveillance",
+    "engName": "Isle-Isle Fruit"
+  },
+  {
+    "id": "ANM177",
+    "name": "Shimauma Shimauma no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a zebra or zebra hybrid at will",
+    "desc": "Allows the user to transform into a zebra hybrid or a full zebra at will",
+    "engName": "Zebra-Zebra Fruit"
+  },
+  {
+    "id": "ANM178",
+    "name": "Shiro Shiro no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/shiro_shiro_no_mi.png",
+    "exerpt": "Can transform themselves into a living castle",
+    "desc": "Allows the user to become a living fortress, with their body containing numerous openings and rooms, such as cannon ports, drawbridges, and well-furnished chambers. They can house and shrink living beings and objects inside them, returning them to normal size when they exit the user's proximity or a special aura. The fortress can be fully deployed for 360-degree protection and surprise attacks, and the user can control internal features telekinetically, while also being able to turn into a larger fortress with immense defensive power",
+    "engName": "Castle-Castle Fruit"
+  },
+  {
+    "id": "ANM179",
+    "name": "Shuku Shuku no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can compress the size of objects",
+    "desc": "Allows the user to compress the size of objects. The user can even compress force and then release it again as a shock wave. If the user takes damage, the compressed objects will return to their normal size",
+    "engName": "Compress-Compress Fruit"
+  },
+  {
+    "id": "ANM180",
+    "name": "SMILE",
+    "type": "Artificial Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/smile.png",
+    "exerpt": "May grat the user a permanent partial animal form",
+    "desc": "An artificial devil fruit that may grant the user a permanent partial animal form. SMILE fruits are generally weaker than Zoan fruits. Only 10% of SMILE fruits successfully bestow powers, with the rest causing users to lose the ability to express negative emotions and constantly smile, even if partially consumed",
+    "engName": "SMILE Fruit"
+  },
+  {
+    "id": "ANM181",
+    "name": "Soru Soru no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/soru_soru_no_mi.png",
+    "exerpt": "Can extract and manipulate souls from others to increase their own strength and infuse them into ...",
+    "desc": "Allows the user to manipulate souls by manifesting and extracting them from those who fear them, stealing portions of the victim's lifespan in the process. The extracted souls can be infused into objects, turning them into \"homies\" with human-like intelligence and abilities, and even into substances from other Devil Fruits for control. The user can also sacrifice their own lifespan for increased power, create special homies with their personal soul fragments, and infuse body parts with homie abilities for unique functions like self-healing",
+    "engName": "Soul-Soul Fruit"
+  },
+  {
+    "id": "ANM182",
+    "name": "Sube Sube no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/sube_sube_no_mi.png",
+    "exerpt": "Can make their body smooth and slippery",
+    "desc": "Allows the user to make their body smooth and slippery, causing most attacks and objects to slide right off them. Additionally, it can also cause excess fat to slip right off",
+    "engName": "Smooth-Smooth Fruit"
+  },
+  {
+    "id": "ANM183",
+    "name": "Sui Sui no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can swim thrugh solid matter as if they were water",
+    "desc": "Allows the user to swim through solid matter like ground and walls as if they were water, including moving upward against gravity and diving into the ground to avoid falls. This ability enables discreet movement and infiltration, allowing the user to sneak up on opponents and attack from behind",
+    "engName": "Swim-Swim Fruit"
+  },
+  {
+    "id": "ANM184",
+    "name": "Suke Suke no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn themselves or anything they are in contact with invisible",
+    "desc": "Allows the user to turn themselves or anything they are in contact with invisible",
+    "engName": "Clear-Clear Fruit"
+  },
+  {
+    "id": "ANM185",
+    "name": "Suna Suna no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/suna_suna_no_mi.png",
+    "exerpt": "Can create, control, and transform into sand at will",
+    "desc": "Allows the user to create, control, and transform into sand at will. The user can create massive amounts of sand, fly by morphing into sand jets, and create offensive sand-based techniques such as blades, sandstorms, and vortexes. Additionally, the fruit grants the ability to dehydrate anything they touch, drying up areas of land and enhancing their sand manipulation. As pure sand, the user is intangible, with normal attacks passing straight through them. The user is weakened by exposure to liquids, which solidify the sand and negate their intangibility",
+    "engName": "Sand-Sand Fruit"
+  },
+  {
+    "id": "ANM186",
+    "name": "Supa Supa no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/supa_supa_no_mi.png",
+    "exerpt": "Can create strong steel-like blades from any part of their body",
+    "desc": "Allows the user to create strong blades from any part of their body, granting them steel-like characteristics. They can cut through almost anything, including flesh and stone, and perform slicing attacks without direct contact. The user can also spin the blades like saws or drills",
+    "engName": "Dice-Dice Fruit"
+  },
+  {
+    "id": "ANM187",
+    "name": "Susu Susu no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create, control, and transform into soot at will",
+    "desc": "Allows the user to create, control, and transform into soot at will. While in soot form, the user is intangible and invulnerable to physical attacks, can float in midair, and can mold the soot into any shape. They can also scatter their body into separate pieces and maintain conscious control over each piece",
+    "engName": "Soot-Soot Fruit"
+  },
+  {
+    "id": "ANM188",
+    "name": "Tama Tama no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a chicken egg, with an evolution cycle into a chicken upon taking heavy damage",
+    "desc": "Allows the user to transform into a chicken egg, with an evolution cycle upon taking heavy damage. When hit, the user's body cracks open to release a yolk that evolves into a stronger form, progressing from a yolk to a chick and eventually a fully-grown chicken. The user reverts to their weakest form if their strongest form is destroyed, making them nearly indestructible but defenseless during transformation",
+    "engName": "Egg-Egg Fruit"
+  },
+  {
+    "id": "ANM189",
+    "name": "Toge Toge no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can sprout long, sharp spikes from their body",
+    "desc": "Allows the user to sprout long, sharp spikes from any part of their body, which can pierce through solid rock and high-speed projectiles. The spikes provide both offensive and defensive advantages, allowing the user to impale opponents and gain enhanced mobility by attaching to surfaces. The spikes' defensive capability makes it difficult for foes to approach or struggle against the user without getting injured",
+    "engName": "Spike-Spike Fruit"
+  },
+  {
+    "id": "ANM190",
+    "name": "Toki Toki no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/toki_toki_no_mi.png",
+    "exerpt": "Can send themselves and others forward in time",
+    "desc": "Allows the user to send themselves and others forward in time, up to 20 years per trip",
+    "engName": "Time-Time Fruit"
+  },
+  {
+    "id": "ANM191",
+    "name": "Ton Ton no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can increaase their body weight up to 10,000 tonnes",
+    "desc": "Allows the user to increase their body weight to incredible amounts, up to 10,000 tonnes. This immense weight enables the user to deliver crushing attacks that can crack the ground and break the bones of giants",
+    "engName": "Ton-Ton Fruit"
+  },
+  {
+    "id": "ANM192",
+    "name": "Tori Tori no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into an bird or bird hybrid at will",
+    "desc": "Allows the user to transform into a bird hybrid or a full bird at will",
+    "engName": "Bird-Bird Fruit"
+  },
+  {
+    "id": "ANM193",
+    "name": "Tori Tori no Mi, Model: Albatross",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into an albatross or ablatross hybrid at will",
+    "desc": "Allows the user to transform into a albatross hybrid or a full albatross at will",
+    "engName": "Bird-Bird Fruit, Model: Albatross"
+  },
+  {
+    "id": "ANM194",
+    "name": "Tori Tori no Mi, Model: Eagle",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_0.svg",
+    "exerpt": "Can turn into an eagle or eagle hybrid at will",
+    "desc": "Allows the user to transform into an eagle hybrid or a full eagle at will. This transformation greatly bolsters the user's physical abilities and, as a predatory Zoan, bestows heightened predatory instincts, on top of equipping the user with claws and flight well-suited for combat",
+    "engName": "Bird-Bird Fruit, Model: Eagle"
+  },
+  {
+    "id": "ANM195",
+    "name": "Tori Tori no Mi, Model: Falcon",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a falcon or falcon hybrid at will",
+    "desc": "Allows the user to transform into a falcon hybrid or a full falcon at will. This transformation greatly bolsters the user's physical abilities and, as a predatory Zoan, bestows heightened predatory instincts, on top of equipping the user with claws and flight well-suited for combat",
+    "engName": "Bird-Bird Fruit, Model: Falcon"
+  },
+  {
+    "id": "ANM196",
+    "name": "Tori Tori no Mi, Model: Nue",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/tori_tori_no_mi_model_nue.png",
+    "exerpt": "Can turn into a nue or nue hybrid at will",
+    "desc": "Allows the user to transform into a mythical nue hybrid or a full nue at will",
+    "engName": "Bird-Bird Fruit, Model: Nue"
+  },
+  {
+    "id": "ANM197",
+    "name": "Tori Tori no Mi, Model: Phoenix",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/tori_tori_no_mi_model_phoenix.png",
+    "exerpt": "Can turn into a phoenix or phoenix hybrid at will",
+    "desc": "Allows the user to transform into a large phoenix covered in blue flames, or a human-phoenix hybrid. The phoenix flames grant immense healing properties, rapidly regenerating injuries and even allowing recovery from lethal wounds. The user can also create and control these flames for defensive and limited offensive purposes, with the ability to heal others and suppress diseases",
+    "engName": "Bird-Bird Fruit, Model: Phoenix"
+  },
+  {
+    "id": "ANM198",
+    "name": "Toro Toro no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can create, control, and transform into a lilac-coloured liquid at will",
+    "desc": "Allows the user to transform into a lilac-coloured liquid, flowing through small spaces and attacking with liquid blasts. The liquid form is immune to physical attacks but lacks physical strength and is unable to transform back in tight spaces. The user is also weak to cold and leaves their clothes behind when transforming",
+    "engName": "Liquid-Liquid Fruit"
+  },
+  {
+    "id": "ANM199",
+    "name": "Toshi Toshi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/toshi_toshi_no_mi.png",
+    "exerpt": "Can temporarily transform themselves and others into alternate future versions of them",
+    "desc": "Allows the user to manipulate the aging process of anything, including themselves, other people, animals, and objects. The user can disguise themselves, age targets into seniors, or regress them into children, with effects applying through physical contact. Altered targets retain memories and cognitive abilities, and bodily modifications remain unchanged. The true power of this fruit is that it allows the user to transform themselves into any possible distorted future forms of themselves. For example, they could become muscular, a different race, or even mimic the abilities of other devil fruits",
+    "engName": "Age-Age Fruit"
+  },
+  {
+    "id": "ANM200",
+    "name": "Tsutsu Tsutsu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can transform their head into a cannon",
+    "desc": "Allows the user to turn their head into a cannon capable of firing explosive cannons at targets",
+    "engName": "Cannon-Cannon Fruit"
+  },
+  {
+    "id": "ANM201",
+    "name": "Uma Uma no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a horse or horse hybrid at will",
+    "desc": "Allows the user to transform into a horse hybrid or a full horse at will",
+    "engName": "Horse-Horse Fruit"
+  },
+  {
+    "id": "ANM202",
+    "name": "Uma Uma no Mi, Model: Pegasus",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_0.svg",
+    "exerpt": "Can turn into a pegasus or pegasus hybrid at will",
+    "desc": "Allows the user to transform into a pegasus hybrid or a full pegasus at will. This grants them the power of flight",
+    "engName": "Horse-Horse Fruit, Model: Pegasus"
+  },
+  {
+    "id": "ANM203",
+    "name": "Uo Uo no Mi, Model: Seiryu",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/uo_uo_no_mi_model_seiryu.png",
+    "exerpt": "Can turn into a dragon or dragon hybrid at will",
+    "desc": "Allows the user to transform into a large, serpentine azure dragon or a human-dragon hybrid. In dragon form, the user gains immense physical strength and size, rivaling a small town in scale, the ability to fly, and can breathe a scorching blast of fire. The Human-Beast Form enhances the user's physical capabilities with dragon features such as scales, claws, and a long tail",
+    "engName": "Fish-Fish Fruit, Model: Azure Dragon"
+  },
+  {
+    "id": "ANM204",
+    "name": "Ushi Ushi no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a cow or cow hybrid at will",
+    "desc": "Allows the user to transform into a cow hybrid or a full cow at will",
+    "engName": "Ox-Ox Fruit"
+  },
+  {
+    "id": "ANM205",
+    "name": "Ushi Ushi no Mi, Model: Bison",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ushi_ushi_no_mi_model_bison.png",
+    "exerpt": "Can turn into a bison or bison hybrid at will",
+    "desc": "Allows the user to transform into a bison hybrid or a full bison at will",
+    "engName": "Ox-Ox Fruit: Model Bison"
+  },
+  {
+    "id": "ANM206",
+    "name": "Ushi Ushi no Mi, Model: Giraffe",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/ushi_ushi_no_mi_model_giraffe.png",
+    "exerpt": "Can turn into a giraffe or giraffe hybrid at wil",
+    "desc": "Allows the user to transform into a giraffe and a half-giraffe hybrid at will, granting enhanced strength, durability, speed, and a long, powerful neck used for whipping attacks",
+    "engName": "Ox-Ox Fruit: Model Giraffe"
+  },
+  {
+    "id": "ANM207",
+    "name": "Uta Uta no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/uta_uta_no_mi.png",
+    "exerpt": "Can transport the consciousness of those who hear their singing into a virtual space they control",
+    "desc": "Allows the user to transport the consciousness of those who hear their singing into a virtual space called Uta World, where they have complete control and can manipulate reality. The physical bodies remain unconscious, and escaping Uta World without the user's presence is impossible. The user can control these unconscious bodies and livestream from Uta World",
+    "engName": "Sing-Sing Fruit"
+  },
+  {
+    "id": "ANM208",
+    "name": "Ute Ute no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn anything into a gun",
+    "desc": "Allows the user to turn anything into a gun",
+    "engName": "Shoot-Shoot Fruit"
+  },
+  {
+    "id": "ANM209",
+    "name": "Wapu Wapu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/wapu_wapu_no_mi.png",
+    "exerpt": "Can teleport themselves and others",
+    "desc": "Allows the user to teleport themselves and others",
+    "engName": "Warp-Warp Fruit"
+  },
+  {
+    "id": "ANM210",
+    "name": "Wara Wara no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/wara_wara_no_mi.png",
+    "exerpt": "Can create and manipulate straw",
+    "desc": "Allows the user to create and manipulate straw for various applications, including as weapons or defensive measures. Additionally, they can create straw dolls linked to individuals, allowing the user to transfer damage taken to these dolls and thus to the linked people",
+    "engName": "Straw-Straw Fruit"
+  },
+  {
+    "id": "ANM211",
+    "name": "Woshu Woshu no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can \"wash and hang out to\" try people and objects, immobilising them",
+    "desc": "Allows the user to \"wash and hang out to dry\" people and objects as if they were clothes, rendering them immobile and unable to fight back. This ability also reportedly makes the \"hearts\" of pirates fainter, potentially reducing their malevolent nature",
+    "engName": "Wash-Wash Fruit"
+  },
+  {
+    "id": "ANM212",
+    "name": "Yami Yami no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/yami_yami_no_mi.png",
+    "exerpt": "Can create, control, and transform into darkness at will",
+    "desc": "Allows the user to control darkness, creating a void that absorbs physical matter and attacks. The darkness can pull opponents towards the user and can absorb and store objects, including entire towns. Additionally, it can nullify the powers of other Devil Fruit users upon touch, rendering their abilities completely ineffective. However, the user remains vulnerable to physical attacks and must maintain contact to keep their power nullification active",
+    "engName": "Dark-Dark Fruit"
+  },
+  {
+    "id": "ANM213",
+    "name": "Yokai Yokai no Mi: Model Bakotsu",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a monstrous bakotsu or bakotsu hybrid at will",
+    "desc": "Allows the user to transform into a mythical yokai, Bakotsu. The user can transform into a giant monstrous skeletal horse, and a human-bakotsu hybrid resembling a centaur at will. As a Mythical Zoan, while transformed, the user is gigantic, highly durable, and possesses great strength. Additionally, the user exhibits extreme speed and agility and can create ice, enhancing their sword to freeze targets",
+    "engName": "Demon-Demon Fruit: Model Bakotsu"
+  },
+  {
+    "id": "ANM214",
+    "name": "Yokai Yokai no Mi: Model Fengxi",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can turn into a monstrous fengxi or fengxi hybrid at will",
+    "desc": "Allows the user to transform into a mythical yokai, Fengxi. The user can transform into a giant monstrous four-tusked boar demon, and a hybrid form at will. As a Mythical Zoan, while transformed, great strength, and a particularly durable hide, capable of withstanding extreme physical attacks and negating certain abilities. In this form, the user can unleash powerful, Haki-infused roars, convert their tusks into massive blades, and perform powerful tackles",
+    "engName": "Demon-Demon Fruit: Model Fengxi"
+  },
+  {
+    "id": "ANM215",
+    "name": "Yokai Yokai no Mi: Model Gyūki",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a monstrous gyuki or gyuki hybrid at will",
+    "desc": "Allows the user to transform into a mythical yokai, Bakotsu. The user can transform into a monstrous bull-spider, and a hybrid form at will. As a Mythical Zoan, while transformed, the user is gigantic, highly durable, and possesses great strength, capable of piercing even strong materials. Their body contains corrosive poison, powerful legs, and flight capabilities achieved by spinning. The user can also spit venomous orbs that produce massive explosions",
+    "engName": "Demon-Demon Fruit: Model Gyūki"
+  },
+  {
+    "id": "ANM216",
+    "name": "Yokai Yokai no Mi: Model Itsumade",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_0.svg",
+    "exerpt": "Can turn into a monstrous itsumade or itsumade hybrid at will",
+    "desc": "Allows the user to transform into a mythical yokai, Itsumade. The user can transform into a giant monstrous bird with a serpentine body, and a hybrid form at will. As a Mythical Zoan, while transformed, the user is gigantic, highly durable, and possesses great strength, capable of piercing even strong materials. The user can also fly and fire a powerful energy beam from their mouth, capable of destroying metal structures and igniting flames that can burn even giants",
+    "engName": "Demon-Demon Fruit: Model Itsumade"
+  },
+  {
+    "id": "ANM217",
+    "name": "Yokai Yokai no Mi: Model Sandowāmu",
+    "type": "Mythical Zoan",
+    "img": "https://devilfruit.io/assets/images/unknown_3.svg",
+    "exerpt": "Can turn into a monstrous sandworm or sandworm hybrid at will",
+    "desc": "Allows the user to transform into a mythical yokai, Sandworm. The user can transform into a giant monstrous sandworm, and a sandworm hybrid at will. As a Mythical Zoan, while transformed, the user is gigantic, highly durable, and possesses great strength. The user can withstand intense fire, swallow opponents whole, and create a powerful vacuum breath that affects entire islands. This ability allows the user to spit out swallowed objects with force, dig through the earth, and bite through hard substances",
+    "engName": "Demon-Demon Fruit: Model Sandworm"
+  },
+  {
+    "id": "ANM218",
+    "name": "Yomi Yomi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/yomi_yomi_no_mi.png",
+    "exerpt": "Can come back to live after dying once and gains soul-related abilities",
+    "desc": "Allows the user to come back to life after dying once, granting a form of immortality until a second death. The user's soul can return to a lifeless body and support its well-being even if the body is in poor condition. While undead, the user can still feel pain and has abilities such as astral projection, allowing the soul to leave the body. The fruit also enables the user to repair their body and transfer energy to objects, creating ice or overwhelming other soul based entities. However, the user is vulnerable to damage when their soul is out of their body and requires a physical body to function normally",
+    "engName": "Revive-Revive Fruit"
+  },
+  {
+    "id": "ANM219",
+    "name": "Yuki Yuki no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/fruits/yuki_yuki_no_mi.png",
+    "exerpt": "Can create, control, and transform into snow at will",
+    "desc": "Allows the user to create, control, and transform into snow at will. The user can create massive amounts of snow, propelling them across large distances at ease. As pure snow the user is intangible, with normal attacks passing straight through them. Th user is also weak to heat",
+    "engName": "Snow-Snow Fruit"
+  },
+  {
+    "id": "ANM220",
+    "name": "Zou Zou no Mi",
+    "type": "Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/zou_zou_no_mi.png",
+    "exerpt": "Can turn into an elephand or elephant hybrid at will",
+    "desc": "Allows the user to transform into an elephant hybrid or a full elephant at will",
+    "engName": "Eleph-Eleph Fruit"
+  },
+  {
+    "id": "ANM221",
+    "name": "Zou Zou no Mi, Model: Mammoth",
+    "type": "Ancient Zoan",
+    "img": "https://devilfruit.io/assets/images/fruits/zou_zou_no_mi_model_mammoth.png",
+    "exerpt": "Can turn into a mammoth or mammoth hybrid at will",
+    "desc": "Allows the user to transform into a mammoth hybrid or a full mammoth at will",
+    "engName": "Eleph-Eleph Fruit: Model Mammoth"
+  },
+  {
+    "id": "ANM222",
+    "name": "Zuma Zuma no Mi",
+    "type": "Logia",
+    "img": "https://devilfruit.io/assets/images/unknown_1.svg",
+    "exerpt": "Can create, control, and transform into plasma at will",
+    "desc": "Allows the user to create, control, and transform into plasma at will. As pure plasma, the user is intangible, with normal attacks passing straight through them",
+    "engName": "Plasma-Plasma Fruit"
+  },
+  {
+    "id": "ANM223",
+    "name": "Zushi Zushi no Mi",
+    "type": "Paramecia",
+    "img": "https://devilfruit.io/assets/images/fruits/zushi_zushi_no_mi.png",
+    "exerpt": "Can generate and control powerful gravitational forces",
+    "desc": "Allows the user to generate and control powerful gravitational forces. The user can manipulate gravity to move objects and living things with ease, from debris to large structures like battleships, and even pull down meteors from space. This ability grants precision telekinesis and simulated flight by altering gravity's direction. The user can maintain multiple gravity fields simultaneously and create floating platforms. However, the user's gravity powers can be disrupted by direct attacks, and they cannot affect themselves with gravity, requiring a platform for flight",
+    "engName": "Press-Press Fruit"
+  }
+]

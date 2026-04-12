@@ -1,0 +1,898 @@
+[
+  {
+    "id": "ANM0",
+    "name": "アメアメの実"
+  },
+  {
+    "id": "ANM1",
+    "name": "アミアミの実"
+  },
+  {
+    "id": "ANM2",
+    "name": "アロアロの実"
+  },
+  {
+    "id": "ANM3",
+    "name": "アトアトの実"
+  },
+  {
+    "id": "ANM4",
+    "name": "アツアツの実"
+  },
+  {
+    "id": "ANM5",
+    "name": "アワアワの実"
+  },
+  {
+    "id": "ANM6",
+    "name": "バクバクの実"
+  },
+  {
+    "id": "ANM7",
+    "name": "バナバナの実"
+  },
+  {
+    "id": "ANM8",
+    "name": "バネバネの実"
+  },
+  {
+    "id": "ANM9",
+    "name": "バラバラの実"
+  },
+  {
+    "id": "ANM10",
+    "name": "バリバリの実"
+  },
+  {
+    "id": "ANM11",
+    "name": "バスバスの実"
+  },
+  {
+    "id": "ANM12",
+    "name": "バタバタの実"
+  },
+  {
+    "id": "ANM13",
+    "name": "バットバットの実 モデル：Vampire"
+  },
+  {
+    "id": "ANM14",
+    "name": "ベリベリの実"
+  },
+  {
+    "id": "ANM15",
+    "name": "ベタベタの実"
+  },
+  {
+    "id": "ANM16",
+    "name": "ビジョビジョの実"
+  },
+  {
+    "id": "ANM17",
+    "name": "ビスビスの実"
+  },
+  {
+    "id": "ANM18",
+    "name": "ボムボムの実"
+  },
+  {
+    "id": "ANM19",
+    "name": "ブキブキの実"
+  },
+  {
+    "id": "ANM20",
+    "name": "ブクブクの実"
+  },
+  {
+    "id": "ANM21",
+    "name": "チユチユの実"
+  },
+  {
+    "id": "ANM22",
+    "name": "チョキチョキの実"
+  },
+  {
+    "id": "ANM23",
+    "name": "チューニチューニの実"
+  },
+  {
+    "id": "ANM24",
+    "name": "デカデカの実"
+  },
+  {
+    "id": "ANM25",
+    "name": "デリデリの実"
+  },
+  {
+    "id": "ANM26",
+    "name": "デロデロの実"
+  },
+  {
+    "id": "ANM27",
+    "name": "ドアドアの実"
+  },
+  {
+    "id": "ANM28",
+    "name": "ドクドクの実"
+  },
+  {
+    "id": "ANM29",
+    "name": "ドルドルの実"
+  },
+  {
+    "id": "ANM30",
+    "name": "フデフデの実"
+  },
+  {
+    "id": "ANM31",
+    "name": "フクフクの実"
+  },
+  {
+    "id": "ANM32",
+    "name": "フワフワの実"
+  },
+  {
+    "id": "ANM33",
+    "name": "ガブガブの実"
+  },
+  {
+    "id": "ANM34",
+    "name": "ガシャガシャの実"
+  },
+  {
+    "id": "ANM35",
+    "name": "ガスガスの実"
+  },
+  {
+    "id": "ANM36",
+    "name": "ゲームゲームの実"
+  },
+  {
+    "id": "ANM37",
+    "name": "ギロギロの実"
+  },
+  {
+    "id": "ANM38",
+    "name": "ゴチャゴチャの実"
+  },
+  {
+    "id": "ANM39",
+    "name": "ゴエゴエの実"
+  },
+  {
+    "id": "ANM40",
+    "name": "ゴムゴムの実"
+  },
+  {
+    "id": "ANM41",
+    "name": "ゴロゴロの実"
+  },
+  {
+    "id": "ANM42",
+    "name": "ゴルゴルの実"
+  },
+  {
+    "id": "ANM43",
+    "name": "グニョグニョの実"
+  },
+  {
+    "id": "ANM44",
+    "name": "グラグラの実"
+  },
+  {
+    "id": "ANM45",
+    "name": "グルグルの実"
+  },
+  {
+    "id": "ANM46",
+    "name": "グツグツの実"
+  },
+  {
+    "id": "ANM47",
+    "name": "ハナハナの実"
+  },
+  {
+    "id": "ANM48",
+    "name": "ヘビヘビの実 モデル：Anaconda"
+  },
+  {
+    "id": "ANM49",
+    "name": "ヘビヘビの実 モデル：King Cobra"
+  },
+  {
+    "id": "ANM50",
+    "name": "ヘビヘビの実 モデル：Yamata no Orochi"
+  },
+  {
+    "id": "ANM51",
+    "name": "ヒエヒエの実"
+  },
+  {
+    "id": "ANM52",
+    "name": "ヒラヒラの実"
+  },
+  {
+    "id": "ANM53",
+    "name": "ヒソヒソの実"
+  },
+  {
+    "id": "ANM54",
+    "name": "ヒトヒトの実"
+  },
+  {
+    "id": "ANM55",
+    "name": "ヒトヒトの実 モデル：Daibutsu"
+  },
+  {
+    "id": "ANM56",
+    "name": "ヒトヒトの実 モデル：Onyudo"
+  },
+  {
+    "id": "ANM57",
+    "name": "ホビホビの実"
+  },
+  {
+    "id": "ANM58",
+    "name": "ホーミホーミの実"
+  },
+  {
+    "id": "ANM59",
+    "name": "ホレホレの実"
+  },
+  {
+    "id": "ANM60",
+    "name": "ホロホロの実"
+  },
+  {
+    "id": "ANM61",
+    "name": "ホルホルの実"
+  },
+  {
+    "id": "ANM62",
+    "name": "ホヤホヤの実"
+  },
+  {
+    "id": "ANM63",
+    "name": "イバイバの実"
+  },
+  {
+    "id": "ANM64",
+    "name": "イクイクの実"
+  },
+  {
+    "id": "ANM65",
+    "name": "イヌイヌの実 モデル：Bake-danuki"
+  },
+  {
+    "id": "ANM66",
+    "name": "イヌイヌの実 モデル：Chihuahua"
+  },
+  {
+    "id": "ANM67",
+    "name": "イヌイヌの実 モデル：Dachshund"
+  },
+  {
+    "id": "ANM68",
+    "name": "イヌイヌの実 モデル：Dalmatian"
+  },
+  {
+    "id": "ANM69",
+    "name": "イヌイヌの実 モデル：Hound"
+  },
+  {
+    "id": "ANM70",
+    "name": "イヌイヌの実 モデル：Jackal"
+  },
+  {
+    "id": "ANM71",
+    "name": "イヌイヌの実 モデル：Cerberus"
+  },
+  {
+    "id": "ANM72",
+    "name": "イヌイヌの実 モデル：Kyubi no Kitsune"
+  },
+  {
+    "id": "ANM73",
+    "name": "イヌイヌの実 モデル：Okuchi no Makami"
+  },
+  {
+    "id": "ANM74",
+    "name": "イヌイヌの実 モデル：Tanuki"
+  },
+  {
+    "id": "ANM75",
+    "name": "イヌイヌの実 モデル：Wolf"
+  },
+  {
+    "id": "ANM76",
+    "name": "イロイロの実"
+  },
+  {
+    "id": "ANM77",
+    "name": "イシイシの実"
+  },
+  {
+    "id": "ANM78",
+    "name": "イトイトの実"
+  },
+  {
+    "id": "ANM79",
+    "name": "ジャケジャケの実"
+  },
+  {
+    "id": "ANM80",
+    "name": "ジャラジャラの実"
+  },
+  {
+    "id": "ANM81",
+    "name": "ジキジキの実"
+  },
+  {
+    "id": "ANM82",
+    "name": "ジュクジュクの実"
+  },
+  {
+    "id": "ANM83",
+    "name": "カチカチの実"
+  },
+  {
+    "id": "ANM84",
+    "name": "カゲカゲの実"
+  },
+  {
+    "id": "ANM85",
+    "name": "カマカマの実"
+  },
+  {
+    "id": "ANM86",
+    "name": "カメカメの実"
+  },
+  {
+    "id": "ANM87",
+    "name": "カルマカルマの実"
+  },
+  {
+    "id": "ANM88",
+    "name": "ケムシケムシの実"
+  },
+  {
+    "id": "ANM89",
+    "name": "キビキビの実"
+  },
+  {
+    "id": "ANM90",
+    "name": "キラキラの実"
+  },
+  {
+    "id": "ANM91",
+    "name": "キロキロの実"
+  },
+  {
+    "id": "ANM92",
+    "name": "KoaraKoaraの実"
+  },
+  {
+    "id": "ANM93",
+    "name": "KoneKoneの実"
+  },
+  {
+    "id": "ANM94",
+    "name": "コピーコピーの実"
+  },
+  {
+    "id": "ANM95",
+    "name": "コロコロの実"
+  },
+  {
+    "id": "ANM96",
+    "name": "KoteKoteの実"
+  },
+  {
+    "id": "ANM97",
+    "name": "ククククの実"
+  },
+  {
+    "id": "ANM98",
+    "name": "クモクモの実"
+  },
+  {
+    "id": "ANM99",
+    "name": "クモクモの実 モデル：Rosamygale Grauvogeli"
+  },
+  {
+    "id": "ANM100",
+    "name": "KuriKuriの実"
+  },
+  {
+    "id": "ANM101",
+    "name": "KyameruKyameruの実 モデル：Alpaca"
+  },
+  {
+    "id": "ANM102",
+    "name": "KyaraKyaraの実"
+  },
+  {
+    "id": "ANM103",
+    "name": "KyubuKyubuの実"
+  },
+  {
+    "id": "ANM104",
+    "name": "MaboMaboの実"
+  },
+  {
+    "id": "ANM105",
+    "name": "MajiMajiの実"
+  },
+  {
+    "id": "ANM106",
+    "name": "MaguMaguの実"
+  },
+  {
+    "id": "ANM107",
+    "name": "MakiMakiの実"
+  },
+  {
+    "id": "ANM108",
+    "name": "マネマネの実"
+  },
+  {
+    "id": "ANM109",
+    "name": "MariMariの実"
+  },
+  {
+    "id": "ANM110",
+    "name": "マトマトの実"
+  },
+  {
+    "id": "ANM111",
+    "name": "メモメモの実"
+  },
+  {
+    "id": "ANM112",
+    "name": "メラメラの実"
+  },
+  {
+    "id": "ANM113",
+    "name": "メロメロの実"
+  },
+  {
+    "id": "ANM114",
+    "name": "メタメタの実"
+  },
+  {
+    "id": "ANM115",
+    "name": "ミニミニの実"
+  },
+  {
+    "id": "ANM116",
+    "name": "ミラミラの実"
+  },
+  {
+    "id": "ANM117",
+    "name": "MoaMoaの実"
+  },
+  {
+    "id": "ANM118",
+    "name": "モチモチの実"
+  },
+  {
+    "id": "ANM119",
+    "name": "ModoModoの実"
+  },
+  {
+    "id": "ANM120",
+    "name": "モグモグの実"
+  },
+  {
+    "id": "ANM121",
+    "name": "モクモクの実"
+  },
+  {
+    "id": "ANM122",
+    "name": "モノモノの実"
+  },
+  {
+    "id": "ANM123",
+    "name": "モリモリの実"
+  },
+  {
+    "id": "ANM124",
+    "name": "MosaMosaの実"
+  },
+  {
+    "id": "ANM125",
+    "name": "ムチムチの実"
+  },
+  {
+    "id": "ANM126",
+    "name": "ムシムシの実 モデル：Kabutomushi"
+  },
+  {
+    "id": "ANM127",
+    "name": "ムシムシの実 モデル：Suzumebachi"
+  },
+  {
+    "id": "ANM128",
+    "name": "ナギナギの実"
+  },
+  {
+    "id": "ANM129",
+    "name": "ネコネコの実 モデル：Cheetah"
+  },
+  {
+    "id": "ANM130",
+    "name": "ネコネコの実 モデル：Leopard"
+  },
+  {
+    "id": "ANM131",
+    "name": "ネコネコの実 モデル：Saber Tiger"
+  },
+  {
+    "id": "ANM132",
+    "name": "ネムネムの実"
+  },
+  {
+    "id": "ANM133",
+    "name": "NepaNepaの実"
+  },
+  {
+    "id": "ANM134",
+    "name": "ネツネツの実"
+  },
+  {
+    "id": "ANM135",
+    "name": "NibiNibiの実"
+  },
+  {
+    "id": "ANM136",
+    "name": "NikyuNikyuの実"
+  },
+  {
+    "id": "ANM137",
+    "name": "ニトニトの実"
+  },
+  {
+    "id": "ANM138",
+    "name": "ノコノコの実"
+  },
+  {
+    "id": "ANM139",
+    "name": "ノミノミの実"
+  },
+  {
+    "id": "ANM140",
+    "name": "ノリノリの実"
+  },
+  {
+    "id": "ANM141",
+    "name": "ノリノリの実"
+  },
+  {
+    "id": "ANM142",
+    "name": "ノロノロの実"
+  },
+  {
+    "id": "ANM143",
+    "name": "NuiNuiの実"
+  },
+  {
+    "id": "ANM144",
+    "name": "ヌケヌケの実"
+  },
+  {
+    "id": "ANM145",
+    "name": "ヌマヌマの実"
+  },
+  {
+    "id": "ANM146",
+    "name": "オペオペの実"
+  },
+  {
+    "id": "ANM147",
+    "name": "オリオリの実"
+  },
+  {
+    "id": "ANM148",
+    "name": "OshiOshiの実"
+  },
+  {
+    "id": "ANM149",
+    "name": "オトオトの実"
+  },
+  {
+    "id": "ANM150",
+    "name": "PamuPamuの実"
+  },
+  {
+    "id": "ANM151",
+    "name": "パサパサの実"
+  },
+  {
+    "id": "ANM152",
+    "name": "ペケペケの実"
+  },
+  {
+    "id": "ANM153",
+    "name": "ペロペロの実"
+  },
+  {
+    "id": "ANM154",
+    "name": "ペトペトの実"
+  },
+  {
+    "id": "ANM155",
+    "name": "ピカピカの実"
+  },
+  {
+    "id": "ANM156",
+    "name": "PochaPochaの実"
+  },
+  {
+    "id": "ANM157",
+    "name": "ポケポケの実"
+  },
+  {
+    "id": "ANM158",
+    "name": "RakiRakiの実"
+  },
+  {
+    "id": "ANM159",
+    "name": "ラコラコの実"
+  },
+  {
+    "id": "ANM160",
+    "name": "RibaRibaの実"
+  },
+  {
+    "id": "ANM161",
+    "name": "リキリキの実"
+  },
+  {
+    "id": "ANM162",
+    "name": "リュリュの実 モデル：Allosaurus"
+  },
+  {
+    "id": "ANM163",
+    "name": "リュリュの実 モデル：Brachiosaurus"
+  },
+  {
+    "id": "ANM164",
+    "name": "リュリュの実 モデル：Kirin"
+  },
+  {
+    "id": "ANM165",
+    "name": "リュリュの実 モデル：Pachycephalosaurus"
+  },
+  {
+    "id": "ANM166",
+    "name": "リュリュの実 モデル：Pteranodon"
+  },
+  {
+    "id": "ANM167",
+    "name": "リュリュの実 モデル：Spinosaurus"
+  },
+  {
+    "id": "ANM168",
+    "name": "リュリュの実 モデル：Triceratops"
+  },
+  {
+    "id": "ANM169",
+    "name": "サビサビの実"
+  },
+  {
+    "id": "ANM170",
+    "name": "サイサイの実"
+  },
+  {
+    "id": "ANM171",
+    "name": "サラサラの実 モデル：Axolotl"
+  },
+  {
+    "id": "ANM172",
+    "name": "サルサルの実 モデル：Red Gorilla"
+  },
+  {
+    "id": "ANM173",
+    "name": "シャリシャリの実"
+  },
+  {
+    "id": "ANM174",
+    "name": "ShiboShiboの実"
+  },
+  {
+    "id": "ANM175",
+    "name": "ShikuShikuの実"
+  },
+  {
+    "id": "ANM176",
+    "name": "シマシマの実"
+  },
+  {
+    "id": "ANM177",
+    "name": "ShimaumaShimaumaの実"
+  },
+  {
+    "id": "ANM178",
+    "name": "シロシロの実"
+  },
+  {
+    "id": "ANM179",
+    "name": "ShukuShukuの実"
+  },
+  {
+    "id": "ANM180",
+    "name": "SMILEの実"
+  },
+  {
+    "id": "ANM181",
+    "name": "ソルソルの実"
+  },
+  {
+    "id": "ANM182",
+    "name": "スベスベの実"
+  },
+  {
+    "id": "ANM183",
+    "name": "スイスイの実"
+  },
+  {
+    "id": "ANM184",
+    "name": "スケスケの実"
+  },
+  {
+    "id": "ANM185",
+    "name": "スナスナの実"
+  },
+  {
+    "id": "ANM186",
+    "name": "スパスパの実"
+  },
+  {
+    "id": "ANM187",
+    "name": "ススススの実"
+  },
+  {
+    "id": "ANM188",
+    "name": "タマタマの実"
+  },
+  {
+    "id": "ANM189",
+    "name": "トゲトゲの実"
+  },
+  {
+    "id": "ANM190",
+    "name": "トキトキの実"
+  },
+  {
+    "id": "ANM191",
+    "name": "トントンの実"
+  },
+  {
+    "id": "ANM192",
+    "name": "トリトリの実"
+  },
+  {
+    "id": "ANM193",
+    "name": "トリトリの実 モデル：Albatross"
+  },
+  {
+    "id": "ANM194",
+    "name": "トリトリの実 モデル：Eagle"
+  },
+  {
+    "id": "ANM195",
+    "name": "トリトリの実 モデル：Falcon"
+  },
+  {
+    "id": "ANM196",
+    "name": "トリトリの実 モデル：Nue"
+  },
+  {
+    "id": "ANM197",
+    "name": "トリトリの実 モデル：Phoenix"
+  },
+  {
+    "id": "ANM198",
+    "name": "トロトロの実"
+  },
+  {
+    "id": "ANM199",
+    "name": "トシトシの実"
+  },
+  {
+    "id": "ANM200",
+    "name": "TsutsuTsutsuの実"
+  },
+  {
+    "id": "ANM201",
+    "name": "ウマウマの実"
+  },
+  {
+    "id": "ANM202",
+    "name": "ウマウマの実 モデル：Pegasus"
+  },
+  {
+    "id": "ANM203",
+    "name": "ウオウオの実 モデル：Seiryu"
+  },
+  {
+    "id": "ANM204",
+    "name": "ウシウシの実"
+  },
+  {
+    "id": "ANM205",
+    "name": "ウシウシの実 モデル：Bison"
+  },
+  {
+    "id": "ANM206",
+    "name": "ウシウシの実 モデル：Giraffe"
+  },
+  {
+    "id": "ANM207",
+    "name": "ウタウタの実"
+  },
+  {
+    "id": "ANM208",
+    "name": "UteUteの実"
+  },
+  {
+    "id": "ANM209",
+    "name": "WapuWapuの実"
+  },
+  {
+    "id": "ANM210",
+    "name": "ワラワラの実"
+  },
+  {
+    "id": "ANM211",
+    "name": "WoshuWoshuの実"
+  },
+  {
+    "id": "ANM212",
+    "name": "ヤミヤミの実"
+  },
+  {
+    "id": "ANM213",
+    "name": "YokaiYokaiの実 モデル：Bakotsu"
+  },
+  {
+    "id": "ANM214",
+    "name": "YokaiYokaiの実 モデル：Fengxi"
+  },
+  {
+    "id": "ANM215",
+    "name": "YokaiYokaiの実 モデル：Gyūki"
+  },
+  {
+    "id": "ANM216",
+    "name": "YokaiYokaiの実 モデル：Itsumade"
+  },
+  {
+    "id": "ANM217",
+    "name": "YokaiYokaiの実 モデル：Sandowāmu"
+  },
+  {
+    "id": "ANM218",
+    "name": "ヨミヨミの実"
+  },
+  {
+    "id": "ANM219",
+    "name": "ユキユキの実"
+  },
+  {
+    "id": "ANM220",
+    "name": "ゾウゾウの実"
+  },
+  {
+    "id": "ANM221",
+    "name": "ゾウゾウの実 モデル：Mammoth"
+  },
+  {
+    "id": "ANM222",
+    "name": "ZumaZumaの実"
+  },
+  {
+    "id": "ANM223",
+    "name": "ズシズシの実"
+  }
+]

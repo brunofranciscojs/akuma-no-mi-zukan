@@ -1,0 +1,118 @@
+@import "tailwindcss";
+
+:root{
+    @apply overflow-x-hidden selection:bg-[#976f47] selection:text-white
+}
+
+@theme {
+  --breakpoint-xxs: 500px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-cl: 960px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-lpt: 1366px;
+  --breakpoint-1xl: 1470px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-4xl: 1600px;
+}
+
+body{
+    place-content: center;
+    min-height: 100svh;
+    display: grid;
+    background: radial-gradient(circle, #fff 0%,#fdf9ee 100%);
+}
+
+@keyframes load{
+    to{
+       width:calc(anchor-size(width) + 3rem)
+    }    
+}
+.h2{
+    &:after{
+        content: '';
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        background: white;
+        z-index:-1;
+    }
+}
+
+ruby {
+    ruby-position: over;
+    display: inline-flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+}
+
+rt {
+    display: block;
+    line-height: 1;
+    margin-bottom: 0.25rem;
+}
+
+div[style]:has([src*="svg"]){
+    img{ opacity: .4 }
+    
+    &:after{
+        content:'';
+        position: absolute;
+        position-anchor: var(--size);
+        inset: 0;
+        width:anchor-size(width);
+        height:anchor-size(height);
+        top:anchor(top);
+        left:anchor(left);
+        mix-blend-mode: screen;
+        background:var(--color);
+        mask-image: var(--mask);
+        mask-size: contain;
+        mask-position: center;
+        mask-repeat: no-repeat;
+        filter: brightness(1.2);
+    }
+}
+
+span:has(a){
+    &:after{
+        content:url('./assets/images/link-external-small-ltr-progressive.svg');
+        font-size: .7rem;
+        position: fixed;
+        position-anchor:var(--extLnk);
+        top: calc(anchor(top) - 3px);
+        left:calc(anchor(right) + 2px);
+        filter: hue-rotate(180deg);
+    }
+}
+
+
+@keyframes logo {
+    to{
+     filter:brightness(2) grayscale(1);
+     translate:0 -200rem;
+     opacity: 0;
+    }
+}
+
+@keyframes fruitEnter {
+    from {
+        opacity: 0;
+        translate: 0 2rem;
+    }
+    to {
+        opacity: 1;
+        translate: 0 0;
+    }
+}
+
+@keyframes fruitFloat {
+    0%, 100% {
+        translate: 0 0;
+    }
+    50% {
+        translate: 0 -0.75rem;
+    }
+}
