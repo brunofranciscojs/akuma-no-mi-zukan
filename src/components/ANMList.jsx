@@ -136,7 +136,9 @@ export default function ANMList() {
     										{i === 0 && <br />}
  										 </React.Fragment>
 									  ))}
-                                    <rt className='text-sm uppercase tracking-[0.2em] font-normal translate-y-1 -translate-x-2'>「{fruit.jpName}」</rt>
+                                    <rt className='text-sm uppercase font-normal translate-y-1 -translate-x-2'>
+                                        「{fruit.jpName}」
+                                    </rt>
                                 </ruby>
                             </h3>
                             <span className='text-xs leading-none text-[#976f47]'>EN: {fruit.engName}</span>
