@@ -2,9 +2,11 @@ import { useParams, Link } from 'react-router-dom'
 import akumasnomi from '../assets/akumanomi2.json'
 import { Helmet } from "react-helmet"
 
+const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+
 export default function FruitPage() {
     const { id } = useParams()
-    const fruta = akumasnomi.find(f => f.id.toLowerCase() === id.toLowerCase())
+    const fruta = akumasnomi.find(f => f.id.toLowerCase() === id.toLowerCase() || slugify(f.name) === id.toLowerCase())
 
     const useRelatedFruits = (allFruits, names) => {
         if (!allFruits || !names) return []
@@ -24,7 +26,7 @@ export default function FruitPage() {
                 <div className="flex flex-wrap gap-2 max-h-50 overflow-y-auto [&:has(a:hover)_a:hover]:opacity-100 [&:has(a:hover)_a]:opacity-50 
                         [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#976f4755] [&::-webkit-scrollbar-thumb]:rounded-full py-4">
                     {fruits.map((fruit, i) => (
-                        <Link to={`/fruta/${fruit.id}`} key={fruit.id} className="flex items-center gap-1 w-[43%] transition-all">
+                        <Link to={`/fruta/${slugify(fruit.name)}`} key={fruit.id} className="flex items-center gap-1 w-[43%] transition-all">
                             <img src={`/images/fruits/${fruit.localImg}`} alt={fruit.name} className='w-3 h-4 object-contain' />
                             <p className='w-2/3 leading-none text-nowrap text-md'>{fruit.name}</p>
                         </Link>

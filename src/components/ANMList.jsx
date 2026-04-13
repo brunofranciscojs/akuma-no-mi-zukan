@@ -2,6 +2,8 @@ import akumasnomi from '../assets/akumanomi2.json'
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
+const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+
 export default function ANMList() {
     const [pagina, setPagina] = useState(() => {
         const saved = sessionStorage.getItem('anmlist_page');
@@ -112,7 +114,7 @@ export default function ANMList() {
                                     z-40 backdrop-blur-xl rounded-b-2xl max-h-100 overflow-y-scroll [&_a:nth-child(1)]:pt-6
                                     [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'>
                         {searchResult.map(fruit => (
-                            <Link key={fruit.id} to={`/fruta/${fruit.id}`}
+                            <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
                                 className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex gap-3 items-center'>
                                 <img src={`/images/fruits/${fruit.localImg}`} className='w-6' />
                                 <span className='flex flex-col text-sm'>
@@ -174,7 +176,7 @@ export default function ANMList() {
                     </div>
                 }
                 {currentFruits.map((fruit, i) => (
-                    <Link key={fruit.id} to={`/fruta/${fruit.id}`}
+                    <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
                         style={{ "--color": fruit.localImg.includes('svg') ? '#976f47' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
                         className='xl:w-[31%] md:w-[47%] w-full border border-[#976f4755] hover:bg-white backdrop-blur-sm duration-300 p-5 grow rounded-xl relative transition-colors min-h-50 flex gap-4 items-center no-underline text-inherit group'>
 
