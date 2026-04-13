@@ -130,7 +130,7 @@ export default function ANMList() {
                         <div className='flex flex-col pr-2'>
                             <h3 className='font-extrabold text-xl font-["Calibri"] text-[#976f47] leading-none text-balance'>
                                 <ruby className='ruby-base'>
-                                    {fruit.name.replace(",","<br/>")}
+                                    {fruit.name.replace(",","\n")}
                                     <rt className='text-sm uppercase tracking-[0.2em] font-normal translate-y-1 -translate-x-2'>「{fruit.jpName}」</rt>
                                 </ruby>
                             </h3>
