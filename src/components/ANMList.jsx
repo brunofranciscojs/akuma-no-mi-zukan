@@ -1,12 +1,22 @@
-import akumasnomi from '../assets/akumanomi.json'
-import React, { useState } from 'react'
+import akumasnomi from '../assets/akumanomi2.json'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 export default function ANMList() {
-    const [pagina, setPagina] = useState(1);
+    const [pagina, setPagina] = useState(() => {
+        const saved = sessionStorage.getItem('anmlist_page');
+        return saved ? parseInt(saved, 10) : 1;
+    });
     const [fruitsPerPage, setFruitsPerPage] = useState(12);
-    const [type, setType] = useState('all');
+    const [type, setType] = useState(() => {
+        return sessionStorage.getItem('anmlist_type') || 'all';
+    });
     const [searchResult, setSearchResult] = useState([]);
+
+    useEffect(() => {
+        sessionStorage.setItem('anmlist_page', pagina);
+        sessionStorage.setItem('anmlist_type', type);
+    }, [pagina, type]);
 
     const filteredFruits = akumasnomi.filter(fruit => type === 'all' || fruit.type === type);
     const totalPages = Math.ceil(filteredFruits.length / fruitsPerPage);
@@ -48,7 +58,7 @@ export default function ANMList() {
                             after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(./assets/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
-            <div className='grid xl:[grid-template-areas:"types_pagination""search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-4 flex-wrap justify-between mb-12 max-w-360 mx-auto'>
+            <div className='grid xl:[grid-template-areas:"types_pagination""search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-4 flex-wrap justify-between mb-6 max-w-360 mx-auto'>
 
                 <div className='flex flex-row gap-2 [grid-area:types] [anchor-name:--types] 
                     after:content-["Types:"] justify-center xl:justify-start
@@ -120,7 +130,49 @@ export default function ANMList() {
 
 
             <div className='flex flex-row gap-6 flex-wrap max-w-360 mx-auto'>
-
+                {type === 'Logia' &&
+                    <div className='flex flex-col gap-2 text-[#976f47]'>
+                        <h2 className="text-[#976f47] font-bold">
+                            Logia •「自然系: ロギア」
+                        </h2>
+                        <span>
+                            Is an Ancient Greek word originating from religious scholarship and roughly translates as "sayings, utterances, oracles"
+                            Logia is the rarest of the 3 Devil Fruit types. Users are granted the power to transform their body's composition into a natural element, as well as create and control it.
+                            If a Logia user transforms part of their body, any effect of the attack on the user's elemental form is superficial and the body can be reformed with no issue.
+                            The most common way to bypass Logias is by using Busoshoku Haki. Haki does not prevent Logia users from transforming rather, once a Haki-imbued object makes contact with a transformed body, the body part that is struck reverts to its solid form.
+                            The elements that Logia users transform into can also have a significant effect on their surrounding environment, from the land and water around them to even the climate.
+                        </span>
+                    </div>
+                }
+                {type === 'Paramecia' &&
+                    <div className='flex flex-col gap-2 text-[#976f47]'>
+                        <h2 className="text-[#976f47] font-bold">Paramecia • 超人系: パラミシア」</h2>
+                        <span>
+                            The kanji for "Paramecia" include the term chōjin (超人?), meaning "superhuman".
+                            Paramecia being the most common and diverse of the 3. Fruits of this type allows the consumer to achieve one of a large variety of abilities.
+                            Just about every Paramecia ability can be placed in 4 categories: altering the user's body(Buki Buki no mi) Transforming their body or certain parts, into organic and inorganic material,
+                            manipulating the environment (Ope Ope no mi) Enables their users to achieve an unnatural effect on the area around them,
+                            and generating a substance(Ito Ito no mi) Enables the user to create their substance and shape it as desired. However, users cannot transform their bodies into substances, and then powers that cant fit into the 3(Toki-Toki fruit).
+                            In addition, there exists a special sub-class known as Special Paramecia, which grant abilities similar to logias(Mochi Mochi no mi).
+                        </span>
+                    </div>
+                }
+                {type === 'Zoan' &&
+                    <div className='flex flex-col gap-2 text-[#976f47]'>
+                        <h2 className="text-[#976f47] font-bold">Zoan •「動物系: ゾオン」</h2>
+                        <span>
+                            Comes from the Ancient Greek zôia, which means "animal".
+                            Zoan Devil Fruits grant the ability to transform into a certain animal species.
+                            Zoans are said to have "a will of their own," even before consumption.
+                            Generally, a Zoan-type Devil Fruit provides the user with 3 basic forms that they can change between:
+                            Human Form: The user's natural form prior to consuming the fruit.
+                            Hybrid Form: Combination between there human form and beast form.
+                            Beast Form: User is fully transformed into the fruit-bestowed species.
+                            Ancient Zoan: Rarer type of Zoan. Allows the users to transform into ancient and extinct animals(Neko Neko no mi Model: Saber tiger).
+                            Mythical Zoan: Exceptionally rare &amp; powerful. Allows users to transform into mythological creatures(Tori Tori no mi Model: Phoenix).
+                        </span>
+                    </div>
+                }
                 {currentFruits.map((fruit, i) => (
                     <Link key={fruit.id} to={`/fruta/${fruit.id}`}
                         style={{ "--color": fruit.localImg.includes('svg') ? '#976f47' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}

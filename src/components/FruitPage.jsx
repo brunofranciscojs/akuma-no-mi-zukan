@@ -1,12 +1,10 @@
 import { useParams, Link } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
-import akumasnomi from '../assets/akumanomi.json'
+import akumasnomi from '../assets/akumanomi2.json'
 
 export default function FruitPage() {
     const { id } = useParams()
     const fruta = akumasnomi.find(f => f.id.toLowerCase() === id.toLowerCase())
-    const [related, setRelated] = useState();
-
 
     const useRelatedFruits = (allFruits, names) => {
         if (!allFruits || !names) return []
@@ -20,11 +18,11 @@ export default function FruitPage() {
         if (!fruits.length) return null
 
         return (
-            <>
+            <div className='mt-32 w-full'>
                 <h3 className='text-xl font-semibold text-[#976f47] mb-4'>Similar Fruits</h3>
 
                 <div className="flex flex-wrap gap-2 max-h-50 overflow-y-auto [&:has(a:hover)_a:hover]:opacity-100 [&:has(a:hover)_a]:opacity-50 
-                    [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full">
+                    [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#976f4755] [&::-webkit-scrollbar-thumb]:rounded-full py-4">
                     {fruits.map((fruit, i) => (
                         <Link to={`/fruta/${fruit.id}`} key={fruit.id} className="flex items-center gap-1 w-[43%] transition-all">
                             <img src={`/images/fruits/${fruit.localImg}`} alt={fruit.name} className='w-3 h-4 object-contain' />
@@ -32,7 +30,7 @@ export default function FruitPage() {
                         </Link>
                     ))}
                 </div>
-            </>
+            </div>
         )
     }
 
@@ -48,7 +46,7 @@ export default function FruitPage() {
     }
 
     return (
-        <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center py-28
+        <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center pt-44 pb-28
                             relative after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(./assets/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
@@ -74,6 +72,11 @@ export default function FruitPage() {
                                 style={{ filter: `drop-shadow(0 0 60px ${fruta.color + '00' || '#fff'})` }}
                             />
                         </div>
+                        <RelatedFruits
+                            allFruits={akumasnomi}
+                            relatedNames={fruta.relatedFruits}
+                        />
+
                     </div>
 
                     <div className='lg:w-3/5 w-full flex flex-col gap-6'>
@@ -86,17 +89,28 @@ export default function FruitPage() {
                             <h1 className='font-extrabold text-5xl font-["Calibri"] text-[#976f47] leading-none -mt-7'>
                                 <ruby className='ruby-base'>
                                     {fruta.name}
-                                    <rt className='text-lg uppercase tracking-[0.2em] font-normal text-[#976f47]/60'>「{fruta.jpName}」</rt>
+                                    <rt className='text-lg uppercase tracking-[0.2em] font-bold text-[#976f47]/60'>「{fruta.jpName}」</rt>
                                 </ruby>
                             </h1>
-                            <p className='text-[#976f47]/70 text-lg mt-1'>EN: {fruta.engName}</p>
+                            <ul className='flex flex-col pl-1 mt-1'>
+                                <li className='text-[#976f47] text-xs'>
+                                    <b>English name:</b> {fruta.engName}
+                                </li>
+
+                                <li className='text-[#976f47] text-xs'>
+                                    <b>Manga debut:</b> CH.: {fruta.mangaDebut}
+                                </li>
+                                <li className='text-[#976f47] text-xs'>
+                                    <b>Anime debut:</b> EP.: {fruta.animeDebut}
+                                </li>
+                            </ul>
                         </div>
 
                         <hr className='border-[#976f47]/30' />
 
                         <div>
                             <h2 className='text-sm uppercase tracking-wider text-[#976f47]/60 font-semibold mb-3'>Description</h2>
-                            <p className='text-gray-800 text-lg leading-relaxed'>{fruta.desc}</p>
+                            <p className='text-black text-lg leading-relaxed'>{fruta.desc}</p>
                         </div>
 
                         <hr className='border-[#976f47]/30' />
@@ -121,8 +135,27 @@ export default function FruitPage() {
                                     )) :
                                     <a href={`https://onepiece.fandom.com/wiki/${fruta.owner}`}
                                         target='_blank'
+                                        style={{ "--img": `url(${fruta.characterImg})` }}
                                         rel='noopener noreferrer'
-                                        className='inline-flex items-center gap-2 px-4 py-2 bg-[#976f47]/8 border border-[#976f47]/20 rounded-lg text-[#976f47] font-semibold hover:bg-[#976f47] hover:text-white transition-all duration-200'>
+                                        className='[anchor-name:--img] inline-flex items-center gap-2 px-4 py-2 bg-[#976f47]/8 border border-[#976f47]/20 rounded-lg text-[#976f47] font-semibold hover:bg-[#976f47] hover:text-white transition-all duration-200
+                                                    hover:before:opacity-100
+                                                    hover:before:translate-x-0
+                                                    before:content-[""] 
+                                                    before:[background-image:var(--img)] 
+                                                    before:[position-anchor:--img] 
+                                                    before:left-[anchor(right)] 
+                                                    before:w-70 
+                                                    before:h-70 
+                                                    before:rounded-full 
+                                                    before:bg-cover 
+                                                    before:bg-center 
+                                                    before:bg-no-repeat 
+                                                    before:absolute 
+                                                    before:opacity-0
+                                                    before:-translate-x-8
+                                                    before:transition-all
+                                                    before:pointer-events-none'>
+
                                         {fruta.owner || 'Desconhecido'}
                                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                                             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -132,12 +165,7 @@ export default function FruitPage() {
                                     </a>
                                 }
                             </div>
-                            <div className='mt-12'>
-                                <RelatedFruits
-                                    allFruits={akumasnomi}
-                                    relatedNames={fruta.relatedFruits}
-                                />
-                            </div>
+
                         </div>
 
                     </div>
