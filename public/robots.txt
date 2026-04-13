@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akumanomikuzan.vercel.app/sitemap.xml

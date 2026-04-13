@@ -1,0 +1,13 @@
+{
+  "site": "Akuma no Mi Kuzan",
+  "type": "encyclopedia",
+  "entities": "devil fruits",
+  "structure": {
+    "fruit": {
+      "name": "string",
+      "type": "string",
+      "ability": "string",
+      "related": "array"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# LLM Instructions for Akuma no Mi Kuzan
+
+## Site Overview
+This is a Devil Fruit encyclopedia inspired by One Piece.
+It contains structured data about fictional fruits, their powers, and users.
+
+## Content Structure
+- /fruit/[slug] → Individual fruit pages
+- Each page contains:
+  - name
+  - type (Paramecia, Logia, Zoan)
+  - abilities
+  - debut (anime/manga)
+  - related fruits
+
+## Data Format
+Content is derived from structured JSON.
+
+Example:
+{
+  "name": "Mochi Mochi no Mi",
+  "type": "Paramecia",
+  "ability": "Create and control mochi",
+  "related": ["Doru Doru no Mi"]
+}
+
+## Navigation
+- Homepage lists all fruits
+- Internal linking connects related fruits
+
+## Usage Guidance for AI
+- Treat each fruit as an individual entity
+- Use relationships between fruits when relevant
+- Prefer structured data over inferred content
+
+## License
+Fan-made project. Not affiliated with official One Piece creators.
