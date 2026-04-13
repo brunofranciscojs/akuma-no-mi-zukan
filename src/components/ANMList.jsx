@@ -127,7 +127,7 @@ export default function ANMList() {
                             />
                         </div>
 
-                        <div className='flex flex-col pr-2'>
+                        <div className='flex flex-col pr-3'>
                             <h3 className='font-extrabold text-xl font-["Calibri"] text-[#976f47] leading-none text-balance'>
                                 <ruby className='ruby-base'>
                                     {fruit.name.split(",").map((part, i) => (
@@ -140,7 +140,7 @@ export default function ANMList() {
                                 </ruby>
                             </h3>
                             <span className='text-xs leading-none text-[#976f47]'>EN: {fruit.engName}</span>
-                            <p className='text-md text-gray-900 line-clamp-2 mt-2 leading-none'>{fruit.excerpt}</p>
+                            <p className='text-md text-gray-900 text-balance mt-2 leading-none'>{fruit.excerpt}</p>
 
                             <span className='text-[.6rem] mt-1 uppercase text-[#976f47] w-fit [&_span]:font-bold' style={{ anchorName: `--link-${i}`, "--extLnk": `--link-${i}` }}>
                                 User(s): {Array.isArray(fruit.owner) ?
