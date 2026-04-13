@@ -90,7 +90,7 @@ export default function ANMList() {
                         popoverTarget='search-results'
                         onClick={() => document.querySelector('#search-result').showPopover()}
                         onInput={(e) => busca(e.target.value)}
-                        className='w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] focus-within:rounded-b-none focus-within:[border-bottom:none] outline-0'
+                        className='w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
                     />
 
                     <div {...{ popover: '' }} id='search-result'
@@ -99,12 +99,17 @@ export default function ANMList() {
                                     w-[anchor-size(width)] 
                                     top-[calc(anchor(top)+3.7rem)] 
                                     left-[anchor(left)] 
-                                    z-40 backdrop-blur-xl rounded-b-2xl max-h-100 overflow-y-scroll
+                                    z-40 backdrop-blur-xl rounded-b-2xl max-h-100 overflow-y-scroll [&_a:nth-child(1)]:pt-6
                                     [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'>
                         {searchResult.map(fruit => (
                             <Link key={fruit.id} to={`/fruta/${fruit.id}`}
                                 className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex gap-3 items-center'>
-                                <img src={`/images/fruits/${fruit.localImg}`} className='w-6' /> {fruit.name} • {fruit.jpName}
+                                <img src={`/images/fruits/${fruit.localImg}`} className='w-6' />
+                                <span className='flex flex-col text-sm'>
+                                    <sup className='opacity-60'>{fruit.engName}</sup>
+                                    {fruit.name}
+                                </span> • {fruit.jpName}
+                                <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2'>{fruit.type}</span>
                             </Link>
                         ))}
                     </div>
@@ -131,11 +136,11 @@ export default function ANMList() {
                             <h3 className='font-extrabold text-xl font-["Calibri"] text-[#976f47] leading-none text-balance'>
                                 <ruby className='ruby-base'>
                                     {fruit.name.split(",").map((part, i) => (
-  										<React.Fragment key={i}>
-    										{part}
-    										{i === 0 && <br />}
- 										 </React.Fragment>
-									  ))}
+                                        <React.Fragment key={i}>
+                                            {part}
+                                            {i === 0 && <br />}
+                                        </React.Fragment>
+                                    ))}
                                     <rt className='text-sm uppercase font-normal translate-y-1 -translate-x-2'>
                                         「{fruit.jpName}」
                                     </rt>
@@ -157,7 +162,7 @@ export default function ANMList() {
                             </span>
 
                         </div>
-                        <span className='text-white text-[.65rem] uppercase w-fit tracking-tighter bg-[#976f47] rounded-full px-2 absolute top-4 right-4'>{fruit.type}</span>
+                        {type === 'all' && <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2 absolute top-3 right-4'>{fruit.type}</span>}
                     </Link>
                 ))}
             </div>
@@ -174,6 +179,9 @@ export default function ANMList() {
                     )
                 })}
             </ol>
+            <pre className='text-center text-sm text-gray-500 absolute bottom-2 left-1/2 -translate-x-1/2'>
+                This list includes only fruits showed in the manga, anime and movies (including non-canon)
+            </pre>
         </section>
     )
 }

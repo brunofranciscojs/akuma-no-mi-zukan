@@ -54,7 +54,7 @@ rt {
     margin-bottom: 0.25rem;
 }
 
-div[style]:has([src*="svg"]){
+a div[style]:has([src*="svg"]){
     img{ opacity: .4 }
     
     &:after{
@@ -100,7 +100,7 @@ span:has(a){
 @keyframes fruitEnter {
     from {
         opacity: 0;
-        translate: 0 2rem;
+        translate: 0 -2rem;
     }
     to {
         opacity: 1;
