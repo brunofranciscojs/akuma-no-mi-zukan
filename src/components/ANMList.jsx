@@ -232,7 +232,8 @@ export default function ANMList() {
                 })}
             </ol>
             <pre className='text-center text-sm text-gray-500 absolute bottom-2 left-1/2 -translate-x-1/2'>
-                This list includes only fruits showed in the manga, anime and movies (including non-canon)
+                This list includes only fruits showed in the manga, anime and movies (including non-canon) <br />
+                found something wrong, or want to contribute? <b><a href="https://github.com/brunofranciscojs/akuma-no-mi-zukan/issues/new" target='_blank'>click here</a></b>
             </pre>
         </section>
     )
