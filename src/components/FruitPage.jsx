@@ -126,12 +126,12 @@ export default function FruitPage() {
                 <div className='max-w-360 mx-auto'>
 
                     <Link to="/"
-                        className='inline-flex items-center gap-2 text-[#976f47] hover:text-[#7a5a3a] transition-colors group text-sm font-medium'>
+                        className='inline-flex items-center gap-2 text-[#976f47] hover:text-[#7a5a3a] transition-colors group text-sm font-medium -translate-y-12'>
                         <span className='group-hover:-translate-x-1 transition-transform'>←</span>
                         Return
                     </Link>
 
-                    <div className='flex flex-col lg:flex-row gap-16 items-center'>
+                    <div className='flex flex-col-reverse lg:flex-row gap-16 items-center'>
 
                         <div className='lg:w-2/5 w-full flex flex-col items-center justify-center lg:sticky lg:top-56 shrink-0'>
                             <div className='relative w-72 h-72 flex items-center justify-center'>

@@ -82,7 +82,7 @@ export default function ANMList() {
                     ))}
                 </div>
 
-                <ol className='[grid-area:pagination] pagination [&::-webkit-scrollbar]:w-0 items-center justify-center xl:justify-end flex gap-2 overflow-y-scroll text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
+                <ol className='[grid-area:pagination] w-fit mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-y-scroll text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
                     {paginas.map(number => {
                         return (
                             <input type='button'
@@ -224,7 +224,7 @@ export default function ANMList() {
                     </Link>
                 ))}
             </div>
-            <ol className='pagination [&::-webkit-scrollbar]:w-0 items-center justify-center flex gap-2 overflow-y-scroll mt-12 text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
+            <ol className='pagination [&::-webkit-scrollbar]:w-0 items-center justify-start w-fit mx-auto flex gap-2 overflow-y-scroll mt-12 text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
                 {paginas.map(number => {
                     return (
                         <input type='button'
