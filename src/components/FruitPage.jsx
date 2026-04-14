@@ -1,6 +1,8 @@
 import { useParams, Link } from 'react-router-dom'
 import akumasnomi from '../assets/akumanomi2.json'
-import { Helmet } from "react-helmet"
+import { Helmet, HelmetProvider } from "react-helmet-async"
+import { Fragment } from 'react'
+import { CopyIcon } from './Icons'
 
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
 
@@ -14,6 +16,12 @@ export default function FruitPage() {
         return allFruits.filter(f => set.has(f.name))
     }
 
+    const images = {
+        localImg: `/images/fruits/${fruta.localImg}`,
+        characterImg: fruta.characterImg ? fruta.characterImg : null,
+        fruitboxImg: fruta.fruitboxImg ? fruta.fruitboxImg : null,
+        infoImg: fruta.infoImg ? fruta.infoImg : null,
+    }
     const RelatedFruits = ({ allFruits, relatedNames }) => {
         const fruits = useRelatedFruits(allFruits, relatedNames)
 
@@ -23,10 +31,10 @@ export default function FruitPage() {
             <div className='mt-32 w-full'>
                 <h3 className='text-xl font-semibold text-[#976f47] mb-4'>Similar Fruits</h3>
 
-                <div className="flex flex-wrap gap-2 max-h-50 overflow-y-auto [&:has(a:hover)_a:hover]:opacity-100 [&:has(a:hover)_a]:opacity-50 
+                <div className="flex flex-wrap gap-x-8 gap-y-4 max-h-50 overflow-y-auto [&:has(a:hover)_a:hover]:opacity-100 [&:has(a:hover)_a]:opacity-50 
                         [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#976f4755] [&::-webkit-scrollbar-thumb]:rounded-full py-4">
                     {fruits.map((fruit, i) => (
-                        <Link to={`/fruta/${slugify(fruit.name)}`} key={fruit.id} className="flex items-center gap-1 w-[43%] transition-all">
+                        <Link to={`/fruta/${slugify(fruit.name)}`} key={fruit.id} className="flex items-center gap-1 w-fit transition-all">
                             <img src={`/images/fruits/${fruit.localImg}`} alt={fruit.name} className='w-3 h-4 object-contain' />
                             <p className='w-2/3 leading-none text-nowrap text-md'>{fruit.name}</p>
                         </Link>
@@ -98,6 +106,9 @@ export default function FruitPage() {
             }
         ]
     }
+
+    const isNumber = (value) => !isNaN(value) && value !== null && value !== "";
+
     return (
         <>
             <Helmet>
@@ -113,13 +124,10 @@ export default function FruitPage() {
                 <meta name="twitter:title" content={`${fruta.name} | Akuma no Mi Zukan`} />
                 <meta name="twitter:description" content={fruta.desc} />
                 <meta name="twitter:image" content={`${window.location.origin}/images/fruits/${fruta.localImg}`} />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-                />
+                <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
             </Helmet>
 
-            <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center pt-44 pb-28
+            <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center pt-44 pb-28 [&:has(dialog:popover-open)]:grayscale transition-all
                                 relative after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(./assets/pattern.avif)] 
                                 after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
@@ -159,23 +167,45 @@ export default function FruitPage() {
                             </span>
 
                             <div>
-                                <h1 className='font-extrabold text-5xl font-["Calibri"] text-[#976f47] leading-none -mt-7'>
+                                <h1 className='font-extrabold text-5xl w-fit font-["Calibri"] text-[#976f47] leading-none -mt-7 '>
                                     <ruby className='ruby-base'>
                                         {fruta.name}
-                                        <rt className='text-lg uppercase tracking-[0.2em] font-bold text-[#976f47]/60'>「{fruta.jpName}」</rt>
+                                        <rt className='text-lg uppercase tracking-[0.2em] font-bold text-[#976f47]/60 [anchor-name:--copy]'>「{fruta.jpName}」</rt>
                                     </ruby>
                                 </h1>
+                                <button popoverTarget="copied" className='[position-anchor:--copy] left-[anchor(right)] top-[calc(anchor(top)-3px)] fixed cursor-pointer'
+                                    onClick={() => navigator.clipboard.writeText(fruta.jpName)}>
+                                    <CopyIcon width={20} height={20} className='[&_path]:stroke-[#976f47]' />
+                                    <span {...{ popover: "" }} id="copied" className='[&:popover-open]:flex fixed [position-anchor:--copy] top-[calc(anchor(top)-5px)] left-[calc(anchor(center)+7rem)] bg-[#976f47] text-white px-2 py-1 rounded-md text-xs'>Copied!</span>
+                                </button>
                                 <ul className='flex flex-col pl-1 mt-1'>
-                                    <li className='text-[#976f47] text-xs'>
+                                    <li className='text-[#976f47] text-sm'>
                                         <b>English name:</b> {fruta.engName}
                                     </li>
 
-                                    <li className='text-[#976f47] text-xs'>
-                                        <b>Manga debut:</b> CH.: {fruta.mangaDebut}
+                                    <li className='text-[#976f47] text-sm'>
+                                        <b>Manga debut:</b> {isNumber(fruta.mangaDebut) ? `CH.: ${fruta.mangaDebut}` : fruta.mangaDebut}
                                     </li>
-                                    <li className='text-[#976f47] text-xs'>
-                                        <b>Anime debut:</b> EP.: {fruta.animeDebut}
+                                    <li className='text-[#976f47] text-sm'>
+                                        <b>Anime debut:</b> {isNumber(fruta.animeDebut) ? `EP.: ${fruta.animeDebut}` : fruta.animeDebut}
                                     </li>
+                                    <li className='text-[#976f47] text-sm'>
+                                        <b>User(s): </b>
+                                        <a href={`https://onepiece.fandom.com/wiki/${fruta.owner}`}
+                                            target='_blank'
+                                            style={{ "--img": `url(${fruta.characterImg})` }}
+                                            rel='noopener noreferrer'
+                                            className='inline-flex items-center gap-2 text-[#976f47] transition-all duration-200'>
+
+                                            {fruta.owner || 'Unknown'}
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                                <polyline points="15 3 21 3 21 9" />
+                                                <line x1="10" y1="14" x2="21" y2="3" />
+                                            </svg>
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </div>
 
@@ -188,56 +218,15 @@ export default function FruitPage() {
 
                             <hr className='border-[#976f47]/30' />
 
-                            <div>
-                                <h2 className='text-sm uppercase tracking-wider text-[#976f47]/60 font-semibold mb-3'>Users(s)</h2>
-                                <div className='flex flex-wrap gap-3'>
-                                    {Array.isArray(fruta.owner) ?
-                                        fruta.owner.map((o, i) => (
-                                            <a key={i}
-                                                href={`https://onepiece.fandom.com/wiki/${o}`}
-                                                target='_blank'
-                                                rel='noopener noreferrer'
-                                                className='inline-flex items-center gap-2 px-4 py-2 bg-[#976f47]/8 border border-[#976f47]/20 rounded-lg text-[#976f47] font-semibold hover:bg-[#976f47] hover:text-white transition-all duration-200'>
-                                                {o}
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                                    <polyline points="15 3 21 3 21 9" />
-                                                    <line x1="10" y1="14" x2="21" y2="3" />
-                                                </svg>
-                                            </a>
-                                        )) :
-                                        <a href={`https://onepiece.fandom.com/wiki/${fruta.owner}`}
-                                            target='_blank'
-                                            style={{ "--img": `url(${fruta.characterImg})` }}
-                                            rel='noopener noreferrer'
-                                            className='[anchor-name:--img] inline-flex items-center gap-2 px-4 py-2 bg-[#976f47]/8 border border-[#976f47]/20 rounded-lg text-[#976f47] font-semibold hover:bg-[#976f47] hover:text-white transition-all duration-200
-                                                        hover:before:opacity-100
-                                                        hover:before:translate-x-0
-                                                        before:content-[""] 
-                                                        before:[background-image:var(--img)] 
-                                                        before:[position-anchor:--img] 
-                                                        before:left-[anchor(right)] 
-                                                        before:w-70 
-                                                        before:h-70 
-                                                        before:bg-cover 
-                                                        before:bg-center 
-                                                        before:bg-no-repeat 
-                                                        before:absolute 
-                                                        before:opacity-0
-                                                        before:-translate-x-8
-                                                        before:transition-all
-                                                        before:pointer-events-none'>
-
-                                            {fruta.owner || 'Desconhecido'}
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-                                                <polyline points="15 3 21 3 21 9" />
-                                                <line x1="10" y1="14" x2="21" y2="3" />
-                                            </svg>
-                                        </a>
-                                    }
-                                </div>
-
+                            <div className='flex gap-4 flex-wrap'>
+                                {Object.values(images).filter(image => image && !image.includes('unknown')).map((image, index) =>
+                                    <Fragment key={Math.floor(Math.random() * 100)}>
+                                        <img src={image} alt={fruta.name} className='w-30 h-20 object-contain rounded-lg bg-[#976f47]/20' onClick={() => document.querySelector(`#image-${index}`).showPopover()} />
+                                        <dialog {...{ popover: '' }} id={`image-${index}`} className='[&:popover-open]:block fixed top-1/2 left-1/2 [translate:-50%_-50%] backdrop:bg-[#976f47]/30 bg-transparent outline-0 h-[90dvh] w-[90dvw]'>
+                                            <img src={image} alt={fruta.name} className='w-full h-full object-contain rounded-2xl' />
+                                        </dialog>
+                                    </Fragment>
+                                )}
                             </div>
 
                         </div>

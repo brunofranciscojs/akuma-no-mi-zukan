@@ -14,7 +14,7 @@ export default function ANMList() {
         return sessionStorage.getItem('anmlist_type') || 'all';
     });
     const [searchResult, setSearchResult] = useState([]);
-const sRef = useRef(null);
+    const sRef = useRef(null);
 
     useEffect(() => {
         sessionStorage.setItem('anmlist_page', pagina);
@@ -91,7 +91,7 @@ const sRef = useRef(null);
                                 value={number}
                                 placeholder={number}
                                 onClick={() => setPagina(number)}
-                                className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm text-[#976f47]"}
+                                className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm text-[#976f47] hover:text-white! hover:bg-[#976f47] cursor-pointer"}
                             />
                         )
                     })}
@@ -100,8 +100,8 @@ const sRef = useRef(null);
                 <div className='relative [grid-area:search]'>
                     <input ref={sRef} type="text" placeholder="Search"
                         popoverTargetAction='show'
-                        popoverTarget='search-results' 
-onFoucs={()=> sRef.current?.scrollIntoView()}
+                        popoverTarget='search-results'
+                        onFocus={() => sRef.current?.scrollIntoView({ behavior: 'smooth' })}
                         onClick={() => document.querySelector('#search-result').showPopover()}
                         onInput={(e) => busca(e.target.value)}
                         className='scroll-mt-24 w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
@@ -114,7 +114,8 @@ onFoucs={()=> sRef.current?.scrollIntoView()}
                                     top-[calc(anchor(top)+3.7rem)] 
                                     left-[anchor(left)] 
                                     z-40 backdrop-blur-xl rounded-b-2xl max-h-100 overflow-y-scroll [&_a:nth-child(1)]:pt-6
-                                    [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'>
+                                    [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'
+                    >
                         {searchResult.map(fruit => (
                             <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
                                 className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex flex-col cl:flex-row gap-3 cl:items-center items-start relative'>
@@ -127,7 +128,6 @@ onFoucs={()=> sRef.current?.scrollIntoView()}
                                     </span> <span className='hidden cl:block'>• {fruit.jpName}</span>
                                 </div>
                                 <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2 hidden ssm:block fixed cl:relative left-[calc(anchor(right)+1rem)] top-[calc(anchor(top))]' style={{ positionAnchor: `--${fruit.id}` }}>{fruit.type}</span>
-
                             </Link>
                         ))}
                     </div>
