@@ -222,7 +222,7 @@ export default function FruitPage() {
                                 {Object.values(images).filter(image => image && !image.includes('unknown')).map((image, index) =>
                                     <Fragment key={Math.floor(Math.random() * 100)}>
                                         <img src={image} alt={fruta.name} className='w-30 h-20 object-contain rounded-lg bg-[#976f47]/20' onClick={() => document.querySelector(`#image-${index}`).showPopover()} />
-                                        <dialog {...{ popover: '' }} id={`image-${index}`} className='[&:popover-open]:block fixed top-1/2 left-1/2 [translate:-50%_-50%] backdrop:bg-[#976f47]/30 bg-transparent outline-0 h-[90dvh] w-[90dvw]'>
+                                        <dialog {...{ popover: '' }} id={`image-${index}`} className='[&:popover-open]:block fixed top-1/2 left-1/2 [translate:-50%_-50%] backdrop:bg-[#976f47]/40 bg-transparent outline-0'>
                                             <img src={image} alt={fruta.name} className='w-full h-full object-contain rounded-2xl' />
                                         </dialog>
                                     </Fragment>
