@@ -82,7 +82,7 @@ export default function ANMList() {
                     ))}
                 </div>
 
-                <ol className='[grid-area:pagination] w-fit mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-y-scroll text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
+                <ol className='[grid-area:pagination] cl:w-fit w-full mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
                     {paginas.map(number => {
                         return (
                             <input type='button'
