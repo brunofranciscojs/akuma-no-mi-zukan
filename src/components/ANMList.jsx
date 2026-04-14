@@ -115,13 +115,17 @@ export default function ANMList() {
                                     [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'>
                         {searchResult.map(fruit => (
                             <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
-                                className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex gap-3 items-center'>
-                                <img src={`/images/fruits/${fruit.localImg}`} className='w-6' />
-                                <span className='flex flex-col text-sm'>
-                                    <sup className='opacity-60'>{fruit.engName}</sup>
-                                    {fruit.name}
-                                </span> • {fruit.jpName}
-                                <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2'>{fruit.type}</span>
+                                className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex flex-col cl:flex-row gap-3 cl:items-center items-start relative'>
+
+                                <div className='flex gap-2 items-center'>
+                                    <img src={`/images/fruits/${fruit.localImg}`} className='w-6 h-6 object-contain -translate-y-1' />
+                                    <span className='flex flex-col text-sm' style={{ anchorName: `--${fruit.id}` }}>
+                                        <sup className='opacity-60 w-fit'>{fruit.engName}  •</sup>
+                                        {fruit.name}
+                                    </span> <span className='hidden cl:block'>• {fruit.jpName}</span>
+                                </div>
+                                <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2 hidden ssm:block fixed cl:relative left-[calc(anchor(right)+1rem)] top-[calc(anchor(top))]' style={{ positionAnchor: `--${fruit.id}` }}>{fruit.type}</span>
+
                             </Link>
                         ))}
                     </div>
@@ -233,10 +237,10 @@ export default function ANMList() {
                     )
                 })}
             </ol>
-            <pre className='text-center text-sm text-gray-500 absolute bottom-2 left-1/2 -translate-x-1/2'>
+            <span className='text-center text-sm text-gray-500 absolute bottom-2 left-1/2 w-full px-12 -translate-x-1/2 block'>
                 This list includes only fruits showed in the manga, anime and movies (including non-canon) <br />
                 found something wrong, or want to contribute? <b><a href="https://github.com/brunofranciscojs/akuma-no-mi-zukan/issues/new" target='_blank'>click here</a></b>
-            </pre>
+            </span>
         </section>
     )
 }
