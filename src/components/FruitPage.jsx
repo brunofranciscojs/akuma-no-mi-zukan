@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom'
 import akumasnomi from '../assets/akumanomi2.json'
-import { Helmet, HelmetProvider } from "react-helmet-async"
-import { Fragment } from 'react'
+import { Helmet } from "react-helmet-async"
+import { Fragment, useEffect } from 'react'
 import { CopyIcon } from './Icons'
 
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
@@ -9,6 +9,10 @@ const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace
 export default function FruitPage() {
     const { id } = useParams()
     const fruta = akumasnomi.find(f => f.id.toLowerCase() === id.toLowerCase() || slugify(f.name) === id.toLowerCase())
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
 
     const useRelatedFruits = (allFruits, names) => {
         if (!allFruits || !names) return []
@@ -176,7 +180,8 @@ export default function FruitPage() {
                                 <button popoverTarget="copied" className='[position-anchor:--copy] left-[anchor(right)] top-[calc(anchor(top)-3px)] fixed cursor-pointer'
                                     onClick={() => navigator.clipboard.writeText(fruta.jpName)}>
                                     <CopyIcon width={20} height={20} className='[&_path]:stroke-[#976f47]' />
-                                    <span {...{ popover: "" }} id="copied" className='[&:popover-open]:flex fixed [position-anchor:--copy] top-[calc(anchor(top)-5px)] left-[calc(anchor(center)+7rem)] bg-[#976f47] text-white px-2 py-1 rounded-md text-xs'>Copied!</span>
+                                    <span {...{ popover: "" }} id="copied"
+                                        className='[&:popover-open]:flex fixed [position-anchor:--copy] top-[calc(anchor(top)-5px)] left-[calc(anchor(right)+2rem)] bg-[#976f47] text-white px-2 py-1 rounded-md text-xs'>Copied!</span>
                                 </button>
                                 <ul className='flex flex-col pl-1 mt-1'>
                                     <li className='text-[#976f47] text-sm'>

@@ -6,13 +6,12 @@ import akumasnomi from '../assets/akumanomi2.json'
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
 
 export default function Header() {
-    const sRef = useRef(null);
     const [searchResult2, setSearchResult2] = useState([]);
     const location = useLocation();
     const isHome = location.pathname === '/'
     const desacentuar = (busca) => busca.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
-    const busca = (name) => {
+    const busca2 = (name) => {
         if (!name.trim()) {
             setSearchResult2([]);
             return;
@@ -27,29 +26,28 @@ export default function Header() {
     }
 
     return (
-        <header className='w-svw h-20 bg-white/80 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-[#976f47]/10 px-12 z-10 flex items-center justify-between'>
+        <header className='w-svw h-20 bg-white/80 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-[#976f47]/10 px-12 z-10 flex items-center justify-between gap-4'>
             <Link to="/">
                 <img src={hLogo} alt="" className='w-50 object-contain' />
             </Link>
 
             {!isHome &&
                 <div className='relative w-[70%]'>
-                    <input ref={sRef} type="text" placeholder="Search"
+                    <input type="text" placeholder="Search"
                         popoverTargetAction='show'
                         popoverTarget='search-results'
-                        onFocus={() => sRef.current?.scrollIntoView({ behavior: 'smooth' })}
                         onClick={() => document.querySelector('#search-result').showPopover()}
-                        onInput={(e) => busca(e.target.value)}
-                        className='scroll-mt-24 w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
+                        onInput={(e) => busca2(e.target.value)}
+                        className='scroll-mt-24 w-full px-7 py-2 backdrop-blur-lg rounded-lg border-[#976f47] border [anchor-name:--search] outline-0'
                     />
 
                     <div {...{ popover: '' }} id='search-result'
-                        className='[&:popover-open]:flex flex-col gap-3 justify-start [&_button]:w-fit absolute shadow-xl
+                        className='[&:popover-open]:flex flex-col gap-3 bg-white/90 justify-start [&_button]:w-fit absolute shadow-xl
                                 [position-anchor:--search] 
                                 w-[anchor-size(width)] 
-                                top-[calc(anchor(top)+3.7rem)] 
+                                top-[calc(anchor(top)+3rem)] 
                                 left-[anchor(left)] 
-                                z-40 backdrop-blur-xl rounded-b-2xl max-h-100 overflow-y-scroll [&_a:nth-child(1)]:pt-6
+                                z-40 backdrop-blur-sm rounded-b-2xl max-h-100 overflow-y-scroll [&_a:nth-child(1)]:pt-6
                                 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'
                     >
                         {searchResult2.map(fruit => (

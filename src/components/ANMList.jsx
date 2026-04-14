@@ -101,8 +101,7 @@ export default function ANMList() {
                     <input ref={sRef} type="text" placeholder="Search"
                         popoverTargetAction='show'
                         popoverTarget='search-results'
-                        onFocus={() => sRef.current?.scrollIntoView({ behavior: 'smooth' })}
-                        onClick={() => document.querySelector('#search-result').showPopover()}
+                        onClick={() => { document.querySelector('#search-result').showPopover(); sRef.current?.scrollIntoView({ behavior: 'smooth' }) }}
                         onInput={(e) => busca(e.target.value)}
                         className='scroll-mt-24 w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
                     />
