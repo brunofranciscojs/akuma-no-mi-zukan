@@ -1,5 +1,5 @@
 import akumasnomi from '../assets/akumanomi2.json'
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
@@ -14,6 +14,7 @@ export default function ANMList() {
         return sessionStorage.getItem('anmlist_type') || 'all';
     });
     const [searchResult, setSearchResult] = useState([]);
+const sRef = useRef();
 
     useEffect(() => {
         sessionStorage.setItem('anmlist_page', pagina);
@@ -97,12 +98,13 @@ export default function ANMList() {
                 </ol>
 
                 <div className='relative [grid-area:search]'>
-                    <input type="text" placeholder="Search"
+                    <input ref={sRef} type="text" placeholder="Search"
                         popoverTargetAction='show'
                         popoverTarget='search-results'
+onFoucs={()=>sRef.current?.scrollIntoView()}
                         onClick={() => document.querySelector('#search-result').showPopover()}
                         onInput={(e) => busca(e.target.value)}
-                        className='w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
+                        className='scroll-mt-24 w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
                     />
 
                     <div {...{ popover: '' }} id='search-result'
