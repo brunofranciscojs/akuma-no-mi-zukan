@@ -2,10 +2,11 @@ import { Link, useLocation } from 'react-router-dom'
 import hLogo from '../assets/h-logo.webp'
 import { useRef, useState, useEffect } from 'react'
 import akumasnomi from '../assets/akumanomi2.json'
+import { GitHubIcon, DarkModeIcon } from './Icons'
 
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
 
-export default function Header() {
+export default function Header({ darkMode, setDarkMode }) {
     const [searchResult2, setSearchResult2] = useState([]);
     const location = useLocation();
     const isHome = location.pathname === '/'
@@ -26,7 +27,7 @@ export default function Header() {
     }
 
     return (
-        <header className='w-svw h-20 bg-white/80 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-[#976f47]/10 px-12 z-10 flex items-center justify-between gap-4'>
+        <header className='w-svw h-20 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-[#976f47]/10 px-12 z-10 flex items-center justify-between gap-4 bg-white/80'>
             <Link to="/">
                 <img src={hLogo} alt="" className='w-50 object-contain' />
             </Link>
@@ -42,7 +43,7 @@ export default function Header() {
                     />
 
                     <div {...{ popover: '' }} id='search-result'
-                        className='[&:popover-open]:flex flex-col gap-3 bg-white/90 justify-start [&_button]:w-fit absolute shadow-xl
+                        className='[&:popover-open]:flex flex-col gap-3 bg-white/90 justify-start [&_button]:w-fit absolute shadow-xl  
                                 [position-anchor:--search] 
                                 w-[anchor-size(width)] 
                                 top-[calc(anchor(top)+3rem)] 
@@ -67,6 +68,22 @@ export default function Header() {
                     </div>
 
                 </div>}
+            <div className='flex items-center gap-2'>
+                {/* <button onClick={() => setDarkMode(!darkMode)}>
+                    <DarkModeIcon with={55} height={55} className="[&_path]:fill-[#976f47aa] hover:[&_path]:fill-[#976f47]" />
+                </button> */}
+                <Link to="https://github.com/brunofranciscojs/akuma-no-mi-zukan"
+                    className='flex flex-col gap-2'
+                    onMouseEnter={() => document.querySelector('#github').showPopover()}
+                    target='_blank'>
+                    <GitHubIcon with={35} height={35} className="[&_path]:fill-[#976f47aa] hover:[&_path]:fill-[#976f47] [anchor-name:--github]" />
+                    <span {...{ popover: '' }} id="github"
+                        className='text-xs text-nowrap  text-white px-1.5 py-1 fixed rounded-sm leading-none bg-[#976f47] 
+                                    [position-anchor:--github] top-[calc(anchor(bottom)+1.4rem)] left-[calc(anchor(left)-2.8rem)]'>
+                        see on github
+                    </span>
+                </Link>
+            </div>
         </header>
     )
 }

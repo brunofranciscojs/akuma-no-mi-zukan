@@ -61,20 +61,20 @@ export default function ANMList() {
                             after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(./assets/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
-            <div className='grid xl:[grid-template-areas:"types_pagination""search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-4 flex-wrap justify-between mb-6 max-w-360 mx-auto'>
+            <div className='grid xl:[grid-template-areas:"types_pagination""search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-4 justify-between mb-6 max-w-360 mx-auto'>
 
-                <div className='flex flex-row gap-2 [grid-area:types] [anchor-name:--types] 
+                <div className='flex flex-row gap-2 [grid-area:types] [anchor-name:--types] h-6
                     after:content-["Types:"] justify-center xl:justify-start
                     after:absolute after:[position-anchor:--types] after:top-[calc(anchor(top)-1.4rem)] 
                     after:left-[anchor(center)] xl:after:left-[anchor(left)] after:text-[#976f47] after:text-sm'>
 
-                    <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all text-base cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
+                    <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
                         style={{ backgroundColor: type === 'all' ? '#976f47' : '', color: type === 'all' ? 'white' : '#976f47' }}
                         onClick={() => handleTypeChange('all')}>
                         All
                     </button>
                     {uniqueTypes.map((cat, i) => (
-                        <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all text-base cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
+                        <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
                             key={i}
                             style={{ backgroundColor: type === cat ? '#976f47' : '', color: type === cat ? 'white' : '#976f47' }}
                             onClick={() => handleTypeChange(cat)}>

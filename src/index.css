@@ -22,7 +22,7 @@ body{
     place-content: center;
     min-height: 100svh;
     display: grid;
-    background: radial-gradient(circle, #fff 0%,#fdf9ee 100%);
+    background: radial-gradient(circle, #fffd 0%,#fdf9ee 100%);
 }
 
 @keyframes load{
