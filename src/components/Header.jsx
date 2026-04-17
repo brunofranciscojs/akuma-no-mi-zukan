@@ -1,16 +1,15 @@
-import { Link, useLocation } from 'react-router-dom'
-import hLogo from '../assets/h-logo.webp'
-import { useRef, useState, useEffect } from 'react'
-import akumasnomi from '../assets/akumanomi2.json'
-import { GitHubIcon, DarkModeIcon } from './Icons'
+'use client'
 
-const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
+import { useRef, useState, useEffect } from 'react'
+import { akumasnomi, slugify, desacentuar } from '../../lib/data'
+import { GitHubIcon, DarkModeIcon } from './Icons'
 
 export default function Header({ darkMode, setDarkMode }) {
     const [searchResult2, setSearchResult2] = useState([]);
-    const location = useLocation();
-    const isHome = location.pathname === '/'
-    const desacentuar = (busca) => busca.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    const pathname = usePathname();
+    const isHome = pathname === '/'
 
     const busca2 = (name) => {
         if (!name.trim()) {
@@ -28,8 +27,8 @@ export default function Header({ darkMode, setDarkMode }) {
 
     return (
         <header className='w-svw h-20 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-[#976f47]/10 px-12 z-10 flex items-center justify-between gap-4 bg-white/80'>
-            <Link to="/">
-                <img src={hLogo} alt="" className='w-50 object-contain' />
+            <Link href="/">
+                <img src="/h-logo.webp" alt="" className='w-50 object-contain' />
             </Link>
 
             {!isHome &&
@@ -52,7 +51,7 @@ export default function Header({ darkMode, setDarkMode }) {
                                 [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'
                     >
                         {searchResult2.map(fruit => (
-                            <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
+                            <Link key={fruit.id} href={`/fruit/${slugify(fruit.name)}`}
                                 className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex flex-col cl:flex-row gap-3 cl:items-center items-start relative'>
 
                                 <div className='flex gap-2 items-center'>
@@ -72,7 +71,7 @@ export default function Header({ darkMode, setDarkMode }) {
                 {/* <button onClick={() => setDarkMode(!darkMode)}>
                     <DarkModeIcon with={55} height={55} className="[&_path]:fill-[#976f47aa] hover:[&_path]:fill-[#976f47]" />
                 </button> */}
-                <Link to="https://github.com/brunofranciscojs/akuma-no-mi-zukan"
+                <Link href="https://github.com/brunofranciscojs/akuma-no-mi-zukan"
                     className='flex flex-col gap-2'
                     onMouseEnter={() => document.querySelector('#github').showPopover()}
                     target='_blank'>

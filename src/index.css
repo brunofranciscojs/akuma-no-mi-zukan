@@ -79,7 +79,7 @@ a div[style]:has([src*="svg"]){
 
 span:has(a){
     &:after{
-        content:url('./assets/images/link-external-small-ltr-progressive.svg');
+        content:url('/images/link-external-small-ltr-progressive.svg');
         font-size: .7rem;
         position: fixed;
         position-anchor:var(--extLnk);

@@ -1,25 +1,40 @@
-import akumasnomi from '../assets/akumanomi2.json'
-import React, { useState, useEffect, useRef } from 'react'
-import { Link } from 'react-router-dom'
+'use client'
 
-const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
+import React, { useState, useEffect, useRef, useTransition } from 'react'
+import Link from 'next/link'
+import { useSearchParams, useRouter, usePathname } from 'next/navigation'
+import { akumasnomi, slugify, desacentuar } from '../../lib/data'
 
 export default function ANMList() {
-    const [pagina, setPagina] = useState(() => {
-        const saved = sessionStorage.getItem('anmlist_page');
-        return saved ? parseInt(saved, 10) : 1;
-    });
+    const searchParams = useSearchParams();
+    const router = useRouter();
+    const pathname = usePathname();
+    const [isPending, startTransition] = useTransition();
+
+    const pagina = parseInt(searchParams.get('page') || '1', 10);
+    const type = searchParams.get('type') || 'all';
+
     const [fruitsPerPage, setFruitsPerPage] = useState(12);
-    const [type, setType] = useState(() => {
-        return sessionStorage.getItem('anmlist_type') || 'all';
-    });
     const [searchResult, setSearchResult] = useState([]);
     const sRef = useRef(null);
 
-    useEffect(() => {
-        sessionStorage.setItem('anmlist_page', pagina);
-        sessionStorage.setItem('anmlist_type', type);
-    }, [pagina, type]);
+    const updateParams = (newParams) => {
+        const params = new URLSearchParams(searchParams.toString());
+        Object.entries(newParams).forEach(([key, value]) => {
+            if (value === null) {
+                params.delete(key);
+            } else {
+                params.set(key, value);
+            }
+        });
+
+        startTransition(() => {
+            router.push(`${pathname}?${params.toString()}`, { scroll: false });
+        });
+    };
+
+    const setPagina = (num) => updateParams({ page: num });
+    const setType = (newType) => updateParams({ type: newType, page: 1 });
 
     const filteredFruits = akumasnomi.filter(fruit => type === 'all' || fruit.type === type);
     const totalPages = Math.ceil(filteredFruits.length / fruitsPerPage);
@@ -33,14 +48,7 @@ export default function ANMList() {
     const firstFruitIndex = lastFruitIndex - fruitsPerPage;
     const currentFruits = filteredFruits.slice(firstFruitIndex, lastFruitIndex);
 
-    const handleTypeChange = (newType) => {
-        setType(newType);
-        setPagina(1);
-    }
-
     let uniqueTypes = [...new Set(akumasnomi.map(p => p.type.split(' ').length > 1 ? p.type.split(' ')[1] : p.type).filter(Boolean))];
-
-    const desacentuar = (busca) => busca.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
 
     const busca = (name) => {
         if (!name.trim()) {
@@ -58,7 +66,7 @@ export default function ANMList() {
 
     return (
         <section className='mx-auto py-44 relative px-8 xl:px-12 w-svw
-                            after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(./assets/pattern.avif)] 
+                            after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
             <div className='grid xl:[grid-template-areas:"types_pagination""search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-4 justify-between mb-6 max-w-360 mx-auto'>
@@ -70,29 +78,29 @@ export default function ANMList() {
 
                     <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
                         style={{ backgroundColor: type === 'all' ? '#976f47' : '', color: type === 'all' ? 'white' : '#976f47' }}
-                        onClick={() => handleTypeChange('all')}>
+                        onClick={() => updateParams({ type: 'all', page: 1 })}>
                         All
                     </button>
                     {uniqueTypes.map((cat, i) => (
                         <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
                             key={i}
                             style={{ backgroundColor: type === cat ? '#976f47' : '', color: type === cat ? 'white' : '#976f47' }}
-                            onClick={() => handleTypeChange(cat)}>
+                            onClick={() => updateParams({ type: cat, page: 1 })}>
                             {cat}
                         </button>
                     ))}
                 </div>
 
-                <ol className='[grid-area:pagination] cl:w-fit w-full mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
+                <ol className={`[grid-area:pagination] cl:w-fit w-full mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth`}>
                     {paginas.map(number => {
                         return (
-                            <input type='button'
+                            <button type='button'
                                 key={number}
-                                value={number}
-                                placeholder={number}
-                                onClick={() => setPagina(number)}
+                                onClick={() => { setPagina(number); console.log(number) }}
                                 className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm text-[#976f47] hover:text-white! hover:bg-[#976f47] cursor-pointer"}
-                            />
+                            >
+                                {number}
+                            </button>
                         )
                     })}
                 </ol>
@@ -116,7 +124,7 @@ export default function ANMList() {
                                     [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'
                     >
                         {searchResult.map(fruit => (
-                            <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
+                            <Link key={fruit.id} href={`/fruit/${slugify(fruit.name)}`}
                                 className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex flex-col cl:flex-row gap-3 cl:items-center items-start relative'>
 
                                 <div className='flex gap-2 items-center'>
@@ -181,7 +189,7 @@ export default function ANMList() {
                     </div>
                 }
                 {currentFruits.map((fruit, i) => (
-                    <Link key={fruit.id} to={`/fruta/${slugify(fruit.name)}`}
+                    <Link key={fruit.id} href={`/fruit/${slugify(fruit.name)}`}
                         style={{ "--color": fruit.localImg.includes('svg') ? '#976f47' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
                         className='xl:w-[31%] md:w-[47%] w-full border border-[#976f4755] hover:bg-white backdrop-blur-sm duration-300 p-5 grow rounded-xl relative transition-colors min-h-50 flex gap-4 items-center no-underline text-inherit group'>
 
@@ -225,16 +233,16 @@ export default function ANMList() {
                     </Link>
                 ))}
             </div>
-            <ol className='pagination [&::-webkit-scrollbar]:w-0 items-center justify-start cl:w-fit w-full mx-auto flex gap-2 overflow-x-scroll mt-12 text-gray-700 [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth'>
+            <ol className={`pagination [&::-webkit-scrollbar]:w-0 items-center justify-start cl:w-fit w-full mx-auto flex gap-2 overflow-x-scroll mt-12 text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth`}>
                 {paginas.map(number => {
                     return (
-                        <input type='button'
+                        <button type='button'
                             key={number}
-                            value={number}
-                            placeholder={number}
                             onClick={() => setPagina(number)}
                             className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm"}
-                        />
+                        >
+                            {number}
+                        </button>
                     )
                 })}
             </ol>
