@@ -14,7 +14,7 @@ const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>1.0</priority>
   </url>
 ${data.map(fruit => `  <url>
-    <loc>${baseUrl}/fruta/${slugify(fruit.name)}</loc>
+    <loc>${baseUrl}/fruit/${slugify(fruit.name)}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>`).join('\n')}
