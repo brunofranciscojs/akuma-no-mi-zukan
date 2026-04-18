@@ -104,9 +104,9 @@ export default async function Page({ params }) {
             '@type': 'CreativeWork',
             'name': 'One Piece'
         },
-        'sameAs': fruta.relatedFruits?.map(name =>
+        'sameAs': Array.isArray(fruta.relatedFruits) ? fruta.relatedFruits.map(name =>
             `https://devilfruitencyclopedia.vercel.app/fruit/${slugify(name)}`
-        ),
+        ) : [],
         'additionalProperty': [
             {
                 '@type': 'PropertyValue',
