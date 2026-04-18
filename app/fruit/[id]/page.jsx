@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Fragment } from 'react'
 import { CopyIcon } from '../../../src/components/Icons'
 import Script from 'next/script'
-
+import Image from 'next/image'
 
 export async function generateStaticParams() {
     return akumasnomi.map((fruit) => ({
@@ -52,7 +52,7 @@ const RelatedFruits = ({ fruta }) => {
                     [&::-webkit-scrollbar]:w-[2px] [&::-webkit-scrollbar-thumb]:bg-[#976f4755] [&::-webkit-scrollbar-thumb]:rounded-full py-4">
                 {fruits.map((fruit) => (
                     <Link href={`/fruit/${slugify(fruit.name)}`} key={fruit.id} className="flex items-center gap-1 w-fit transition-all">
-                        <img src={`/images/fruits/${fruit.localImg}`} alt={fruit.name} className='w-3 h-4 object-contain' />
+                        <Image width={100} height={100} src={`/images/fruits/${fruit.localImg}`} alt={fruit.name} className='w-3 h-4 object-contain' />
                         <p className='w-2/3 leading-none text-nowrap text-md'>{fruit.name}</p>
                     </Link>
                 ))}
@@ -90,68 +90,37 @@ export default async function Page({ params }) {
     }
 
     const jsonLd = {
-        '@context': 'https://schema.org',
-        '@graph': [
+        '@type': 'DefinedTerm',
+        'name': fruta.name,
+        'alternateName': [fruta.engName, fruta.jpName],
+        'description': fruta.desc,
+        'url': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}`,
+        'identifier': fruta.id,
+        'inDefinedTermSet': {
+            '@type': 'DefinedTermSet',
+            'name': 'Akuma no Mi'
+        },
+        'about': {
+            '@type': 'CreativeWork',
+            'name': 'One Piece'
+        },
+        'sameAs': fruta.relatedFruits?.map(name =>
+            `https://devilfruitencyclopedia.vercel.app/fruit/${slugify(name)}`
+        ),
+        'additionalProperty': [
             {
-                '@type': 'WebPage',
-                '@id': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}`,
-                'name': `${fruta.name} | Devil Fruit Encyclopedia`,
-                'description': fruta.excerpt || fruta.desc,
-                'mainEntity': {
-                    '@type': 'Thing',
-                    'name': fruta.name,
-                    'alternateName': [fruta.engName, fruta.jpName],
-                    'description': fruta.desc,
-                    'image': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}/opengraph-image`,
-                    'disambiguatingDescription': fruta.type
-                }
+                '@type': 'PropertyValue',
+                'name': 'Type',
+                'value': fruta.type
             },
             {
-                '@type': 'BreadcrumbList',
-                'itemListElement': [
-                    {
-                        '@type': 'ListItem',
-                        'position': 1,
-                        'name': 'Home',
-                        'item': 'https://devilfruitencyclopedia.vercel.app/'
-                    },
-                    {
-                        '@type': 'ListItem',
-                        'position': 2,
-                        'name': 'Devil Fruits',
-                        'item': 'https://devilfruitencyclopedia.vercel.app/'
-                    },
-                    {
-                        '@type': 'ListItem',
-                        'position': 3,
-                        'name': fruta.name,
-                        'item': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}`
-                    }
-                ]
-            },
-            {
-                '@type': 'FAQPage',
-                'mainEntity': [
-                    {
-                        '@type': 'Question',
-                        'name': `What powers does the ${fruta.name} grant?`,
-                        'acceptedAnswer': {
-                            '@type': 'Answer',
-                            'text': fruta.desc
-                        }
-                    },
-                    {
-                        '@type': 'Question',
-                        'name': `Who is the user of ${fruta.name}?`,
-                        'acceptedAnswer': {
-                            '@type': 'Answer',
-                            'text': `The ${fruta.name} (${fruta.engName}) is used by ${Array.isArray(fruta.owner) ? fruta.owner.join(' and ') : (fruta.owner || 'an unknown person')}.`
-                        }
-                    }
-                ]
+                '@type': 'PropertyValue',
+                'name': 'User',
+                'value': fruta.owner || 'Unknown'
             }
         ]
-    };
+    }
+
 
     return (
         <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center pt-44 pb-28 [&:has(dialog:popover-open)]:grayscale transition-all
@@ -173,7 +142,7 @@ export default async function Page({ params }) {
                         <div className='relative w-72 h-72 flex items-center justify-center'>
                             <div className='absolute inset-0 rounded-full blur-3xl opacity-30 saturate-200'
                                 style={{ backgroundColor: fruta.color + 'aa' || '#976f47' }} />
-                            <img
+                            <Image width={1000} height={1000}
                                 src={`/images/fruits/${fruta.localImg}`}
                                 alt={fruta.name}
                                 draggable='false'
@@ -244,12 +213,12 @@ export default async function Page({ params }) {
                             {Object.values(images).filter((image) => image && !image.includes('unknown')).map((image, index) => (
                                 <Fragment key={index}>
                                     <button popoverTarget={`fruit-img-${index}`} className="bg-transparent border-0 p-0 cursor-pointer">
-                                        <img src={image} alt={fruta.name}
+                                        <Image width={100} height={100} src={image} alt={fruta.name}
                                             className="w-30 h-20 object-contain rounded-lg bg-[#976f47]/20" />
                                     </button>
                                     <div popover="" id={`fruit-img-${index}`}
                                         className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent outline-0 [&:popover-open]:block backdrop:bg-[#976f47]/40">
-                                        <img src={image} alt={fruta.name} className="w-full h-full object-contain rounded-2xl" />
+                                        <Image width={1000} height={1000} src={image} alt={fruta.name} className="w-full h-full object-contain rounded-2xl" />
                                     </div>
                                 </Fragment>
                             ))}

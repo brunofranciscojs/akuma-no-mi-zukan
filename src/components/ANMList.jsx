@@ -65,7 +65,7 @@ export default function ANMList() {
     }
 
     return (
-        <section className='mx-auto py-44 relative px-8 xl:px-12 w-svw
+        <section className='mx-auto pt-44 pb-80 relative px-8 xl:px-12 w-svw
                             after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
@@ -144,7 +144,7 @@ export default function ANMList() {
             </div>
 
 
-            <div className='flex flex-row gap-6 flex-wrap max-w-360 mx-auto'>
+            <div className='flex flex-row gap-6 flex-wrap max-w-360 mx-auto [anchor-name:--section]'>
                 {type === 'Logia' &&
                     <div className='flex flex-col gap-2 text-[#976f47]'>
                         <h2 className="text-[#976f47] font-bold">
@@ -188,6 +188,9 @@ export default function ANMList() {
                         </span>
                     </div>
                 }
+                <h2 className="sr-only">
+                    List of Devil Fruits by type
+                </h2>
                 {currentFruits.map((fruit, i) => (
                     <Link key={fruit.id} href={`/fruit/${slugify(fruit.name)}`}
                         style={{ "--color": fruit.localImg.includes('svg') ? '#976f47' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
@@ -233,23 +236,21 @@ export default function ANMList() {
                     </Link>
                 ))}
             </div>
-            <ol className={`pagination [&::-webkit-scrollbar]:w-0 items-center justify-start cl:w-fit w-full mx-auto flex gap-2 overflow-x-scroll mt-12 text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth`}>
+
+            <ol className={`cl:w-fit w-full mx-auto pagination mt-12 [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth`}>
                 {paginas.map(number => {
                     return (
                         <button type='button'
                             key={number}
-                            onClick={() => setPagina(number)}
-                            className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm"}
+                            onClick={() => { setPagina(number); console.log(number) }}
+                            className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm text-[#976f47] hover:text-white! hover:bg-[#976f47] cursor-pointer"}
                         >
                             {number}
                         </button>
                     )
                 })}
             </ol>
-            <span className='text-center text-sm text-gray-500 absolute bottom-2 left-1/2 w-full px-12 -translate-x-1/2 block'>
-                This list includes only fruits showed in the manga, anime and movies (including non-canon) <br />
-                found something wrong, or want to contribute? <b><a href="https://github.com/brunofranciscojs/akuma-no-mi-zukan/issues/new" target='_blank'>click here</a></b>
-            </span>
+
         </section>
     )
 }

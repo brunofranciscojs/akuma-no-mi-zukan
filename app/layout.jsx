@@ -23,8 +23,30 @@ export const metadata = {
 import ClientLayout from './ClientLayout'
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "url": "https://devilfruitencyclopedia.vercel.app/fruit/gomu-gomu-no-mi"
+      }
+    ],
+    "name": "Akuma no Mi Encyclopedia",
+    "url": "https://devilfruitencyclopedia.vercel.app",
+    "description": "Complete database of Devil Fruits from One Piece, including abilities, users and types.",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://devilfruitencyclopedia.vercel.app/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
   return (
     <html lang="en" className={outfit.className}>
+      <head>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      </head>
       <body>
         <ClientLayout>
           {children}
