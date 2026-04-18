@@ -1,5 +1,9 @@
 import { ImageResponse } from 'next/og'
 import { getFruitBySlug } from '../../../lib/data'
+import fs from 'fs'
+import path from 'path'
+
+export const runtime = 'nodejs'
 
 export const alt = 'Akuma no Mi Details'
 export const size = {
@@ -22,10 +26,6 @@ export default async function Image({ params }) {
     )
   }
 
-  // Determine site origin for absolute URLs
-  const origin = process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : 'http://localhost:3000';
 
   let fruitImgData = null;
   let patternImgData = null;
@@ -37,20 +37,24 @@ export default async function Image({ params }) {
     if (fruitImgName.endsWith('.webp')) {
       fruitImgName = fruitImgName.replace('.webp', '.png');
     }
-    
-    // SVG is supported by Satori, so we keep it if it is SVG.
-    const fruitRes = await fetch(`${origin}/images/fruits/${fruitImgName}`, { cache: 'no-store' });
-    if (fruitRes.ok) {
-      fruitImgData = await fruitRes.arrayBuffer();
+
+    // Load from filesystem
+    const fruitPath = path.join(process.cwd(), 'public', 'images', 'fruits', fruitImgName);
+    if (fs.existsSync(fruitPath)) {
+      const buffer = fs.readFileSync(fruitPath);
+      fruitImgData = `data:image/png;base64,${buffer.toString('base64')}`;
+    } else {
+      console.warn(`[OG] Fruit image not found: ${fruitPath}`);
     }
 
     // 2. Load Pattern
-    const patternRes = await fetch(`${origin}/pattern.png`, { cache: 'no-store' });
-    if (patternRes.ok) {
-      patternImgData = await patternRes.arrayBuffer();
+    const patternPath = path.join(process.cwd(), 'public', 'pattern.png');
+    if (fs.existsSync(patternPath)) {
+      const buffer = fs.readFileSync(patternPath);
+      patternImgData = `data:image/png;base64,${buffer.toString('base64')}`;
     }
   } catch (error) {
-    console.error('OG Image Fetch Error:', error);
+    console.error('OG Image Read Error:', error);
   }
 
   return new ImageResponse(
@@ -85,11 +89,11 @@ export default async function Image({ params }) {
               opacity: 0.05,
             }}
           >
-            {Array.from({ length: 45 }).map((_, i) => (
+            {Array.from({ length: 12 }).map((_, i) => (
               <img
                 key={i}
                 src={patternImgData}
-                style={{ width: '150px', height: '150px', objectFit: 'cover' }}
+                style={{ width: '300px', height: '300px', objectFit: 'cover' }}
               />
             ))}
           </div>
@@ -102,7 +106,6 @@ export default async function Image({ params }) {
             alignItems: 'center',
             justifyContent: 'center',
             position: 'relative',
-            zIndex: 10,
           }}
         >
           {fruitImgData && (

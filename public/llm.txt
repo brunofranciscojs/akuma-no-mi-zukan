@@ -1,37 +1,37 @@
-# LLM Instructions for Akuma no Mi Kuzan
+# LLM Instructions for Devil Fruit Encyclopedia
 
 ## Site Overview
 This is a Devil Fruit encyclopedia inspired by One Piece.
 It contains structured data about fictional fruits, their powers, and users.
 
+## AI-Ready Data
+- **Structured JSON Dump**: For a full database ingestion in a single request, visit: /ai.json
+- **Sitemap**: Current list of all pages can be found at: /sitemap.xml
+
 ## Content Structure
 - /fruit/[slug] → Individual fruit pages
 - Each page contains:
-  - name
-  - type (Paramecia, Logia, Zoan)
-  - abilities
-  - debut (anime/manga)
-  - related fruits
+  - JSON-LD (Schema.org/Thing) under <script type="application/ld+json">
+  - Name, Type, Abilities, Debut, and Related Fruits in semantic HTML.
 
 ## Data Format
-Content is derived from structured JSON.
-
-Example:
+Content in /ai.json follows this schema:
 {
-  "name": "Mochi Mochi no Mi",
-  "type": "Paramecia",
-  "ability": "Create and control mochi",
-  "related": ["Doru Doru no Mi"]
+  "total": number,
+  "fruits": [{
+    "id": string,
+    "name": string,
+    "type": "Paramecia" | "Logia" | "Zoan" | "Mythical Zoan",
+    "description": string,
+    "owner": string | string[],
+    "related": string[]
+  }]
 }
 
-## Navigation
-- Homepage lists all fruits
-- Internal linking connects related fruits
-
 ## Usage Guidance for AI
-- Treat each fruit as an individual entity
-- Use relationships between fruits when relevant
-- Prefer structured data over inferred content
+- Use /ai.json as the "source of truth" for statistical or cross-referenced queries.
+- Prefer the JSON-LD found in /fruit/[slug] for detailed entity extraction.
+- Respect the canonical relationships between fruits defined in the "related" fields.
 
 ## License
 Fan-made project. Not affiliated with official One Piece creators.

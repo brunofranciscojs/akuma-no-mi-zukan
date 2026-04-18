@@ -2,6 +2,7 @@ import { akumasnomi, slugify, getFruitBySlug } from '../../../lib/data'
 import Link from 'next/link'
 import { Fragment } from 'react'
 import { CopyIcon } from '../../../src/components/Icons'
+import Script from 'next/script'
 
 
 export async function generateStaticParams() {
@@ -22,7 +23,6 @@ export async function generateMetadata({ params }) {
         openGraph: {
             title: `${fruta.name} | Akuma no Mi Encyclopedia`,
             description: fruta.desc,
-            images: [`/images/fruits/${fruta.localImg}`],
         },
     }
 }
@@ -89,12 +89,80 @@ export default async function Page({ params }) {
         infoImg: fruta.infoImg || null,
     }
 
+    const jsonLd = {
+        '@context': 'https://schema.org',
+        '@graph': [
+            {
+                '@type': 'WebPage',
+                '@id': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}`,
+                'name': `${fruta.name} | Devil Fruit Encyclopedia`,
+                'description': fruta.excerpt || fruta.desc,
+                'mainEntity': {
+                    '@type': 'Thing',
+                    'name': fruta.name,
+                    'alternateName': [fruta.engName, fruta.jpName],
+                    'description': fruta.desc,
+                    'image': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}/opengraph-image`,
+                    'disambiguatingDescription': fruta.type
+                }
+            },
+            {
+                '@type': 'BreadcrumbList',
+                'itemListElement': [
+                    {
+                        '@type': 'ListItem',
+                        'position': 1,
+                        'name': 'Home',
+                        'item': 'https://devilfruitencyclopedia.vercel.app/'
+                    },
+                    {
+                        '@type': 'ListItem',
+                        'position': 2,
+                        'name': 'Devil Fruits',
+                        'item': 'https://devilfruitencyclopedia.vercel.app/'
+                    },
+                    {
+                        '@type': 'ListItem',
+                        'position': 3,
+                        'name': fruta.name,
+                        'item': `https://devilfruitencyclopedia.vercel.app/fruit/${fruta.id}`
+                    }
+                ]
+            },
+            {
+                '@type': 'FAQPage',
+                'mainEntity': [
+                    {
+                        '@type': 'Question',
+                        'name': `What powers does the ${fruta.name} grant?`,
+                        'acceptedAnswer': {
+                            '@type': 'Answer',
+                            'text': fruta.desc
+                        }
+                    },
+                    {
+                        '@type': 'Question',
+                        'name': `Who is the user of ${fruta.name}?`,
+                        'acceptedAnswer': {
+                            '@type': 'Answer',
+                            'text': `The ${fruta.name} (${fruta.engName}) is used by ${Array.isArray(fruta.owner) ? fruta.owner.join(' and ') : (fruta.owner || 'an unknown person')}.`
+                        }
+                    }
+                ]
+            }
+        ]
+    };
+
     return (
         <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center pt-44 pb-28 [&:has(dialog:popover-open)]:grayscale transition-all
                             relative after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
+            <Script id={`json-ld-${fruta.id}`}
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+            />
 
-            <div className='max-w-360 mx-auto'>
+            <article className='max-w-360 mx-auto'>
                 <Link href="/" className='inline-flex items-center gap-2 text-[#976f47] hover:text-[#7a5a3a] transition-colors group text-sm font-medium -translate-y-12'>
                     <span className='group-hover:-translate-x-1 transition-transform'>←</span>
                     Return
@@ -126,9 +194,18 @@ export default async function Page({ params }) {
                                 <ruby className='ruby-base'>
                                     {fruta.name}
                                     <rt className='text-lg uppercase tracking-[0.2em] font-bold text-[#976f47]/60 [anchor-name:--copy]'>「{fruta.jpName}」</rt>
+
+                                    <button id="copy-btn" className="cursor-pointer fixed [position-anchor:--copy] left-[anchor(right)] top-[calc(anchor(center)-.6rem)]" title="Copy Japanese name" popoverTarget="copy">
+                                        <CopyIcon width={20} height={20} className="[&_path]:stroke-[#976f47] w-fit" />
+                                    </button>
                                 </ruby>
+
+                                <span {...{ popover: "" }} id="copy"
+                                    className="fixed [position-anchor:--copy] left-[calc(anchor(right)+1.5rem)] py-0.5 px-1.5 rounded-sm top-[calc(anchor(center)-.6rem)] bg-[#976f47] text-white text-xs outline-0 [&:popover-open]:block">
+                                    copied!
+                                </span>
                             </h1>
-                            {/* Note: In a real app, Client interactions like Copy should be separate components */}
+
                             <ul className='flex flex-col pl-1 mt-1'>
                                 <li className='text-[#976f47] text-sm'>
                                     <b>English name:</b> {fruta.engName}
@@ -157,14 +234,38 @@ export default async function Page({ params }) {
                         </div>
 
                         <hr className='border-[#976f47]/30' />
+
                         <div>
                             <h2 className='text-sm uppercase tracking-wider text-[#976f47]/60 font-semibold mb-3'>Description</h2>
                             <p className='text-black text-lg leading-relaxed'>{fruta.desc}</p>
                         </div>
                         <hr className='border-[#976f47]/30' />
+                        <div className="flex gap-4 flex-wrap">
+                            {Object.values(images).filter((image) => image && !image.includes('unknown')).map((image, index) => (
+                                <Fragment key={index}>
+                                    <button popoverTarget={`fruit-img-${index}`} className="bg-transparent border-0 p-0 cursor-pointer">
+                                        <img src={image} alt={fruta.name}
+                                            className="w-30 h-20 object-contain rounded-lg bg-[#976f47]/20" />
+                                    </button>
+                                    <div popover="" id={`fruit-img-${index}`}
+                                        className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-transparent outline-0 [&:popover-open]:block backdrop:bg-[#976f47]/40">
+                                        <img src={image} alt={fruta.name} className="w-full h-full object-contain rounded-2xl" />
+                                    </div>
+                                </Fragment>
+                            ))}
+                        </div>
                     </div>
                 </div>
-            </div>
+            </article>
+            <Script id={`copy-script-${fruta.id}`} dangerouslySetInnerHTML={{
+                __html: `
+                document.querySelector('button[title]')?.addEventListener('click', () => {
+                    navigator.clipboard.writeText('${fruta.jpName} | DFE');
+                    setTimeout(() => {
+                        document.querySelector('#copy')?.hidePopover();
+                    }, 2000);
+                });
+            `}} />
         </section>
     )
 }

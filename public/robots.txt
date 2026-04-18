@@ -1,4 +1,13 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://akumanomikuzan.vercel.app/sitemap.xml
+# Specifically inviting AI crawlers to the structured data
+User-agent: GPTBot
+Allow: /ai.json
+Allow: /llm.txt
+
+User-agent: Claude-Web
+Allow: /ai.json
+Allow: /llm.txt
+
+Sitemap: https://devilfruitencyclopedia.vercel.app/sitemap.xml
