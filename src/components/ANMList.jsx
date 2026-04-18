@@ -74,30 +74,30 @@ export default function ANMList() {
                 <div className='flex flex-row gap-2 [grid-area:types] [anchor-name:--types] h-6
                     after:content-["Types:"] justify-center xl:justify-start
                     after:absolute after:[position-anchor:--types] after:top-[calc(anchor(top)-1.4rem)] 
-                    after:left-[anchor(center)] xl:after:left-[anchor(left)] after:text-[#976f47] after:text-sm'>
+                    after:left-[anchor(center)] xl:after:left-[anchor(left)] after:text-(--primary) after:text-sm'>
 
-                    <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
-                        style={{ backgroundColor: type === 'all' ? '#976f47' : '', color: type === 'all' ? 'white' : '#976f47' }}
+                    <button className='hover:bg-(--primary) rounded-full px-4 text-(--primary) hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-(--primary) outline-1'
+                        style={{ backgroundColor: type === 'all' ? 'var(--primary)' : '', color: type === 'all' ? 'white' : 'var(--primary)' }}
                         onClick={() => updateParams({ type: 'all', page: 1 })}>
                         All
                     </button>
                     {uniqueTypes.map((cat, i) => (
-                        <button className='hover:bg-[#976f47] rounded-full px-4 text-[#976f47] hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-[#976f47] outline-1'
+                        <button className='hover:bg-(--primary) rounded-full px-4 text-(--primary) hover:text-white! duration-200! transition-all leading-0! cursor-pointer hover:opacity-100! outline-(--primary) outline-1'
                             key={i}
-                            style={{ backgroundColor: type === cat ? '#976f47' : '', color: type === cat ? 'white' : '#976f47' }}
+                            style={{ backgroundColor: type === cat ? 'var(--primary)' : '', color: type === cat ? 'white' : 'var(--primary)' }}
                             onClick={() => updateParams({ type: cat, page: 1 })}>
                             {cat}
                         </button>
                     ))}
                 </div>
 
-                <ol className={`[grid-area:pagination] cl:w-fit w-full mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth`}>
+                <ol className={`[grid-area:pagination] cl:w-fit w-full mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-(--text-primary) transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-(--primary-dark)  [&:has(.active)_.active]:text-white scroll-smooth`}>
                     {paginas.map(number => {
                         return (
                             <button type='button'
                                 key={number}
                                 onClick={() => { setPagina(number); console.log(number) }}
-                                className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm text-[#976f47] hover:text-white! hover:bg-[#976f47] cursor-pointer"}
+                                className={pagina === number ? "active px-2 rounded-sm bg-(--primary)! text-white!" : "px-2 rounded-sm text-(--primary) hover:text-white! dark:hover:bg-(--primary-dark) hover:bg-(--primary)! cursor-pointer"}
                             >
                                 {number}
                             </button>
@@ -111,46 +111,43 @@ export default function ANMList() {
                         popoverTarget='search-results'
                         onClick={() => { document.querySelector('#search-result').showPopover(); sRef.current?.scrollIntoView({ behavior: 'smooth' }) }}
                         onInput={(e) => busca(e.target.value)}
-                        className='scroll-mt-24 w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-[#976f47] border [anchor-name:--search] outline-0'
-                    />
+                        className='scroll-mt-24 w-full px-7 py-4 backdrop-blur-lg rounded-2xl border-(--primary) border [anchor-name:--search] outline-0 bg-transparent text-(--text-primary) placeholder:text-(--text-muted)' />
 
                     <div {...{ popover: '' }} id='search-result'
-                        className='[&:popover-open]:flex flex-col gap-3 justify-start [&_button]:w-fit bg-[#fdf9eeaa] absolute shadow-xl
+                        className='[&:popover-open]:flex flex-col gap-3 justify-start [&_button]:w-fit bg-(--header-bg) absolute shadow-xl
                                     [position-anchor:--search] 
                                     w-[anchor-size(width)] 
                                     top-[calc(anchor(top)+3.7rem)] 
                                     left-[anchor(left)] 
                                     z-40 backdrop-blur-xl rounded-b-2xl max-h-100 overflow-y-scroll [&_a:nth-child(1)]:pt-6
-                                    [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-[#976f47] [&::-webkit-scrollbar-thumb]:rounded-full'
+                                    [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-thumb]:bg-(--primary)  [&::-webkit-scrollbar-thumb]:rounded-full'
                     >
                         {searchResult.map(fruit => (
                             <Link key={fruit.id} href={`/fruit/${slugify(fruit.name)}`}
-                                className='px-6 py-2 hover:text-[#976f47] hover:bg-[#976f47]/5 cursor-pointer transition-colors flex flex-col cl:flex-row gap-3 cl:items-center items-start relative'>
+                                className='px-6 py-2 hover:text-(--primary) hover:bg-(--primary)/5 cursor-pointer transition-colors flex flex-col cl:flex-row gap-3 cl:items-center items-start relative text-(--text-primary)'>
 
                                 <div className='flex gap-2 items-center'>
                                     <img src={`/images/fruits/${fruit.localImg}`} className='w-6 h-6 object-contain -translate-y-1' />
                                     <span className='flex flex-col text-sm' style={{ anchorName: `--${fruit.id}` }}>
                                         <sup className='opacity-60 w-fit'>{fruit.engName}  •</sup>
                                         {fruit.name}
-                                    </span> <span className='hidden cl:block'>• {fruit.jpName}</span>
+                                    </span> <span className='hidden cl:block opacity-70'>• {fruit.jpName}</span>
                                 </div>
-                                <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2 hidden ssm:block fixed cl:relative left-[calc(anchor(right)+1rem)] top-[calc(anchor(top))]' style={{ positionAnchor: `--${fruit.id}` }}>{fruit.type}</span>
+                                <span className='text-white text-[.7rem] w-fit bg-(--primary)  rounded-full px-2 hidden ssm:block fixed cl:relative left-[calc(anchor(right)+1rem)] top-[calc(anchor(top))]' style={{ positionAnchor: `--${fruit.id}` }}>{fruit.type}</span>
                             </Link>
                         ))}
                     </div>
-
                 </div>
-
             </div>
 
 
             <div className='flex flex-row gap-6 flex-wrap max-w-360 mx-auto [anchor-name:--section]'>
                 {type === 'Logia' &&
-                    <div className='flex flex-col gap-2 text-[#976f47]'>
-                        <h2 className="text-[#976f47] font-bold">
+                    <div className='flex flex-col gap-2 text-(--text-primary)'>
+                        <h2 className="text-(--primary) font-bold">
                             Logia •「自然系: ロギア」
                         </h2>
-                        <span>
+                        <span className='opacity-80'>
                             Is an Ancient Greek word originating from religious scholarship and roughly translates as "sayings, utterances, oracles"
                             Logia is the rarest of the 3 Devil Fruit types. Users are granted the power to transform their body's composition into a natural element, as well as create and control it.
                             If a Logia user transforms part of their body, any effect of the attack on the user's elemental form is superficial and the body can be reformed with no issue.
@@ -160,9 +157,9 @@ export default function ANMList() {
                     </div>
                 }
                 {type === 'Paramecia' &&
-                    <div className='flex flex-col gap-2 text-[#976f47]'>
-                        <h2 className="text-[#976f47] font-bold">Paramecia • 超人系: パラミシア」</h2>
-                        <span>
+                    <div className='flex flex-col gap-2 text-(--text-primary)'>
+                        <h2 className="text-(--primary) font-bold">Paramecia • 超人系: パラミシア」</h2>
+                        <span className='opacity-80'>
                             The kanji for "Paramecia" include the term chōjin (超人?), meaning "superhuman".
                             Paramecia being the most common and diverse of the 3. Fruits of this type allows the consumer to achieve one of a large variety of abilities.
                             Just about every Paramecia ability can be placed in 4 categories: altering the user's body(Buki Buki no mi) Transforming their body or certain parts, into organic and inorganic material,
@@ -173,9 +170,9 @@ export default function ANMList() {
                     </div>
                 }
                 {type === 'Zoan' &&
-                    <div className='flex flex-col gap-2 text-[#976f47]'>
-                        <h2 className="text-[#976f47] font-bold">Zoan •「動物系: ゾオン」</h2>
-                        <span>
+                    <div className='flex flex-col gap-2 text-(--text-primary)'>
+                        <h2 className="text-(--primary) font-bold">Zoan •「動物系: ゾオン」</h2>
+                        <span className='opacity-80'>
                             Comes from the Ancient Greek zôia, which means "animal".
                             Zoan Devil Fruits grant the ability to transform into a certain animal species.
                             Zoans are said to have "a will of their own," even before consumption.
@@ -193,17 +190,17 @@ export default function ANMList() {
                 </h2>
                 {currentFruits.map((fruit, i) => (
                     <Link key={fruit.id} href={`/fruit/${slugify(fruit.name)}`}
-                        style={{ "--color": fruit.localImg.includes('svg') ? '#976f47' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
-                        className='xl:w-[31%] md:w-[47%] w-full border border-[#976f4755] hover:bg-white backdrop-blur-sm duration-300 p-5 grow rounded-xl relative transition-colors min-h-50 flex gap-4 items-center no-underline text-inherit group'>
+                        style={{ "--color": fruit.localImg.includes('svg') ? 'var(--primary)' : fruit.color, "--mix": `color-mix(in srgb, var(--color), white 50%)` }}
+                        className='xl:w-[31%] md:w-[47%] w-full border border-(--primary)/30 hover:bg-(--bg-secondary)/50 backdrop-blur-sm duration-300 p-5 grow rounded-xl relative transition-colors min-h-50 flex gap-4 items-center no-underline text-inherit group'>
 
                         <div className='w-1/3 h-24 shrink-0' style={{ anchorName: `--svg-${i}`, "--size": `--svg-${i}`, "--mask": `url(/images/fruits/${fruit.localImg})` }}>
                             <img src={`/images/fruits/${fruit.localImg}`}
-                                draggable='false' alt={fruit.name} className='w-full h-full object-contain select-none filter-[drop-shadow(0_0_40px_var(--mix))]'
+                                draggable='false' alt={fruit.name + " | Devil Fruit Encyclopedia"} className='w-full h-full object-contain select-none dark:filter-none filter-[drop-shadow(0_0_40px_var(--mix))]'
                             />
                         </div>
 
                         <div className='flex flex-col pr-3'>
-                            <h3 className='font-extrabold text-xl font-["Calibri"] text-[#976f47] leading-none text-balance'>
+                            <h3 className='font-extrabold text-xl font-["Calibri"] text-(--primary) leading-none text-balance'>
                                 <ruby className='ruby-base'>
                                     {fruit.name.split(",").map((part, i) => (
                                         <React.Fragment key={i}>
@@ -211,15 +208,15 @@ export default function ANMList() {
                                             {i === 0 && <br />}
                                         </React.Fragment>
                                     ))}
-                                    <rt className='text-sm uppercase font-normal translate-y-1 -translate-x-2'>
+                                    <rt className='text-sm uppercase font-normal translate-y-1 -translate-x-2 opacity-80'>
                                         「{fruit.jpName}」
                                     </rt>
                                 </ruby>
                             </h3>
-                            <span className='text-xs leading-none text-[#976f47]'>EN: {fruit.engName}</span>
-                            <p className='text-md text-gray-900 text-balance mt-2 leading-none'>{fruit.excerpt}</p>
+                            <span className='text-xs leading-none text-(--primary)/70'>EN: {fruit.engName}</span>
+                            <p className='text-md text-(--text-primary) text-balance mt-2 leading-none'>{fruit.excerpt}</p>
 
-                            <span className='text-[.6rem] mt-1 uppercase text-[#976f47] w-fit [&_span]:font-bold' style={{ anchorName: `--link-${i}`, "--extLnk": `--link-${i}` }}>
+                            <span className='text-[.6rem] mt-1 uppercase text-(--primary) w-fit [&_span]:font-bold' style={{ anchorName: `--link-${i}`, "--extLnk": `--link-${i}` }}>
                                 User(s): {Array.isArray(fruit.owner) ?
                                     fruit.owner.map((o, i) => (
                                         <React.Fragment key={i}>
@@ -232,18 +229,18 @@ export default function ANMList() {
                             </span>
 
                         </div>
-                        {type === 'all' && <span className='text-white text-[.7rem] w-fit bg-[#976f47] rounded-full px-2 absolute top-3 right-4'>{fruit.type}</span>}
+                        {type === 'all' && <span className='text-white text-[.7rem] w-fit bg-(--primary) dark:bg-(--primary-dark) rounded-full px-2 absolute top-3 right-4'>{fruit.type}</span>}
                     </Link>
                 ))}
             </div>
 
-            <ol className={`cl:w-fit w-full mx-auto pagination mt-12 [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-[#976f47] [&:has(.active)_.active]:text-white scroll-smooth`}>
+            <ol className={`cl:w-fit w-full mx-auto pagination mt-12 [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-(--primary-dark) [&:has(.active)_.active]:text-white scroll-smooth`}>
                 {paginas.map(number => {
                     return (
                         <button type='button'
                             key={number}
                             onClick={() => { setPagina(number); console.log(number) }}
-                            className={pagina === number ? "active px-2 rounded-sm" : "px-2 rounded-sm text-[#976f47] hover:text-white! hover:bg-[#976f47] cursor-pointer"}
+                            className={pagina === number ? "active px-2 rounded-sm bg-(--primary)!" : "px-2 rounded-sm text-(--primary) hover:text-white! hover:bg-(--primary) cursor-pointer"}
                         >
                             {number}
                         </button>
