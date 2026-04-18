@@ -41,8 +41,10 @@ export default async function Image({ params }) {
     // Load from filesystem
     const fruitPath = path.join(process.cwd(), 'public', 'images', 'fruits', fruitImgName);
     if (fs.existsSync(fruitPath)) {
-      const buffer = fs.readFileSync(fruitPath);
-      fruitImgData = `data:image/png;base64,${buffer.toString('base64')}`;
+      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://devilfruitencyclopedia.vercel.app';
+      const res = await fetch(`${baseUrl}/images/fruits/${fruitImgName}`);
+      const buffer = await res.arrayBuffer();
+      fruitImgData = `data:image/png;base64,${Buffer.from(buffer).toString('base64')}`;
     } else {
       console.warn(`[OG] Fruit image not found: ${fruitPath}`);
     }

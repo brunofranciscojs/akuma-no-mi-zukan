@@ -28,7 +28,6 @@ export default function Header({ darkMode, setDarkMode }) {
     return (
         <header className='w-svw h-20 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-[#976f47]/10 px-12 z-10 flex items-center justify-between gap-4 bg-white/80'>
             <Link href="/">
-                <h1 className='sr-only'>Devil Fruit Encyclopedia</h1>
                 <img src="/h-logo.webp" alt="Devil Fruit Encyclopedia" className='w-50 object-contain' />
             </Link>
 

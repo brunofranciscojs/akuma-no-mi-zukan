@@ -6,7 +6,7 @@ import H1Seo from '../src/components/H1Seo'
 export default function Home() {
   return (
     <>
-      <div className='w-full max-w-360 pb-12 flex flex-col gap-2 absolute [position-anchor:--section] top-[calc(anchor(bottom)+15rem)] left-[calc(anchor(left)-2rem)] z-50 px-12'>
+      <div className='animate-[appear_linear_forwards] opacity-0 [animation-timeline:view()] [animation-range:entry_-2rem] w-full max-w-360 pb-12 flex flex-col gap-2 absolute [position-anchor:--section] top-[calc(anchor(bottom)+15rem)] left-[calc(anchor(left)-2rem)] z-50 px-12'>
         <h1 className="text-3xl font-bold text-[#976f47] -mb-5 [anchor-name:--book]">
           Devil Fruit Encyclopedia | 悪魔の実図鑑, Akuma no Mi Zukan
         </h1>

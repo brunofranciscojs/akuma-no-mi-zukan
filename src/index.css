@@ -89,6 +89,11 @@ span:has(a){
     }
 }
 
+@keyframes appear{
+    to{
+        opacity: 1;
+    }
+}
 
 @keyframes logo {
     to{
