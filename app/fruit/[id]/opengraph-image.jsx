@@ -1,7 +1,5 @@
 import { ImageResponse } from 'next/og'
 import { getFruitBySlug } from '../../../lib/data'
-import fs from 'fs'
-import path from 'path'
 
 export const runtime = 'nodejs'
 
@@ -12,6 +10,19 @@ export const size = {
 }
 
 export const contentType = 'image/png'
+
+async function loadImageAsBase64(url) {
+  try {
+    const res = await fetch(url)
+    if (!res.ok) return null
+    const buffer = await res.arrayBuffer()
+    const base64 = Buffer.from(buffer).toString('base64')
+    const mime = res.headers.get('content-type') || 'image/png'
+    return `data:${mime};base64,${base64}`
+  } catch {
+    return null
+  }
+}
 
 export default async function Image({ params }) {
   const { id } = await params
@@ -26,38 +37,19 @@ export default async function Image({ params }) {
     )
   }
 
+  const baseUrl =
+    process.env.NEXT_PUBLIC_BASE_URL ||
+    (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000')
 
-  let fruitImgData = null;
-  let patternImgData = null;
-
-  try {
-    // 1. Resolve Fruit Image
-    // WebP is not supported by Satori in this environment, so we force PNG.
-    let fruitImgName = fruta.localImg;
-    if (fruitImgName.endsWith('.webp')) {
-      fruitImgName = fruitImgName.replace('.webp', '.png');
-    }
-
-    // Load from filesystem
-    const fruitPath = path.join(process.cwd(), 'public', 'images', 'fruits', fruitImgName);
-    if (fs.existsSync(fruitPath)) {
-      const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://devilfruitencyclopedia.vercel.app';
-      const res = await fetch(`${baseUrl}/images/fruits/${fruitImgName}`);
-      const buffer = await res.arrayBuffer();
-      fruitImgData = `data:image/png;base64,${Buffer.from(buffer).toString('base64')}`;
-    } else {
-      console.warn(`[OG] Fruit image not found: ${fruitPath}`);
-    }
-
-    // 2. Load Pattern
-    const patternPath = path.join(process.cwd(), 'public', 'pattern.png');
-    if (fs.existsSync(patternPath)) {
-      const buffer = fs.readFileSync(patternPath);
-      patternImgData = `data:image/png;base64,${buffer.toString('base64')}`;
-    }
-  } catch (error) {
-    console.error('OG Image Read Error:', error);
+  let fruitImgName = fruta.localImg
+  if (fruitImgName.endsWith('.webp')) {
+    fruitImgName = fruitImgName.replace('.webp', '.png')
   }
+
+  const [fruitImgData, patternImgData] = await Promise.all([
+    loadImageAsBase64(`${baseUrl}/images/fruits/${fruitImgName}`),
+    loadImageAsBase64(`${baseUrl}/pattern.png`),
+  ])
 
   return new ImageResponse(
     (
@@ -78,7 +70,6 @@ export default async function Image({ params }) {
           AKUMA NO MI ENCYCLOPEDIA
         </div>
 
-        {/* Background Pattern Overlay */}
         {patternImgData && (
           <div
             style={{
@@ -149,7 +140,7 @@ export default async function Image({ params }) {
                 display: 'flex',
                 textTransform: 'uppercase',
                 letterSpacing: '4px',
-                fontFamily: 'serif'
+                fontFamily: 'serif',
               }}
             >
               {fruta.name}
