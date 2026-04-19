@@ -34,7 +34,13 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
-
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+    ],
+    apple: '/favicon.svg',
+  },
 }
 
 import ClientLayout from './ClientLayout'

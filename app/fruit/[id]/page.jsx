@@ -21,9 +21,13 @@ export async function generateMetadata({ params }) {
     return {
         title: `${fruta.name} | Akuma no Mi Encyclopedia`,
         description: fruta.desc,
+        icons: {
+            icon: `/images/fruits/${fruta.localImg}`,
+        },
         openGraph: {
             title: `${fruta.name} | Akuma no Mi Encyclopedia`,
             description: fruta.desc,
+            images: [`/images/fruits/${fruta.localImg}`],
         },
     }
 }
