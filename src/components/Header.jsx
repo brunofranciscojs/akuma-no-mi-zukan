@@ -2,9 +2,9 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useRef, useState, useEffect } from 'react'
+import { useState } from 'react'
 import { akumasnomi, slugify, desacentuar } from '../../lib/data'
-import { GitHubIcon, DarkModeIcon } from './Icons'
+import { DarkModeIcon } from './Icons'
 
 export default function Header({ darkMode, setDarkMode }) {
     const [searchResult2, setSearchResult2] = useState([]);

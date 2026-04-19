@@ -1,11 +1,27 @@
 import { Outfit } from 'next/font/google'
 import '../src/index.css'
+import { JsonLd } from '../src/components/JsonLd'
 
 const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap',
 })
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Devil Fruit Encyclopedia",
+  "url": "https://devilfruitencyclopedia.vercel.app",
+  "description": "Complete database of Devil Fruits from One Piece.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://devilfruitencyclopedia.vercel.app/?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
 export const metadata = {
   metadataBase: new URL('https://devilfruitencyclopedia.vercel.app'),
   title: 'Devil Fruit Encyclopedia (Akuma no Mi Encyclopedia)',
@@ -18,37 +34,17 @@ export const metadata = {
     locale: 'en_US',
     type: 'website',
   },
+
 }
 
 import ClientLayout from './ClientLayout'
 
 export default function RootLayout({ children }) {
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "url": "https://devilfruitencyclopedia.vercel.app/fruit/gomu-gomu-no-mi"
-      }
-    ],
-    "name": "Akuma no Mi Encyclopedia",
-    "url": "https://devilfruitencyclopedia.vercel.app",
-    "description": "Complete database of Devil Fruits from One Piece, including abilities, users and types.",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://devilfruitencyclopedia.vercel.app/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  }
   return (
     <html lang="en" className={outfit.className}>
-      <head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
               (function() {
                 try {
                   var theme = localStorage.getItem('theme');
@@ -58,10 +54,10 @@ export default function RootLayout({ children }) {
                 } catch (e) {}
               })();
             `,
-          }}
-        />
-      </head>
+        }}
+      />
       <body>
+        <JsonLd data={jsonLd} />
         <ClientLayout>
           {children}
         </ClientLayout>

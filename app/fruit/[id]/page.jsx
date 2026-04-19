@@ -4,6 +4,7 @@ import { Fragment } from 'react'
 import { CopyIcon } from '../../../src/components/Icons'
 import Script from 'next/script'
 import Image from 'next/image'
+import { JsonLd } from '../../../src/components/JsonLd'
 
 export async function generateStaticParams() {
     return akumasnomi.map((fruit) => ({
@@ -92,6 +93,7 @@ export default async function Page({ params }) {
     }
 
     const jsonLd = {
+        '@context': 'https://schema.org',
         '@type': 'DefinedTerm',
         'name': fruta.name,
         'alternateName': [fruta.engName, fruta.jpName],
@@ -128,10 +130,8 @@ export default async function Page({ params }) {
         <section className='min-h-dvh w-svw px-8 animate-[fruitEnter_1s_ease-out] place-content-center pt-44 pb-28 [&:has(dialog:popover-open)]:grayscale transition-all
                             relative after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
-            <Script id={`json-ld-${fruta.id}`}
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
+
+            <JsonLd data={jsonLd} />
 
             <article className='max-w-360 mx-auto'>
                 <Link href="/" className='inline-flex items-center gap-2 text-(--primary) hover:text-(--primary-light) transition-colors group text-sm font-medium -translate-y-12'>
@@ -230,7 +230,7 @@ export default async function Page({ params }) {
             <Script id={`copy-script-${fruta.id}`} dangerouslySetInnerHTML={{
                 __html: `
                 document.querySelector('button[title]')?.addEventListener('click', () => {
-                    navigator.clipboard.writeText('${fruta.jpName} | DFE');
+                    navigator.clipboard.writeText('${fruta.jpName} | devilfruitencyclopedia.vercel.app');
                     setTimeout(() => {
                         document.querySelector('#copy')?.hidePopover();
                     }, 2000);
