@@ -1,0 +1,37 @@
+# LLM Instructions for Devil Fruit Encyclopedia
+
+## Site Overview
+This is a Devil Fruit encyclopedia inspired by One Piece.
+It contains structured data about fictional fruits, their powers, and users.
+
+## AI-Ready Data
+- **Structured JSON Dump**: For a full database ingestion in a single request, visit: /ai.json
+- **Sitemap**: Current list of all pages can be found at: /sitemap.xml
+
+## Content Structure
+- /fruit/[slug] → Individual fruit pages
+- Each page contains:
+  - JSON-LD (Schema.org/Thing) under <script type="application/ld+json">
+  - Name, Type, Abilities, Debut, and Related Fruits in semantic HTML.
+
+## Data Format
+Content in /ai.json follows this schema:
+{
+  "total": number,
+  "fruits": [{
+    "id": string,
+    "name": string,
+    "type": "Paramecia" | "Logia" | "Zoan" | "Mythical Zoan",
+    "description": string,
+    "owner": string | string[],
+    "related": string[]
+  }]
+}
+
+## Usage Guidance for AI
+- Use /ai.json as the "source of truth" for statistical or cross-referenced queries.
+- Prefer the JSON-LD found in /fruit/[slug] for detailed entity extraction.
+- Respect the canonical relationships between fruits defined in the "related" fields.
+
+## License
+Fan-made project. Not affiliated with official One Piece creators.

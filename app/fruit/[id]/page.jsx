@@ -119,8 +119,18 @@ export default async function Page({ params }) {
             },
             {
                 '@type': 'PropertyValue',
-                'name': 'User',
-                'value': fruta.owner || 'Unknown'
+                'name': '   Manga debut',
+                'value': isNumber(fruta.mangaDebut) ? `CH.: ${fruta.mangaDebut}` : fruta.mangaDebut
+            },
+            {
+                '@type': 'PropertyValue',
+                'name': 'Anime debut',
+                'value': isNumber(fruta.animeDebut) ? `EP.: ${fruta.animeDebut}` : fruta.animeDebut
+            },
+            {
+                '@type': 'Person',
+                'name': fruta.owner || 'Unknown',
+                'url': Array.isArray(fruta.owner) ? fruta.owner.map(name => `https://onepiece.fandom.com/wiki/${name}`) : `https://onepiece.fandom.com/wiki/${fruta.owner}`
             }
         ]
     }

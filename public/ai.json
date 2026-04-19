@@ -2,6 +2,8 @@
   "site": "Akuma no Mi Kuzan",
   "type": "encyclopedia",
   "entities": "devil fruits",
+  "version": "2026-04-19",
+  "last_updated": "2026-04-19T09:00:00-03:00",
   "structure": {
     "fruit": {
       "name": "string",
