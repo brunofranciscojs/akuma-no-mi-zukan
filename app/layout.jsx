@@ -24,6 +24,9 @@ const jsonLd = {
 }
 export const metadata = {
   metadataBase: new URL('https://devilfruitencyclopedia.vercel.app'),
+alternates: {
+    canonical: '/',
+  },
   title: 'Devil Fruit Encyclopedia (Akuma no Mi Encyclopedia)',
   description: 'Explore all Devil Fruits from One Piece. Powers, users, and detailed information about each fruit.',
   openGraph: {
