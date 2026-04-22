@@ -1,9 +1,17 @@
 import { Outfit } from 'next/font/google'
+import localFont from 'next/font/local'
 import '../src/index.css'
 import { JsonLd } from '../src/components/JsonLd'
 
 const outfit = Outfit({
   subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-outfit',
+})
+
+const finSerif = localFont({
+  src: '../public/FinSerifDisplay-Bold.woff2',
+  variable: '--font-finserif',
   display: 'swap',
 })
 
@@ -47,22 +55,14 @@ import ClientLayout from './ClientLayout'
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={outfit.className}>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-              (function() {
-                try {
-                  var theme = localStorage.getItem('theme');
-                  if (theme === 'dark') {
-                    document.documentElement.classList.add('dark');
-                  }
-                } catch (e) {}
-              })();
-            `,
-        }}
-      />
+    <html lang="en" className={`${finSerif.variable}`}>
       <body>
+        <script
+          async={false}
+          dangerouslySetInnerHTML={{
+            __html: `(function() { localStorage.getItem('theme') === 'dark' && document.documentElement.classList.add('dark'); })();`,
+          }}
+        />
         <JsonLd data={jsonLd} />
         <ClientLayout>
           {children}

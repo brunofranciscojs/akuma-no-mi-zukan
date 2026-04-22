@@ -13,8 +13,7 @@
     --selection-text-dark: #b68d65;
     --header-bg: rgba(255, 255, 255, 0.8);
     --shadow-color: rgba(151, 111, 71, 0.1);
-
-    @apply overflow-x-hidden selection:bg-[var(--selection-bg)] selection:text-[var(--selection-text)] dark:selection:bg-[var(--selection-bg-dark)] dark:selection:text-[var(--selection-text-dark)]
+    @apply overflow-x-hidden w-svw scroll-smooth selection:bg-[var(--selection-bg)] selection:text-[var(--selection-text)] dark:selection:bg-[var(--selection-bg-dark)] dark:selection:text-[var(--selection-text-dark)]
 }
 
 .dark {
@@ -37,6 +36,8 @@
 --color-bg-secondary: var(--bg-secondary);
 --color-text-primary: var(--text-primary);
 --color-text-muted: var(--text-muted);
+--font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+--font-serif: var(--font-finserif), ui-serif, Georgia, serif;
 --breakpoint-xxs: 500px;
 --breakpoint-ssm: 550px;
 --breakpoint-sm: 640px;
@@ -51,12 +52,21 @@
 }
 
 body{
+    font-family: var(--font-sans);
     place-content: center;
     min-height: 100svh;
+    min-width: 100svw;
     display: grid;
     background: radial-gradient(circle, var(--bg-primary) 0%, var(--bg-secondary) 100%);
     color: var(--text-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
+    scroll-behavior: var(--scroll-behavior);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    line-height: 1.1;
+    font-weight: 700;
 }
 
 @keyframes load{

@@ -1,9 +1,10 @@
 'use client'
 
-import React, { useState, useEffect, useRef, useTransition } from 'react'
+import React, { useState, useRef, useTransition } from 'react'
 import Link from 'next/link'
 import { useSearchParams, useRouter, usePathname } from 'next/navigation'
 import { akumasnomi, slugify, desacentuar } from '../../lib/data'
+import Pagination from './Pagination'
 
 export default function ANMList() {
     const searchParams = useSearchParams();
@@ -34,9 +35,8 @@ export default function ANMList() {
     };
 
     const setPagina = (num) => updateParams({ page: num });
-    const setType = (newType) => updateParams({ type: newType, page: 1 });
 
-    const filteredFruits = akumasnomi.filter(fruit => type === 'all' || fruit.type === type);
+    const filteredFruits = akumasnomi.filter(fruit => type === 'all' || fruit.type.includes(type));
     const totalPages = Math.ceil(filteredFruits.length / fruitsPerPage);
     const paginas = [];
 
@@ -69,7 +69,7 @@ export default function ANMList() {
                             after:content-[""] after:absolute after:inset-0 after:w-full after:h-full after:bg-[url(/pattern.avif)] 
                             after:bg-size-[10%] after:bg-repeat after:opacity-5 after:-z-1 after:pointer-events-none'>
 
-            <div className='grid xl:[grid-template-areas:"types_pagination""search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-4 justify-between mb-6 max-w-360 mx-auto'>
+            <div className='grid xl:[grid-template-areas:"types_fruitsperpage_pagination""search_search_search"] [grid-template-areas:"types_types""pagination_pagination""search_search"] gap-7 justify-between mb-6 max-w-360 mx-auto'>
 
                 <div className='flex flex-row gap-2 [grid-area:types] [anchor-name:--types] h-6
                     after:content-["Types:"] justify-center xl:justify-start
@@ -91,19 +91,7 @@ export default function ANMList() {
                     ))}
                 </div>
 
-                <ol className={`[grid-area:pagination] cl:w-fit w-full mx-auto pagination [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-(--text-primary) transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-(--primary-dark)  [&:has(.active)_.active]:text-white scroll-smooth`}>
-                    {paginas.map(number => {
-                        return (
-                            <button type='button'
-                                key={number}
-                                onClick={() => { setPagina(number); console.log(number) }}
-                                className={pagina === number ? "active px-2 rounded-sm bg-(--primary)! text-white!" : "px-2 rounded-sm text-(--primary) hover:text-white! dark:hover:bg-(--primary-dark) hover:bg-(--primary)! cursor-pointer"}
-                            >
-                                {number}
-                            </button>
-                        )
-                    })}
-                </ol>
+                <Pagination anchor={'top'} paginas={paginas} pagina={pagina} updateParams={updateParams} isPending={isPending} setFruitsPerPage={setFruitsPerPage} setPagina={setPagina} />
 
                 <div className='relative [grid-area:search]'>
                     <input ref={sRef} type="text" placeholder="Search"
@@ -141,7 +129,7 @@ export default function ANMList() {
             </div>
 
 
-            <div className='flex flex-row gap-6 flex-wrap max-w-360 mx-auto [anchor-name:--section]'>
+            <div className='flex flex-row gap-6 flex-wrap max-w-360 mx-auto [anchor-name:--section] mb-12'>
                 {type === 'Logia' &&
                     <div className='flex flex-col gap-2 text-(--text-primary)'>
                         <h2 className="text-(--primary) font-bold">
@@ -200,7 +188,7 @@ export default function ANMList() {
                         </div>
 
                         <div className='flex flex-col pr-3'>
-                            <h3 className='font-extrabold text-xl font-["Calibri"] text-(--primary) leading-none text-balance'>
+                            <h3 className='font-black text-xl text-(--primary) leading-none text-balance'>
                                 <ruby className='ruby-base'>
                                     {fruit.name.split(",").map((part, i) => (
                                         <React.Fragment key={i}>
@@ -234,19 +222,7 @@ export default function ANMList() {
                 ))}
             </div>
 
-            <ol className={`cl:w-fit w-full mx-auto pagination mt-12 [&::-webkit-scrollbar]:w-0 items-center justify-start xl:justify-end flex gap-2 overflow-x-scroll text-gray-700 transition-opacity ${isPending ? 'opacity-50' : ''} [&:has(.active)_.active]:bg-(--primary-dark) [&:has(.active)_.active]:text-white scroll-smooth`}>
-                {paginas.map(number => {
-                    return (
-                        <button type='button'
-                            key={number}
-                            onClick={() => { setPagina(number); console.log(number) }}
-                            className={pagina === number ? "active px-2 rounded-sm bg-(--primary)!" : "px-2 rounded-sm text-(--primary) hover:text-white! hover:bg-(--primary) cursor-pointer"}
-                        >
-                            {number}
-                        </button>
-                    )
-                })}
-            </ol>
+            <Pagination anchor={'bottom'} paginas={paginas} pagina={pagina} updateParams={updateParams} isPending={isPending} setFruitsPerPage={setFruitsPerPage} setPagina={setPagina} />
 
         </section>
     )

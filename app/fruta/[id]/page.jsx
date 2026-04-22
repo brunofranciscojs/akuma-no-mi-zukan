@@ -174,7 +174,7 @@ export default async function Page({ params }) {
                         </span>
 
                         <div>
-                            <h1 className='font-extrabold text-5xl w-fit font-["Calibri"] text-(--primary) leading-none -mt-7 '>
+                            <h1 className='font-extrabold text-5xl w-fit text-(--primary) leading-none -mt-7 '>
                                 <ruby className='ruby-base'>
                                     {fruta.name}
                                     <rt className='text-lg uppercase tracking-[0.2em] font-bold text-(--primary)/60 [anchor-name:--copy]'>「{fruta.jpName}」</rt>

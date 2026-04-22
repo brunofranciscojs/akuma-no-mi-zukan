@@ -16,7 +16,7 @@ export default function AkumaNoMi({ fruta }) {
             </div>
 
             <div className='flex flex-col pr-2'>
-                <h3 className='font-extrabold text-xl font-["Calibri"] text-(--primary) leading-none text-balance'>
+                <h3 className='font-extrabold text-xl text-(--primary) leading-none text-balance'>
                     <ruby className='ruby-base'>
                         {fruta.name}
                         <rt className='text-sm uppercase tracking-[0.2em] font-normal translate-y-1 -translate-x-2 opacity-80'>「{fruta.jpName}」</rt>

@@ -1,5 +1,4 @@
 'use client'
-
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
@@ -9,7 +8,7 @@ import { DarkModeIcon } from './Icons'
 export default function Header({ darkMode, setDarkMode }) {
     const [searchResult2, setSearchResult2] = useState([]);
     const pathname = usePathname();
-    const isHome = pathname === '/'
+    const isHome = pathname === '/' || pathname === '/what-are-devil-fruits'
 
     const busca2 = (name) => {
         if (!name.trim()) {
@@ -26,9 +25,24 @@ export default function Header({ darkMode, setDarkMode }) {
     }
 
     return (
-        <header className='w-svw h-20 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-(--shadow-color) px-12 z-10 flex items-center justify-between gap-4 bg-(--header-bg)'>
-            <Link href="/">
-                <img src="/h-logo.webp" alt="Devil Fruit Encyclopedia" className='w-50 object-contain' />
+        <header className='w-svw h-20 backdrop-blur-xl fixed top-0 left-0 shadow-xl shadow-(--shadow-color) px-4 xxs:px-8  z-10 flex items-center justify-between gap-4 bg-(--header-bg)'>
+            <Link href="/" className='flex gap-4 items-center'>
+                <h6 className='text-3xl font-black text-(--primary) uppercase tracking-wide leading-0 [zoom:.8] xxs:[zoom:1]'>Devil Fruit <br />
+                    <sup className='text-base tracking-[.39rem] leading-[1.5rem] block'>
+                        Encycl<b className='text-transparent [anchor-name:--fruit] 
+                                            after:content-[""] 
+                                            after:bg-[url(/fruit.webp)] 
+                                            after:bg-no-repeat 
+                                            after:bg-center 
+                                            after:bg-contain 
+                                            after:w-5 
+                                            after:h-5 
+                                            after:absolute 
+                                            after:[position-anchor:--fruit] 
+                                            after:left-[calc(anchor(left)-0.5px)]
+                                            after:top-[calc(anchor(top)-4px)]'>o</b>pedia
+                    </sup>
+                </h6>
             </Link>
 
             {!isHome &&
@@ -70,6 +84,7 @@ export default function Header({ darkMode, setDarkMode }) {
 
                 </div>}
             <div className='flex items-center gap-2'>
+                <Link href="/what-are-devil-fruits" className='text-sm text-(--primary) hover:text-(--primary) duration-200 cursor-pointer text-right'>What are Devil Fruits?</Link>
                 <button
                     onClick={() => setDarkMode(!darkMode)}
                     onMouseEnter={() => document.querySelector('#theme-tooltip').showPopover()}
