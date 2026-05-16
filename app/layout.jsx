@@ -32,6 +32,9 @@ const jsonLd = {
 }
 export const metadata = {
   metadataBase: new URL('https://devilfruitencyclopedia.vercel.app'),
+  verification: {
+    google: 'cu4zW65MNUcMrhgj2Mp_9PVnwzHNjnmPt_aHraaLNZQ',
+  },
 alternates: {
     canonical: '/',
   },
