@@ -34,6 +34,9 @@ export const metadata = {
   metadataBase: new URL('https://devilfruitencyclopedia.vercel.app'),
   verification: {
     google: 'cu4zW65MNUcMrhgj2Mp_9PVnwzHNjnmPt_aHraaLNZQ',
+    other: {
+      'msvalidate.01': '5C82E1CA55822BA2966B04EA608CCA0D',
+    },
   },
 alternates: {
     canonical: '/',
