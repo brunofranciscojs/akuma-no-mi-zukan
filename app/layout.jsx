@@ -2,6 +2,7 @@ import { Outfit } from 'next/font/google'
 import localFont from 'next/font/local'
 import '../src/index.css'
 import { JsonLd } from '../src/components/JsonLd'
+import { Analytics } from "@vercel/analytics/next"
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
         <ClientLayout>
           {children}
         </ClientLayout>
+        <Analytics />
       </body>
     </html>
   )
